@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Deploy Association to link Linux virtual machines, virtual machine scale sets, and Arc machines to the specified Data Collection Rule or the specified Data Collection Endpoint. The list of locations and OS images are updated over time as support is increased.",
     "metadata": {
-      "version": "6.6.0",
+      "version": "6.7.0",
       "category": "Monitoring"
     },
-    "version": "6.6.0",
+    "version": "6.7.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -211,7 +211,8 @@
                               "RHEL-HA",
                               "RHEL-SAP",
                               "RHEL-SAP-APPS",
-                              "RHEL-SAP-HA"
+                              "RHEL-SAP-HA",
+                              "RHEL-SAP-HANA"
                             ]
                           },
                           {
@@ -230,6 +231,10 @@
                               },
                               {
                                 "field": "Microsoft.Compute/imageSku",
+                                "like": "10*"
+                              },
+                              {
+                                "field": "Microsoft.Compute/imageSku",
                                 "like": "rhel-lvm7*"
                               },
                               {
@@ -239,6 +244,10 @@
                               {
                                 "field": "Microsoft.Compute/imageSku",
                                 "like": "rhel-lvm9*"
+                              },
+                              {
+                                "field": "Microsoft.Compute/imageSku",
+                                "like": "rhel-lvm10*"
                               }
                             ]
                           }
@@ -491,7 +500,9 @@
                             "field": "Microsoft.Compute/imageSku",
                             "in": [
                               "rocky-community-8-arm",
-                              "rocky-community-9-arm"
+                              "rocky-community-9-arm",
+                              "rocky-community-8",
+                              "rocky-community-9"
                             ]
                           }
                         ]
@@ -555,7 +566,9 @@
                               "11",
                               "11-gen2",
                               "12",
-                              "12-gen2"
+                              "12-gen2",
+                              "11-backports-arm64",
+                              "12-backports-arm64"
                             ]
                           }
                         ]
@@ -732,6 +745,7 @@
       }
     },
     "versions": [
+      "6.7.0",
       "6.6.0",
       "6.5.1",
       "6.5.0",

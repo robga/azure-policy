@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Deploy Association to link Windows virtual machine scale sets to specified Data Collection Rule to enable ChangeTracking and Inventory. The list of locations and OS images are updated over time as support is increased.",
     "metadata": {
-      "version": "1.1.0",
+      "version": "1.2.0",
       "category": "ChangeTrackingAndInventory"
     },
-    "version": "1.1.0",
+    "version": "1.2.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -272,6 +272,22 @@
                     "equals": "Windows-10"
                   }
                 ]
+              },
+              {
+                "allOf": [
+                  {
+                    "field": "Microsoft.Compute/imagePublisher",
+                    "equals": "center-for-internet-security-inc"
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageOffer",
+                    "equals": "cis-windows-server"
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageSKU",
+                    "equals": "cis-windows-server2022-l1-gen1"
+                  }
+                ]
               }
             ]
           }
@@ -338,6 +354,7 @@
       }
     },
     "versions": [
+      "1.2.0",
       "1.1.0",
       "1.0.1",
       "1.0.0-PREVIEW"

@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "Focuses on protecting Controlled Unclassified Information (CUI) in defense contracting with advanced security controls.",
     "metadata": {
-      "version": "1.5.0",
+      "version": "1.6.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.5.0",
+    "version": "1.6.0",
     "policyDefinitionGroups": [
       {
         "name": "CMMC_L2_v1.9.0_SC.L2_3.13.11",
@@ -950,14 +950,15 @@
       },
       "effect-efbde977-ba53-4479-b8e9-10b957924fbf": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: The Log Analytics extension should be installed on Virtual Machine Scale Sets",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "IncludeArcMachines-e6955644-301c-44b5-a4c4-528577de6861": {
@@ -5196,23 +5197,6 @@
         }
       },
       {
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "groupNames": [
-          "CMMC_L2_v1.9.0_AU.L2_3.3.3",
-          "CMMC_L2_v1.9.0_AU.L2_3.3.1",
-          "CMMC_L2_v1.9.0_SI.L2_3.14.3",
-          "CMMC_L2_v1.9.0_SI.L2_3.14.6",
-          "CMMC_L2_v1.9.0_SI.L2_3.14.7"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-efbde977-ba53-4479-b8e9-10b957924fbf')]"
-          }
-        }
-      },
-      {
         "policyDefinitionReferenceId": "e6955644-301c-44b5-a4c4-528577de6861",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e6955644-301c-44b5-a4c4-528577de6861",
         "definitionVersion": "3.*.*",
@@ -8183,6 +8167,7 @@
       }
     ],
     "versions": [
+      "1.6.0",
       "1.5.0",
       "1.4.0",
       "1.3.1",

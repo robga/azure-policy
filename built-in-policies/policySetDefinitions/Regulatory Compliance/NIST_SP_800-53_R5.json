@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "National Institute of Standards and Technology (NIST) SP 800-53 Rev. 5 provides a standardized approach for assessing, monitoring and authorizing cloud computing products and services to manage information security risk. These policies address a subset of NIST SP 800-53 R5 controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/nist800-53r5-initiative",
     "metadata": {
-      "version": "14.18.0",
+      "version": "14.19.0",
       "category": "Regulatory Compliance"
     },
-    "version": "14.18.0",
+    "version": "14.19.0",
     "policyDefinitionGroups": [
       {
         "name": "NIST_SP_800-53_R5_AC-1",
@@ -5105,7 +5105,7 @@
       },
       "effect-7d092e0a-7acd-40d2-a975-dca21cae48c4": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -5184,7 +5184,7 @@
       },
       "effect-53503636-bcc9-4748-9663-5348217f160f": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -5261,7 +5261,7 @@
           "Deny",
           "Disabled"
         ],
-        "defaultValue": "Audit"
+        "defaultValue": "Disabled"
       },
       "effect-a6abeaec-4d90-4a02-805f-6b26c4d3fbe9": {
         "type": "String",
@@ -5316,7 +5316,7 @@
       },
       "effect-52630df9-ca7e-442b-853b-c6ce548b31a2": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -7824,19 +7824,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-53_R5_AU-6(4)",
-          "NIST_SP_800-53_R5_AU-6(5)",
-          "NIST_SP_800-53_R5_AU-12",
-          "NIST_SP_800-53_R5_AU-12(1)",
-          "NIST_SP_800-53_R5_SI-4"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "6ba6d016-e7c3-4842-b8f2-4992ebc0d72d",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6ba6d016-e7c3-4842-b8f2-4992ebc0d72d",
         "definitionVersion": "1.*.*",
@@ -7886,19 +7873,6 @@
           "NIST_SP_800-53_R5_AC-17(1)",
           "NIST_SP_800-53_R5_SC-7",
           "NIST_SP_800-53_R5_SC-7(3)"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-53_R5_AU-6(4)",
-          "NIST_SP_800-53_R5_AU-6(5)",
-          "NIST_SP_800-53_R5_AU-12",
-          "NIST_SP_800-53_R5_AU-12(1)",
-          "NIST_SP_800-53_R5_SI-4"
         ]
       },
       {
@@ -12969,6 +12943,7 @@
       }
     ],
     "versions": [
+      "14.19.0",
       "14.18.0",
       "14.17.0",
       "14.16.0",

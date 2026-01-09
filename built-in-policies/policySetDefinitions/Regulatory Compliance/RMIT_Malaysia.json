@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address a subset of RMIT requirements. Additional policies will be added in upcoming releases. For more information, visit aka.ms/rmit-initiative.",
     "metadata": {
-      "version": "9.19.0",
+      "version": "9.20.0",
       "category": "Regulatory Compliance"
     },
-    "version": "9.19.0",
+    "version": "9.20.0",
     "policyDefinitionGroups": [
       {
         "name": "RMiT_v1.0_10.1",
@@ -1229,7 +1229,8 @@
         "metadata": {
           "displayName": "Log Analytics workspace to be used",
           "description": "Select the Log Analytics workspace from dropdown list to be used. This is a shared parameter for all policies requiring Log Analytics workspace.",
-          "strongType": "omsWorkspace"
+          "strongType": "omsWorkspace",
+          "deprecated": true
         }
       },
       "metricsEnabled": {
@@ -1261,7 +1262,8 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope to configure Log Analytics agent to be enabled",
-          "description": " List of virtual machine images that have supported Windows OS to configure Log Analytics agent. Example values: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": " List of virtual machine images that have supported Windows OS to configure Log Analytics agent. Example values: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
+          "deprecated": true
         }
       },
       "effect-0868462e-646c-4fe3-9ced-a733534b6a2c": {
@@ -1273,7 +1275,8 @@
         ],
         "metadata": {
           "displayName": "Effect for policy: Deploy - Configure Log Analytics agent to be enabled on Windows virtual machines",
-          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects."
+          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects.",
+          "deprecated": true
         }
       },
       "effect-08ba64b8-738f-4918-9686-730d2ed79c7d": {
@@ -1342,7 +1345,8 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope to deploy Diagnostic Settings for Data Lake Storage Gen1 to Log Analytics workspace",
-          "description": "List of virtual machine images that have supported Windows OS to deploy Diagnostic Settings for Data Lake Storage Gen1 to Log Analytics workspace. Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "List of virtual machine images that have supported Windows OS to deploy Diagnostic Settings for Data Lake Storage Gen1 to Log Analytics workspace. Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
+          "deprecated": true
         }
       },
       "effect-3c1b3629-c8f8-4bf6-862c-037cb9094038": {
@@ -1354,7 +1358,8 @@
         ],
         "metadata": {
           "displayName": "Effect for policy: Deploy - Configure Log Analytics agent to be enabled on Windows virtual machine scale sets",
-          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects."
+          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects.",
+          "deprecated": true
         }
       },
       "effect-3d5da587-71bd-41f5-ac95-dd3330c2d58d": {
@@ -3048,25 +3053,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "0868462e-646c-4fe3-9ced-a733534b6a2c",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0868462e-646c-4fe3-9ced-a733534b6a2c",
-        "definitionVersion": "3.*.*",
-        "parameters": {
-          "logAnalytics": {
-            "value": "[parameters('logAnalytics')]"
-          },
-          "listOfImageIdToInclude": {
-            "value": "[parameters('listOfImageIdToInclude-0868462e-646c-4fe3-9ced-a733534b6a2c')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-0868462e-646c-4fe3-9ced-a733534b6a2c')]"
-          }
-        },
-        "groupNames": [
-          "RMiT_v1.0_10.66"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "08ba64b8-738f-4918-9686-730d2ed79c7d",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/08ba64b8-738f-4918-9686-730d2ed79c7d",
         "definitionVersion": "1.*.*",
@@ -3187,26 +3173,6 @@
         },
         "groupNames": [
           "RMiT_v1.0_10.66"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "3c1b3629-c8f8-4bf6-862c-037cb9094038",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/3c1b3629-c8f8-4bf6-862c-037cb9094038",
-        "definitionVersion": "3.*.*",
-        "parameters": {
-          "logAnalytics": {
-            "value": "[parameters('logAnalytics')]"
-          },
-          "listOfImageIdToInclude": {
-            "value": "[parameters('listOfImageIdToInclude-3c1b3629-c8f8-4bf6-862c-037cb9094038')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-3c1b3629-c8f8-4bf6-862c-037cb9094038')]"
-          }
-        },
-        "groupNames": [
-          "RMiT_v1.0_10.27",
-          "RMiT_v1.0_10.35"
         ]
       },
       {
@@ -3588,15 +3554,6 @@
             "value": "[parameters('logsEnabled')]"
           }
         },
-        "groupNames": [
-          "RMiT_v1.0_10.66"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "parameters": {},
         "groupNames": [
           "RMiT_v1.0_10.66"
         ]
@@ -4717,6 +4674,7 @@
       }
     ],
     "versions": [
+      "9.20.0",
       "9.19.0",
       "9.18.0",
       "9.17.0",

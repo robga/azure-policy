@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "The US National Institute of Standards and Technology (NIST) promotes and maintains measurement standards and guidelines to help protect the information and information systems of federal agencies. In response to Executive Order 13556 on managing controlled unclassified information (CUI), it published NIST SP 800-171. These policies address a subset of NIST SP 800-171 Rev. 2 controls. For more information, visit https://docs.microsoft.com/azure/compliance/offerings/offering-nist-800-171",
     "metadata": {
-      "version": "15.21.0",
+      "version": "15.22.0",
       "category": "Regulatory Compliance"
     },
-    "version": "15.21.0",
+    "version": "15.22.0",
     "policyDefinitionGroups": [
       {
         "name": "NIST_SP_800-171_R2_3.1.1",
@@ -539,7 +539,7 @@
       },
       "effect-7d092e0a-7acd-40d2-a975-dca21cae48c4": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -566,7 +566,7 @@
       },
       "effect-53503636-bcc9-4748-9663-5348217f160f": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -629,7 +629,7 @@
           "Deny",
           "Disabled"
         ],
-        "defaultValue": "Audit"
+        "defaultValue": "Disabled"
       },
       "effect-a6abeaec-4d90-4a02-805f-6b26c4d3fbe9": {
         "type": "String",
@@ -684,7 +684,7 @@
       },
       "effect-52630df9-ca7e-442b-853b-c6ce548b31a2": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -3584,30 +3584,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-171_R2_3.3.1",
-          "NIST_SP_800-171_R2_3.3.2",
-          "NIST_SP_800-171_R2_3.14.6",
-          "NIST_SP_800-171_R2_3.14.7"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-171_R2_3.3.1",
-          "NIST_SP_800-171_R2_3.3.2",
-          "NIST_SP_800-171_R2_3.14.6",
-          "NIST_SP_800-171_R2_3.14.7"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "8dfab9c4-fe7b-49ad-85e4-1e9be085358f",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8dfab9c4-fe7b-49ad-85e4-1e9be085358f",
         "definitionVersion": "6.*.*-preview",
@@ -5219,16 +5195,6 @@
           "NIST_SP_800-171_R2_3.14.2",
           "NIST_SP_800-171_R2_3.14.4",
           "NIST_SP_800-171_R2_3.14.5"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "theLogAnalyticsAgentShouldBeInstalledOnVirtualMachineScaleSets",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-171_R2_3.3.1",
-          "NIST_SP_800-171_R2_3.3.2"
         ]
       },
       {
@@ -7343,6 +7309,7 @@
       }
     ],
     "versions": [
+      "15.22.0",
       "15.21.0",
       "15.20.0",
       "15.19.0",

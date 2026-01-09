@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address a subset of the SWIFT Customer Security Program's Customer Security Controls Framework v2021 controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/swift2021-init.",
     "metadata": {
-      "version": "4.15.1",
+      "version": "4.16.0",
       "category": "Regulatory Compliance"
     },
-    "version": "4.15.1",
+    "version": "4.16.0",
     "policyDefinitionGroups": [
       {
         "name": "SWIFT_CSCF_v2021_1.1",
@@ -319,7 +319,7 @@
           "Deny",
           "Disabled"
         ],
-        "defaultValue": "Audit"
+        "defaultValue": "Disabled"
       },
       "effect-a6abeaec-4d90-4a02-805f-6b26c4d3fbe9": {
         "type": "String",
@@ -423,7 +423,7 @@
           "Deny",
           "Disabled"
         ],
-        "defaultValue": "Audit"
+        "defaultValue": "Disabled"
       },
       "effect-32e6bbec-16b6-44c2-be37-c5b672d103cf": {
         "type": "String",
@@ -938,15 +938,6 @@
             "value": "[parameters('requiredRetentionDays')]"
           }
         },
-        "groupNames": [
-          "SWIFT_CSCF_v2021_6.4"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "parameters": {},
         "groupNames": [
           "SWIFT_CSCF_v2021_6.4"
         ]
@@ -1837,6 +1828,7 @@
       }
     ],
     "versions": [
+      "4.16.0",
       "4.15.1",
       "4.15.0-PREVIEW",
       "4.14.0-PREVIEW",

@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address the Dutch Baseline Informatiebeveiliging (BIO) controls specifically for the 'thema-uitwerking Clouddiensten' and include policies covered under the SOC2 and ISO 27001:2013 controls.",
     "metadata": {
-      "version": "1.13.0",
+      "version": "1.14.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.13.0",
+    "version": "1.14.0",
     "policyDefinitionGroups": [
       {
         "name": "B.01 - Laws and regulations",
@@ -3068,7 +3068,7 @@
       "audit_effect": {
         "type": "String",
         "metadata": {
-          "displayName": "Effect",
+          "displayName": "Audit Effect",
           "description": "Enable or disable the execution of the policy"
         },
         "allowedValues": [
@@ -4331,14 +4331,15 @@
       },
       "effect-842c54e8-c2f9-4d79-ae8d-38d8b8019373": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: [Preview]: Log Analytics extension should be installed on your Linux Azure Arc machines",
-          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects"
+          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "effect-a3a6ea0c-e018-4933-9ef0-5aaa1501449b": {
@@ -4467,14 +4468,15 @@
       },
       "effect-d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: [Preview]: Log Analytics extension should be installed on your Windows Azure Arc machines",
-          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects"
+          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "effect-f8d36e2f-389b-4ee4-898d-21aeb69a0f45": {
@@ -7984,19 +7986,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "PreviewLogAnalyticsExtensionShouldBeInstalledOnYourLinuxAzureArcMachines",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-842c54e8-c2f9-4d79-ae8d-38d8b8019373')]"
-          }
-        },
-        "groupNames": [
-          "U.15.1 - Events logged"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "GuestConfigurationExtensionShouldBeInstalledOnYourMachines",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ae89ebca-1c92-4898-ac2c-9f63decb045c",
         "definitionVersion": "1.*.*",
@@ -8090,19 +8079,6 @@
         "parameters": {
           "effect": {
             "value": "[parameters('effect-d26f7642-7545-4e18-9b75-8c9bbdee3a9a')]"
-          }
-        },
-        "groupNames": [
-          "U.15.1 - Events logged"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "PreviewLogAnalyticsExtensionShouldBeInstalledOnYourWindowsAzureArcMachines",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e')]"
           }
         },
         "groupNames": [
@@ -8300,6 +8276,7 @@
       }
     ],
     "versions": [
+      "1.14.0",
       "1.13.0",
       "1.12.0",
       "1.11.0",

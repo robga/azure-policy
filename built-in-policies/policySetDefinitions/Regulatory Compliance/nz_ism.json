@@ -4,11 +4,11 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address a subset of New Zealand Information Security Manual controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/nzism-initiative.",
     "metadata": {
-      "version": "11.14.0-deprecated",
+      "version": "11.15.0-deprecated",
       "category": "Regulatory Compliance",
       "deprecated": true
     },
-    "version": "11.14.0",
+    "version": "11.15.0",
     "policyDefinitionGroups": [
       {
         "name": "NZISM_Security_Benchmark_v1.1_AC-1",
@@ -644,7 +644,7 @@
       },
       "effect-057d6cfe-9c4f-4a6d-bc60-14420ea1f1a9": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -758,7 +758,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of custom VM images that have supported Windows OS to add to scope additional to the images in the gallery",
+          "displayName": "Optional: List of custom VM images that have supported Windows OS to add to scope additional to the images in the gallery via Dependency Agent Extension Windows VM DINE",
           "description": "For more information on Guest Configuration, visit https://aka.ms/gcpol",
           "deprecated": true
         }
@@ -824,7 +824,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of custom VM images that have supported Windows OS to add to scope additional to the images in the gallery",
+          "displayName": "Optional: List of custom VM images that have supported Windows OS to add to scope additional to the images in the gallery via Log Analytics OS Image Audit",
           "description": "For more information on Guest Configuration, visit https://aka.ms/gcpol",
           "deprecated": true
         }
@@ -833,7 +833,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of custom VM images that have supported Linux OS to add to scope additional to the images in the gallery",
+          "displayName": "Optional: List of custom VM images that have supported Linux OS to add to scope additional to the images in the gallery via Log Analytics OS Image Audit",
           "description": "For more information on Guest Configuration, visit https://aka.ms/gcpol",
           "deprecated": true
         }
@@ -855,7 +855,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of custom VM images that have supported Windows OS to add to scope additional to the images in the gallery",
+          "displayName": "Optional: List of custom VM images that have supported Windows OS to add to scope additional to the images in the gallery via Dependency Agent Extension Windows VMSS DINE",
           "description": "For more information on Guest Configuration, visit https://aka.ms/gcpol",
           "deprecated": true
         }
@@ -1035,7 +1035,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of custom VM images that have supported Windows OS to add to scope additional to the images in the gallery",
+          "displayName": "Optional: List of custom VM images that have supported Windows OS to add to scope additional to the images in the gallery via Log Analytics OS Image VMSS Audit",
           "description": "For more information on Guest Configuration, visit https://aka.ms/gcpol",
           "deprecated": true
         }
@@ -1044,14 +1044,14 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of custom VM images that have supported Linux OS to add to scope additional to the images in the gallery",
+          "displayName": "Optional: List of custom VM images that have supported Linux OS to add to scope additional to the images in the gallery via Log Analytics OS Image VMSS Audit",
           "description": "For more information on Guest Configuration, visit https://aka.ms/gcpol",
           "deprecated": true
         }
       },
       "effect-5c607a2e-c700-4744-8254-d77e7c9eb5e4": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -1070,7 +1070,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: External accounts with write permissions should be removed from your subscription",
+          "displayName": "Effect for policy: External accounts with write permissions should be removed from your subscription via ASC Remove Guest Accounts with Write Permissions Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1095,7 +1095,7 @@
       },
       "effect-6b1cbf55-e8b6-442f-ba4c-7246b6381474": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -1114,7 +1114,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: Deprecated accounts should be removed from your subscription",
+          "displayName": "Effect for policy: Deprecated accounts should be removed from your subscription via ASC Remove Blocked Accounts with Read Write Permissions Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1227,7 +1227,7 @@
       },
       "effect-9297c21d-2ed6-4474-b48f-163f75654ce3": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -1246,7 +1246,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: MFA should be enabled accounts with write permissions on your subscription",
+          "displayName": "Effect for policy: MFA should be enabled accounts with write permissions on your subscription via ASC Enable MFA for Accounts with Write Permissions Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1289,7 +1289,7 @@
       },
       "effect-aa633080-8b72-40c4-a2d7-d00c03e80bed": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -1308,7 +1308,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: MFA should be enabled on accounts with owner permissions on your subscription",
+          "displayName": "Effect for policy: MFA should be enabled on accounts with owner permissions on your subscription via ASC Enable MFA for Accounts with Owner Permissions Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1479,7 +1479,7 @@
       },
       "effect-e3576e28-8b17-4677-84c3-db2990658d64": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -1498,7 +1498,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: MFA should be enabled on accounts with read permissions on your subscription",
+          "displayName": "Effect for policy: MFA should be enabled on accounts with read permissions on your subscription via ASC Enable MFA for Accounts with Read Permissions Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1586,7 +1586,7 @@
       },
       "effect-ebb62a0c-3560-49e1-89ed-27e074e9f8ad": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -1605,7 +1605,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: Deprecated accounts with owner permissions should be removed from your subscription",
+          "displayName": "Effect for policy: Deprecated accounts with owner permissions should be removed from your subscription via ASC Remove Blocked Accounts with Owner Permissions Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1744,7 +1744,7 @@
       },
       "effect-f8456c1c-aa66-4dfb-861a-25d127b775c9": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -1763,7 +1763,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: External accounts with owner permissions should be removed from your subscription",
+          "displayName": "Effect for policy: External accounts with owner permissions should be removed from your subscription via ASC Remove Guest Accounts with Owner Permissions Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1806,7 +1806,7 @@
       },
       "effect-d62cfe2b-3ab0-4d41-980d-76803b58ca65": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -2015,7 +2015,7 @@
       },
       "effect-b607c5de-e7d9-4eee-9e5c-83f1bcee4fa0": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -2174,7 +2174,7 @@
       },
       "effect-7c1b1214-f927-48bf-8882-84f0af6588b1": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -2441,7 +2441,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest",
+          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest via SQL Managed Instance - Ensure server TDE is Encrypted DENY",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2454,7 +2454,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: SQL servers should use customer-managed keys to encrypt data at rest",
+          "displayName": "Effect for policy: SQL servers should use customer-managed keys to encrypt data at rest via SQL Server - Ensure Server TDE is Encrypted with your own key DENY",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2693,7 +2693,7 @@
       },
       "effect-7d092e0a-7acd-40d2-a975-dca21cae48c4": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -2770,7 +2770,7 @@
       },
       "effect-53503636-bcc9-4748-9663-5348217f160f": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -4588,6 +4588,7 @@
       }
     ],
     "versions": [
+      "11.15.0",
       "11.14.0",
       "11.13.0",
       "11.12.0",

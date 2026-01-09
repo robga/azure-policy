@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "SWIFT's Customer Security Programme (CSP) helps financial institutions ensure their defences against cyberattacks are up to date and effective, to protect the integrity of the wider financial network. Users compare the security measures they have implemented with those detailed in the Customer Security Controls Framework (CSCF). These policies address a subset of SWIFT controls. For more information, visit https://docs.microsoft.com/azure/governance/policy/samples/swift-cscf-v2021",
     "metadata": {
-      "version": "2.12.0",
+      "version": "2.13.0",
       "category": "Regulatory Compliance"
     },
-    "version": "2.12.0",
+    "version": "2.13.0",
     "policyDefinitionGroups": [
       {
         "name": "SWIFT_CSCF_v2022_1.1",
@@ -2820,15 +2820,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "parameters": {},
-        "groupNames": [
-          "SWIFT_CSCF_v2022_6.4"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "91a78b24-f231-4a8a-8da9-02c35b2b6510",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/91a78b24-f231-4a8a-8da9-02c35b2b6510",
         "definitionVersion": "2.*.*",
@@ -3739,6 +3730,7 @@
       }
     ],
     "versions": [
+      "2.13.0",
       "2.12.0",
       "2.11.0",
       "2.10.0",

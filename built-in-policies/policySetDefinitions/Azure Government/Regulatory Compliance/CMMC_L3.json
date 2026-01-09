@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address a subset of Cybersecurity Maturity Model Certification (CMMC) Level 3 requirements. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/cmmc-initiative.",
     "metadata": {
-      "version": "9.13.0",
+      "version": "9.14.0",
       "category": "Regulatory Compliance"
     },
-    "version": "9.13.0",
+    "version": "9.14.0",
     "policyDefinitionGroups": [
       {
         "name": "CMMC_L3_AC.1.001",
@@ -767,13 +767,13 @@
       },
       "effect-5c607a2e-c700-4744-8254-d77e7c9eb5e4": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: External accounts with write permissions should be removed from your subscription",
+          "displayName": "Effect for policy: External accounts with write permissions should be removed from your subscription via Remove External Accounts Write Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -786,19 +786,19 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: External accounts with write permissions should be removed from your subscription",
+          "displayName": "Effect for policy: External accounts with write permissions should be removed from your subscription via Remove Guest Accounts With Write Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
       "effect-5f76cf89-fbf2-47fd-a3f4-b891fa780b60": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: External accounts with read permissions should be removed from your subscription",
+          "displayName": "Effect for policy: External accounts with read permissions should be removed from your subscription via Remove External Accounts Read Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -811,19 +811,19 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: External accounts with read permissions should be removed from your subscription",
+          "displayName": "Effect for policy: External accounts with read permissions should be removed from your subscription via Remove Guest Accounts With Read Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
       "effect-6b1cbf55-e8b6-442f-ba4c-7246b6381474": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: Deprecated accounts should be removed from your subscription",
+          "displayName": "Effect for policy: Deprecated accounts should be removed from your subscription via Remove Deprecated Accounts",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -836,7 +836,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: Deprecated accounts should be removed from your subscription",
+          "displayName": "Effect for policy: Deprecated accounts should be removed from your subscription via Remove Blocked Accounts With Read Write Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1091,13 +1091,13 @@
       },
       "effect-9297c21d-2ed6-4474-b48f-163f75654ce3": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: MFA should be enabled accounts with write permissions on your subscription",
+          "displayName": "Effect for policy: MFA should be enabled accounts with write permissions on your subscription via Enable MFA For Write Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1110,7 +1110,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: MFA should be enabled accounts with write permissions on your subscription",
+          "displayName": "Effect for policy: MFA should be enabled accounts with write permissions on your subscription via Enable MFA For Accounts With Write Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1215,13 +1215,13 @@
       },
       "effect-aa633080-8b72-40c4-a2d7-d00c03e80bed": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: MFA should be enabled on accounts with owner permissions on your subscription",
+          "displayName": "Effect for policy: MFA should be enabled on accounts with owner permissions on your subscription via Enable MFA For Owner Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1234,7 +1234,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: MFA should be enabled on accounts with owner permissions on your subscription",
+          "displayName": "Effect for policy: MFA should be enabled on accounts with owner permissions on your subscription via Enable MFA For Accounts With Owner Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1359,13 +1359,13 @@
       },
       "effect-e3576e28-8b17-4677-84c3-db2990658d64": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: MFA should be enabled on accounts with read permissions on your subscription",
+          "displayName": "Effect for policy: MFA should be enabled on accounts with read permissions on your subscription via Enable MFA For Read Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1378,7 +1378,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: MFA should be enabled on accounts with read permissions on your subscription",
+          "displayName": "Effect for policy: MFA should be enabled on accounts with read permissions on your subscription via Enable MFA For Accounts With Read Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1411,13 +1411,13 @@
       },
       "effect-ebb62a0c-3560-49e1-89ed-27e074e9f8ad": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: Deprecated accounts with owner permissions should be removed from your subscription",
+          "displayName": "Effect for policy: Deprecated accounts with owner permissions should be removed from your subscription via Remove Deprecated Accounts With Owner Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1430,20 +1430,21 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: Deprecated accounts with owner permissions should be removed from your subscription",
+          "displayName": "Effect for policy: Deprecated accounts with owner permissions should be removed from your subscription via Remove Blocked Accounts With Owner Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
       "effect-efbde977-ba53-4479-b8e9-10b957924fbf": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: The Log Analytics agent should be installed on Virtual Machine Scale Sets",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "effect-f0e6e85b-9b9f-4a4b-b67b-f730d42f1b0b": {
@@ -1472,13 +1473,13 @@
       },
       "effect-f8456c1c-aa66-4dfb-861a-25d127b775c9": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: External accounts with owner permissions should be removed from your subscription",
+          "displayName": "Effect for policy: External accounts with owner permissions should be removed from your subscription via Remove External Accounts With Owner Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1491,7 +1492,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: External accounts with owner permissions should be removed from your subscription",
+          "displayName": "Effect for policy: External accounts with owner permissions should be removed from your subscription via Remove Guest Accounts With Owner Permissions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1563,7 +1564,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: Resource logs in App Services should be enabled",
+          "displayName": "Effect for policy: Resource logs in App Services should be enabled via Audit Logging Monitoring Audit V2 Deprecated",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1576,7 +1577,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: Resource logs in App Services should be enabled",
+          "displayName": "Effect for policy: Resource logs in App Services should be enabled via Resource Logging Monitoring Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1608,7 +1609,7 @@
           "Detection"
         ],
         "metadata": {
-          "displayName": "Mode Requirement",
+          "displayName": "Mode Requirement via WAF_AppGatewayMode_Audit",
           "description": "Mode required for all WAF policies"
         }
       },
@@ -1633,7 +1634,7 @@
           "Detection"
         ],
         "metadata": {
-          "displayName": "Mode Requirement",
+          "displayName": "Mode Requirement via WAF_AFD_Mode_Audit",
           "description": "Mode required for all WAF policies"
         }
       },
@@ -1826,7 +1827,7 @@
       },
       "effect-2c89a2e5-7285-40fe-afe0-ae8654b92fab": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Disabled"
@@ -1901,7 +1902,7 @@
       },
       "effect-e372f825-a257-4fb8-9175-797a8a8627d6": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Disabled"
@@ -2094,7 +2095,7 @@
       },
       "effect-057d6cfe-9c4f-4a6d-bc60-14420ea1f1a9": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -2316,7 +2317,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest",
+          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest (Parameter: effect-048248b0-55cd-46da-b1ff-39efd52db260)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -2329,7 +2330,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: SQL servers should use customer-managed keys to encrypt data at rest",
+          "displayName": "Effect for policy: SQL servers should use customer-managed keys to encrypt data at rest (Parameter: effect-0d134df8-db83-46fb-ad72-fe0c9428c8dd)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -2343,7 +2344,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest",
+          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest - DENY",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2917,21 +2918,6 @@
         "groupNames": [
           "CMMC_L3_AC.1.001",
           "CMMC_L3_SC.3.181"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-efbde977-ba53-4479-b8e9-10b957924fbf')]"
-          }
-        },
-        "groupNames": [
-          "CMMC_L3_AU.2.041",
-          "CMMC_L3_AU.2.042",
-          "CMMC_L3_AU.3.048"
         ]
       },
       {
@@ -4067,6 +4053,7 @@
       }
     ],
     "versions": [
+      "9.14.0",
       "9.13.0",
       "9.12.0",
       "9.11.0",

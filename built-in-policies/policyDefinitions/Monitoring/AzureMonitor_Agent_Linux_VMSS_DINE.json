@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Automate the deployment of Azure Monitor Agent extension on your Linux virtual machine scale sets for collecting telemetry data from the guest OS. This policy will install the extension if the OS and region are supported and system-assigned managed identity is enabled, and skip install otherwise. Learn more: https://aka.ms/AMAOverview.",
     "metadata": {
-      "version": "3.8.0",
+      "version": "3.9.0",
       "category": "Monitoring"
     },
-    "version": "3.8.0",
+    "version": "3.9.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -149,7 +149,8 @@
                       "RHEL-HA",
                       "RHEL-SAP",
                       "RHEL-SAP-APPS",
-                      "RHEL-SAP-HA"
+                      "RHEL-SAP-HA",
+                      "RHEL-SAP-HANA"
                     ]
                   },
                   {
@@ -168,6 +169,10 @@
                       },
                       {
                         "field": "Microsoft.Compute/imageSku",
+                        "like": "10*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSku",
                         "like": "rhel-lvm7*"
                       },
                       {
@@ -177,6 +182,10 @@
                       {
                         "field": "Microsoft.Compute/imageSku",
                         "like": "rhel-lvm9*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSku",
+                        "like": "rhel-lvm10*"
                       }
                     ]
                   }
@@ -429,7 +438,9 @@
                     "field": "Microsoft.Compute/imageSku",
                     "in": [
                       "rocky-community-8-arm",
-                      "rocky-community-9-arm"
+                      "rocky-community-9-arm",
+                      "rocky-community-8",
+                      "rocky-community-9"
                     ]
                   }
                 ]
@@ -493,7 +504,9 @@
                       "11",
                       "11-gen2",
                       "12",
-                      "12-gen2"
+                      "12-gen2",
+                      "11-backports-arm64",
+                      "12-backports-arm64"
                     ]
                   }
                 ]
@@ -603,6 +616,7 @@
       }
     },
     "versions": [
+      "3.9.0",
       "3.8.0",
       "3.7.0",
       "3.6.0",

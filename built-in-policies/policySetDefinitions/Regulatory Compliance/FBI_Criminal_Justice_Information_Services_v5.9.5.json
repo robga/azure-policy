@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "Standards by the FBI to secure criminal justice information, covering data access, transmission, and storage.",
     "metadata": {
-      "version": "1.6.0",
+      "version": "1.7.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.6.0",
+    "version": "1.7.0",
     "policyDefinitionGroups": [
       {
         "name": "FBI_Criminal_Justice_Information_Services_v5.9.5_5.1",
@@ -52,7 +52,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ADX CMK",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -64,7 +64,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Install Windows GA Ext On VMSS Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -76,7 +76,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MySQL Flexible Servers AD Only Enabled Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -88,7 +88,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Linux machines that allow remote connections from accounts without passwords",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -101,7 +101,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Linux Password 110 AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -113,7 +113,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Activity Log Security Operations Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -125,7 +125,7 @@
           "Microsoft.Security/securitySolutions/delete"
         ],
         "metadata": {
-          "displayName": "Operation Name",
+          "displayName": "Operation Name via An activity log alert should exist for specific Security operations",
           "description": "Security Operation name for which activity log alert should exist"
         },
         "defaultValue": "Microsoft.Security/policies/write"
@@ -138,7 +138,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Network security Group Flow Log Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -151,7 +151,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via IoT Dps CMK Encryption Enabled Audit Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -163,7 +163,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Arc Policy Extension Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -176,7 +176,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Namespace Access Rules Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -188,7 +188,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Advanced Threat Protection On App Services Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -200,7 +200,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via AKS Azure Policy Add On Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -212,7 +212,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Disable Remote Debugging Function App Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -224,7 +224,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Managed HSM Audit Diagnostic Log",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -232,7 +232,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Azure Key Vault Managed HSM should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -244,7 +244,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via VNET Audit (7804b5c7-01dc-4723-969b-ae300cc07ff1)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -257,7 +257,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via WAF AFD Enabled Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -269,7 +269,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Standard Pricing Tier",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -281,7 +281,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Security Audit Must Be Deployed",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -293,7 +293,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Windows VM Encryption AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -306,7 +306,7 @@
           "Deny"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via VNET Audit (8af8f826-edcb-4178-b35f-851ea6fea615)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -318,7 +318,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Server Vulnerability Assessment Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -331,7 +331,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via Kubernetes cluster containers should only use allowed capabilities",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -339,7 +339,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes cluster containers should only use allowed capabilities",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -352,7 +352,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Container Allowed Capabilities",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -365,7 +365,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Kubernetes cluster containers should only use allowed capabilities",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -373,7 +373,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes cluster containers should only use allowed capabilities",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -381,7 +381,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes cluster containers should only use allowed capabilities",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -407,7 +407,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Containers exclusions",
+          "displayName": "Containers exclusions via Kubernetes cluster containers should only use allowed capabilities",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identify is the name of container. Use an empty list to apply this policy to all containers in all namespaces."
         }
       },
@@ -415,7 +415,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Image exclusions",
+          "displayName": "Image exclusions via Kubernetes cluster containers should only use allowed capabilities",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identifier is the image of container. Prefix-matching can be signified with `*`. For example: `myregistry.azurecr.io/istio:*`. It is recommended that users use the fully-qualified Docker image name (e.g. start with a domain name) in order to avoid unexpectedly exempting images from an untrusted repository.",
           "portalReview": true
         }
@@ -428,7 +428,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Server Auditing Actions And Groups Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -441,7 +441,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Secrets Expiration Set",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -454,7 +454,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Cosmos Disable Local Auth Audit Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -466,7 +466,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Options - Audit'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -487,7 +487,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Security Options Audit AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -499,7 +499,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Diagnostic Log (83a214f7-d01a-484b-91a9-ed54470c9a6a)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -507,7 +507,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Event Hub should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -519,7 +519,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Server Secret Assessment Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -531,7 +531,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via PostgreSQL Enable Byok Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -544,7 +544,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Keys Expiration Set",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -557,7 +557,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ACR Public network Access Audit Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -569,7 +569,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Diagnostic Log (afe0c3be-ba3b-4544-ba52-0c99672a8ad6)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -577,7 +577,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Azure Machine Learning Workspaces should be enabled",
           "description": "The required resource logs retention in days if exporting to an Azure Storage account"
         }
       },
@@ -589,7 +589,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Options - Network Security'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -642,7 +642,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Security Options Network Security AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -655,7 +655,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Storage Audit For HTTPS Enabled Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -667,7 +667,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Vulnerability Assessment On Server Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -679,7 +679,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC SQL Vulnerability Assessment On Synapse Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -691,7 +691,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'System Audit Policies - Privilege Use'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -704,20 +704,21 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via System Audit Policies Privilege Use AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
       "effect-efbde977-ba53-4479-b8e9-10b957924fbf": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via VMSS Log analytics Agent AINE",
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "IncludeArcMachines-e6955644-301c-44b5-a4c4-528577de6861": {
@@ -728,7 +729,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Linux machines that do not have the passwd file permissions set to 0644",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -741,7 +742,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Linux Password 121 AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -754,7 +755,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Server Public network Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -766,7 +767,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Use Managed Identity Function App Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -778,7 +779,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via CMA C 1651",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -791,7 +792,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ADX Disk Encrypted",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -803,7 +804,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Options - Recovery console'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -824,7 +825,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Security Options Recovery Console AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -837,7 +838,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Cosmos Network Rules Exist Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -850,7 +851,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via Kubernetes cluster containers should run with a read only root file system",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -858,7 +859,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes cluster containers should run with a read only root file system",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -871,7 +872,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Read Only Root File System",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -884,7 +885,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Kubernetes cluster containers should run with a read only root file system",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -892,7 +893,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes cluster containers should run with a read only root file system",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -900,7 +901,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes cluster containers should run with a read only root file system",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -908,7 +909,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Containers exclusions",
+          "displayName": "Containers exclusions via Kubernetes cluster containers should run with a read only root file system",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identify is the name of container. Use an empty list to apply this policy to all containers in all namespaces."
         }
       },
@@ -916,7 +917,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Image exclusions",
+          "displayName": "Image exclusions via Kubernetes cluster containers should run with a read only root file system",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identifier is the image of container. Prefix-matching can be signified with `*`. For example: `myregistry.azurecr.io/istio:*`. It is recommended that users use the fully-qualified Docker image name (e.g. start with a domain name) in order to avoid unexpectedly exempting images from an untrusted repository.",
           "portalReview": true
         }
@@ -930,7 +931,7 @@
           "Deny"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via CMK Audit (0aa61e00-0a01-4a3c-9945-e93cffedf0e6)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -962,7 +963,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Keys Allowed Key Types",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -974,7 +975,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Machines Anti Malware Auto Update AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -982,7 +983,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Windows machines that have the specified members in the Administrators group",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -1005,7 +1006,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Activity Log Capture All Categories",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1018,7 +1019,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via Kubernetes clusters should disable automounting API credentials",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -1026,7 +1027,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes clusters should disable automounting API credentials",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -1039,7 +1040,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Block Automount Token",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1047,7 +1048,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Image exclusions",
+          "displayName": "Image exclusions via Kubernetes clusters should disable automounting API credentials",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identifier is the image of container. Prefix-matching can be signified with `*`. For example: `myregistry.azurecr.io/istio:*`. It is recommended that users use the fully-qualified Docker image name (e.g. start with a domain name) in order to avoid unexpectedly exempting images from an untrusted repository.",
           "portalReview": true
         }
@@ -1061,7 +1062,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Kubernetes clusters should disable automounting API credentials",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -1069,7 +1070,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes clusters should disable automounting API credentials",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -1077,7 +1078,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes clusters should disable automounting API credentials",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -1089,7 +1090,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Diagnostic Log (428256e6-1fac-4f48-a757-df34c2b3336d)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1097,7 +1098,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Batch accounts should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -1110,7 +1111,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Synaspe Workspace Aad Only Authentication Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1123,7 +1124,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Cosmos Private Network Access Audit Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1136,7 +1137,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Redis Cache Audit SSL Port Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1148,7 +1149,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Email Notification",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1160,7 +1161,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'System Audit Policies - Account Management'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1173,7 +1174,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via System Audit Policies Account Management AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1185,7 +1186,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Unprotected Endpoints Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1198,7 +1199,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Storage account Allow Shared Key Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1210,7 +1211,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Network Service Endpoint App Service AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1223,7 +1224,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Account CMK Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1235,7 +1236,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Windows machines that have extra accounts in the Administrators group",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1257,7 +1258,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Windows machines that do not have the password complexity setting enabled",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1270,7 +1271,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Windows Password Complexity AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1282,7 +1283,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Azure Defender Arc Extension Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1295,7 +1296,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via User Owned Storage Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1307,7 +1308,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Server Advanced Data Security Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1319,7 +1320,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Resource Logging Monitoring Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1327,7 +1328,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via App Service apps should have resource logs enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -1345,7 +1346,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Managed Disk Encryption Sets Allowed Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1358,7 +1359,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MySQL Flexible Servers Defender For SQL Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1371,7 +1372,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Double Encryption Required Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1383,7 +1384,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Event Hub Access Rules Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1395,7 +1396,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Redis Cache Private Endpoint AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1408,7 +1409,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Storage Network Acls Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1420,7 +1421,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Client Cert Function App Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1433,7 +1434,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Classic Audit For Classic Storages Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1446,7 +1447,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Private Link Public network Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1458,7 +1459,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Network security Groups On Internet Facing Virtual machines Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1470,7 +1471,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Private Endpoints AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1483,7 +1484,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via CMK Audit (87ba29ef-1ab3-4d82-b763-87fcd4f531f7)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1495,7 +1496,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Upgrade Version Kubernetes Service Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1507,7 +1508,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Use Managed Identity Web App Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1519,7 +1520,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Administrative Templates - Network'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1556,7 +1557,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Administrative Templates Network AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1569,7 +1570,7 @@
           "Deny"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Spring VNET Enabled Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1596,7 +1597,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Private endpoint Enabled Audit V 2",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1608,7 +1609,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Private Endpoint Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1621,7 +1622,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Recoverable Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1634,7 +1635,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Customer Managed Key Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1647,7 +1648,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Disable Local Auth Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1660,7 +1661,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Storage Disallow Public Blob Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1672,7 +1673,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via CMA 0014",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1685,7 +1686,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Firewall Enabled Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1725,7 +1726,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Network Service Endpoint Container Registry Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1733,7 +1734,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Dependency agent should be enabled for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -1741,7 +1742,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -1753,7 +1754,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Dependency Agent OS Image Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1765,7 +1766,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Windows machines that do not have the maximum password age set to specified number of days",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1774,7 +1775,7 @@
         "type": "string",
         "defaultValue": "70",
         "metadata": {
-          "displayName": "Maximum password age",
+          "displayName": "Maximum password age via Audit Windows machines that do not have the maximum password age set to specified number of days",
           "description": "The Maximum password age setting determines the period of time (in days) that a password can be used before the system requires the user to change it.",
           "portalReview": "true"
         }
@@ -1787,7 +1788,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Windows Maximum Password AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1808,7 +1809,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Log Analytics Workspace Mismatch VM Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1821,7 +1822,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Network Service Endpoint SQL Server AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1833,7 +1834,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Azure Defender AKS Security Profile Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1845,7 +1846,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Advanced Data Security On SQL Servers Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1857,7 +1858,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via PostgreSQL Flexible Servers Enable Entra Only Authentication Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1869,7 +1870,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Machines Log analytics Agent AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -1882,7 +1883,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Logprofile Activity logs Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1914,7 +1915,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Keys Ec Allowed Curve Names",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1926,7 +1927,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Disable Remote Debugging Web App Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1938,7 +1939,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Network Flow Log Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1950,7 +1951,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Enable Private endpoints Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1962,7 +1963,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'User Rights Assignment'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2111,7 +2112,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via User Rights Assignment AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2124,7 +2125,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via PostgreSQL Flexible Servers Disable Public network Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2136,7 +2137,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Gc Ext On VM With No SAMI",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2148,7 +2149,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Windows Sb Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2156,7 +2157,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Machines Approved Extensions Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -2174,7 +2175,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Approved Virtual Network Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -2196,7 +2197,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Advanced Data Security On SQL Server Virtual machines Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2209,7 +2210,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Storage Access Trusted Microsoft Services Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2221,7 +2222,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Gc Ext On VM",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2233,7 +2234,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'System Audit Policies - Policy Change'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2274,7 +2275,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via System Audit Policies Policy Change AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2286,7 +2287,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Options - User Account Control'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2331,7 +2332,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Security Options User Account Control AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2343,7 +2344,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Windows Firewall Properties'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2500,7 +2501,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Windows Firewall Properties AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2508,7 +2509,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Windows machines that don't have the specified applications installed",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -2532,7 +2533,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MySQL Flexible Servers Disable Public network Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2544,7 +2545,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Network Service Endpoint Storage Account Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2552,7 +2553,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Approved Virtual Network Gateway AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -2574,7 +2575,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Recovery Services Private Endpoint Audit (11e3da8c-1d68-4392-badd-0ff3c43ab5b0)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2586,7 +2587,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Server Private Endpoint Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2598,7 +2599,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Security Contact Email",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2610,7 +2611,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Io T hub audit diagnostic log",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2618,7 +2619,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in IoT Hub should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -2630,7 +2631,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MDC Microsoft Defender Azure Cosmos Db Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2642,7 +2643,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Restrict CORS Access Funtion App Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2655,7 +2656,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Managed HSM Recoverable Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2668,7 +2669,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via Kubernetes cluster containers should not share host namespaces",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -2676,7 +2677,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes cluster containers should not share host namespaces",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -2689,7 +2690,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Block Host Namespace",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2702,7 +2703,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Kubernetes cluster containers should not share host namespaces",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -2710,7 +2711,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes cluster containers should not share host namespaces",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -2718,7 +2719,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes cluster containers should not share host namespaces",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -2726,7 +2727,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Image exclusions",
+          "displayName": "Image exclusions via Kubernetes cluster containers should not share host namespaces",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identifier is the image of container. Prefix-matching can be signified with `*`. For example: `myregistry.azurecr.io/istio:*`. It is recommended that users use the fully-qualified Docker image name (e.g. start with a domain name) in order to avoid unexpectedly exempting images from an untrusted repository.",
           "portalReview": true
         }
@@ -2739,7 +2740,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via VPN Gateways Basic Sku Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2776,7 +2777,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Authentication Function App Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2788,7 +2789,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Activity Log Policy Operations Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2799,7 +2800,7 @@
           "Microsoft.Authorization/policyAssignments/delete"
         ],
         "metadata": {
-          "displayName": "Operation Name",
+          "displayName": "Operation Name via An activity log alert should exist for specific Policy operations",
           "description": "Policy Operation name for which activity log alert should exist"
         },
         "defaultValue": "Microsoft.Authorization/policyAssignments/write"
@@ -2812,7 +2813,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Vtpm Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2824,7 +2825,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Install Windows GA Ext On VM Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2836,7 +2837,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Settings - Account Policies'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2853,7 +2854,7 @@
         "type": "string",
         "defaultValue": "1,70",
         "metadata": {
-          "displayName": "Maximum password age",
+          "displayName": "Maximum password age via Windows machines should meet requirements for 'Security Settings - Account Policies'",
           "description": "Specifies the maximum number of days that may elapse before a user account password must be changed. The format of the value is two integers separated by a comma, denoting an inclusive range."
         }
       },
@@ -2889,7 +2890,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Security Settings Account Policies AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2901,7 +2902,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Diagnostic Log (cf820ca0-f99e-4f3e-84fb-66e913812d21)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2909,7 +2910,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Key Vault should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -2921,7 +2922,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MySQL Audit Server AD Admins Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2933,7 +2934,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements of the Azure compute security baseline",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2946,7 +2947,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Azure Windows Baseline AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2959,7 +2960,7 @@
           "Deny"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Server Minium TLS Version Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2972,7 +2973,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Az Update Mgmt Center Auto Assessment Mode Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2984,7 +2985,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Diagnostic Log (34f95f76-5386-4de7-b824-0d8478470c9d)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -2992,7 +2993,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Logic Apps should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3004,7 +3005,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Apim API Endpoints Shouldbe Authenticated AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3016,7 +3017,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Server Auditing Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3040,7 +3041,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Managed Instance Ensure Server Td Eis Encrypted Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3053,7 +3054,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Log analytics Workspaces Disable Local Auth Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3065,7 +3066,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Defender For Apis Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3091,7 +3092,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Keys Rsa Minimum Key Size",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3104,7 +3105,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Should Use RBAC",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3116,7 +3117,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Managed Instance Minium TLS Version Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3128,7 +3129,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Activity Log Capture All Regions",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3140,7 +3141,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'System Audit Policies - Detailed Tracking'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3167,7 +3168,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via System Audit Policies Detailed Tracking AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3175,7 +3176,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Log Analytics Extension should be enabled for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3184,7 +3185,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Log Analytics Extension should be enabled for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3197,7 +3198,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Log Analytics OS Image Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -3211,7 +3212,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Server Ensure Server Td Eis Encrypted With Your Own Key Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3223,7 +3224,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Options - Microsoft Network Server'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3236,7 +3237,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Security Options Microsoft Network Server AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3248,7 +3249,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Network Service Endpoint EventHub AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3261,7 +3262,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Managed Instance Public Endpoint Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3273,7 +3274,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Linux VM Encryption AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3281,7 +3282,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Windows machines that do not contain the specified certificates in Trusted Root",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -3304,7 +3305,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Windows Servers Anti Malware AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3317,7 +3318,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Workspace Public network Access Disabled Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3329,7 +3330,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Authentication Web App Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3341,7 +3342,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Install Linux GA Ext On VMSS Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3354,7 +3355,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MariaDB Disable Public network Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3367,7 +3368,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Container disallowed sys Admin capability",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3380,7 +3381,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -3388,7 +3389,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -3396,7 +3397,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -3404,7 +3405,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Containers exclusions",
+          "displayName": "Containers exclusions via Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identify is the name of container. Use an empty list to apply this policy to all containers in all namespaces."
         }
       },
@@ -3412,7 +3413,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Image exclusions",
+          "displayName": "Image exclusions via Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identifier is the image of container. Prefix-matching can be signified with `*`. For example: `myregistry.azurecr.io/istio:*`. It is recommended that users use the fully-qualified Docker image name (e.g. start with a domain name) in order to avoid unexpectedly exempting images from an untrusted repository.",
           "portalReview": true
         }
@@ -3425,7 +3426,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Boot Component Signature Linux Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3437,7 +3438,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Store Audit Diagnostic log Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3445,7 +3446,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Azure Data Lake Store should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3467,7 +3468,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Td On Synapse Workspaces Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3479,7 +3480,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Advanced Threat Protection On Key Vaults Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3491,7 +3492,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via PostgreSQL Audit Server AD Admins Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3504,7 +3505,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via PostgreSQL Disable Public network Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3517,7 +3518,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via WAF App gateway Mode Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3541,7 +3542,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Azure Defender On Open Source Relational Databases Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3554,7 +3555,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Minimum API Version Audit Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -3575,7 +3576,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Keys Key Rotation Policy Maximum Days To Rotate",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3587,7 +3588,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Activity log Retention 365 Or Greater",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3599,7 +3600,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Diagnostic Log (245fc9df-fa96-4414-9a0b-3738c2f7341c)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3607,7 +3608,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Azure Kubernetes Service should be enabled",
           "description": "The required resource logs retention (in days)"
         }
       },
@@ -3619,7 +3620,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Open Tou Ports On Virtual machines Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3631,7 +3632,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Open Management Ports On Virtual machines Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3644,7 +3645,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Storage account Keys Expired Restrict",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3656,7 +3657,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Network Service Endpoint KeyVault Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3668,7 +3669,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via PostgreSQL Flexible Servers Defender For SQL Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3681,7 +3682,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Server AD Only Enabled Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3693,7 +3694,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MDC Azure Container registry Vulnerability Assessment Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3701,7 +3702,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Log Analytics extension should be enabled in virtual machine scale sets for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3710,7 +3711,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Log Analytics extension should be enabled in virtual machine scale sets for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3723,7 +3724,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Log Analytics OS Image VMSS Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -3736,7 +3737,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Vulnerability Assessment On Managed Instance Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3748,7 +3749,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC OS Vulnerabilities Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects",
           "deprecated": true
         }
@@ -3761,7 +3762,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via PostgreSQL Enable Private endpoint Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3773,7 +3774,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MDC K 8 S Runing Images Vulnerability Assessment Based On MDVM Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3785,7 +3786,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Analytics Audit Diagnostic log Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3793,7 +3794,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Data Lake Analytics should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3805,7 +3806,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MariaDB Enable Private endpoint Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3817,7 +3818,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Activity Log Administrative Operations Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3836,7 +3837,7 @@
           "Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/delete"
         ],
         "metadata": {
-          "displayName": "Operation Name",
+          "displayName": "Operation Name via An activity log alert should exist for specific Administrative operations",
           "description": "Administrative Operation name for which activity log alert should be configured"
         },
         "defaultValue": "Microsoft.Sql/servers/firewallRules/write"
@@ -3849,7 +3850,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Options - Network Access'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3886,7 +3887,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Security Options Network Access AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3898,7 +3899,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Healthcare Ap Is Restrict CORS Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3923,7 +3924,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Storage Encryption Scopes Should Use Double Encryption Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3935,7 +3936,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Client Cert Web App Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3948,7 +3949,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via MySQL Disable Public network Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3960,7 +3961,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Virtual Network Service Endpoint CosmosDB Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -3972,7 +3973,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Options - Accounts'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3993,7 +3994,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Security Options Accounts AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4005,7 +4006,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Azure Defender Cspm Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4017,7 +4018,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Missing System Updates V 2 Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4030,7 +4031,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Managed Instance AD Only Enabled Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4042,7 +4043,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Public Endpoint AINE",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4067,7 +4068,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Advanced Threat Protection On Containers Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4080,7 +4081,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Application Insights Component Workspace Association Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4093,7 +4094,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Platform Version Audit Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4105,7 +4106,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Healthcare Ap Is Enable Byok Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4117,7 +4118,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Install Linux GA Ext On VM Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4129,7 +4130,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Network security Groups On Subnets Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4137,7 +4138,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Windows machines missing any of specified members in the Administrators group",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -4161,7 +4162,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Disable Local Auth Audit Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4174,7 +4175,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via WAF App gateway Enabled Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4186,7 +4187,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Enable Azure Defender On Resource Manager Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4198,7 +4199,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Diagnostic Log (f9be5368-9bf5-4b84-9e0a-7850da98bb46)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4206,7 +4207,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Azure Stream Analytics should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -4218,7 +4219,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Audit Diagnostic Log (f8d36e2f-389b-4ee4-898d-21aeb69a0f45)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4226,7 +4227,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Resource logs in Service Bus should be enabled",
           "description": "The required resource logs retention in days"
         }
       },
@@ -4239,7 +4240,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Log analytics Workspaces Network Access Enabled Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4251,7 +4252,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Disks Export Limit Network Access Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4264,7 +4265,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Storage Encryption Scopes Should Use CMK Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4277,7 +4278,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Vpn-azure Ad-audit-deny-disable-policy",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4289,7 +4290,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via ASC Server SQL Vulnerability Assessment Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4302,7 +4303,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Application Insights Components Network Access Enabled Deny",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4323,7 +4324,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Certificates Validity Period",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4335,7 +4336,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Workspace Firewall Rules Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4343,7 +4344,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -4351,7 +4352,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -4363,7 +4364,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Dependency Agent OS Image VMSS Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4375,7 +4376,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Recovery Services Private Endpoint Audit (deeddb44-9f94-4903-9fa0-081d524406e3)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4387,7 +4388,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via SQL Managed Instance Advanced Data Security Audit",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4400,7 +4401,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via Kubernetes clusters should not use the default namespace",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -4408,7 +4409,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes clusters should not use the default namespace",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -4421,7 +4422,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write)",
+          "displayName": "Effect for policy: An activity log alert should exist for specific Administrative operations (Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/write) via Block Default Namespace",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4434,7 +4435,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Kubernetes clusters should not use the default namespace",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -4444,7 +4445,7 @@
           "default"
         ],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes clusters should not use the default namespace",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -4452,7 +4453,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes clusters should not use the default namespace",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       }
@@ -5036,20 +5037,6 @@
           },
           "effect": {
             "value": "[parameters('effect-87845465-c458-45f3-af66-dcd62176f397')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "groupNames": [
-          "FBI_Criminal_Justice_Information_Services_v5.9.5_5.4",
-          "FBI_Criminal_Justice_Information_Services_v5.9.5_5.11"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-efbde977-ba53-4479-b8e9-10b957924fbf')]"
           }
         }
       },
@@ -7898,6 +7885,7 @@
       }
     ],
     "versions": [
+      "1.7.0",
       "1.6.0",
       "1.5.0",
       "1.4.0",

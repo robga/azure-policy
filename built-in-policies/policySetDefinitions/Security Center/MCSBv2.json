@@ -4,11 +4,11 @@
     "policyType": "BuiltIn",
     "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
     "metadata": {
-      "version": "1.1.0-preview",
+      "version": "1.2.0-preview",
       "preview": "true",
       "category": "Security Center"
     },
-    "version": "1.1.0-preview",
+    "version": "1.2.0-preview",
     "policyDefinitionGroups": [
       {
         "name": "Azure_Security_Benchmark_v3.0_NS-1",
@@ -474,7 +474,8 @@
         ],
         "metadata": {
           "displayName": "Arc Windows Monitoring Effect",
-          "description": "Enable or disable monitoring of Arc connected Windows machines"
+          "description": "Enable or disable monitoring of Arc connected Windows machines",
+          "deprecated": true
         }
       },
       "cognitiveServicesAccountsShouldEnableDataEncryptionWithACustomerManagedKeyMonitoringEffect": {
@@ -2841,27 +2842,6 @@
         ]
       },
       {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "ArcWindowsMonitoring",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('ArcWindowsMonitoringEffect')]"
-          }
-        },
-        "groupNames": [
-          "Azure_Security_Benchmark_v3.0_LT-5"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "ArcLinuxMonitoring",
-        "groupNames": [
-          "Azure_Security_Benchmark_v3.0_LT-5"
-        ]
-      },
-      {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0e6763cc-5078-4e64-889d-ff4d9a839047",
         "definitionVersion": "1.*.*",
         "policyDefinitionReferenceId": "keyVaultsAdvancedDataSecurityMonitoringEffect",
@@ -4201,6 +4181,7 @@
       }
     ],
     "versions": [
+      "1.2.0-PREVIEW",
       "1.1.0-PREVIEW",
       "1.0.0-PREVIEW"
     ]

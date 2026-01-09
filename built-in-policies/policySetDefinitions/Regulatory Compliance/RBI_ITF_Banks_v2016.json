@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address a subset of Reserve Bank of India IT Framework for Banks controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/rbiitfbanks-initiative.",
     "metadata": {
-      "version": "1.19.1",
+      "version": "1.20.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.19.1",
+    "version": "1.20.0",
     "policyDefinitionGroups": [
       {
         "name": "RBI_CSF_Banks_v2016_9.1",
@@ -483,7 +483,7 @@
           "Deny",
           "Disabled"
         ],
-        "defaultValue": "Audit"
+        "defaultValue": "Disabled"
       },
       "effect-0a075868-4c26-42ef-914c-5bc007359560": {
         "type": "string",
@@ -2405,27 +2405,9 @@
         ]
       },
       {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "parameters": {},
-        "groupNames": [
-          "RBI_CSF_Banks_v2016_16.2"
-        ]
-      },
-      {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7796937f-307b-4598-941c-67d3a05ebfe7",
         "definitionVersion": "1.*.*",
         "policyDefinitionReferenceId": "7796937f-307b-4598-941c-67d3a05ebfe7",
-        "parameters": {},
-        "groupNames": [
-          "RBI_CSF_Banks_v2016_16.2"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "842c54e8-c2f9-4d79-ae8d-38d8b8019373",
         "parameters": {},
         "groupNames": [
           "RBI_CSF_Banks_v2016_16.2"
@@ -2485,6 +2467,7 @@
       }
     ],
     "versions": [
+      "1.20.0",
       "1.19.1",
       "1.19.0-PREVIEW",
       "1.18.0-PREVIEW",

@@ -5,9 +5,9 @@
     "description": "This initiative includes policies that address the Dutch Baseline Informatiebeveiliging (BIO) controls specifically for the 'thema-uitwerking Clouddiensten' and include policies covered under the SOC2 and ISO 27001:2013 controls.",
     "metadata": {
       "category": "Regulatory Compliance",
-      "version": "2.6.0"
+      "version": "2.7.0"
     },
-    "version": "2.6.0",
+    "version": "2.7.0",
     "policyDefinitionGroups": [
       {
         "name": "B.01 - Laws and Regulations",
@@ -2690,13 +2690,14 @@
         "type": "String",
         "metadata": {
           "displayName": "Effect for policy:[Preview]: Log Analytics extension should be installed on your Windows Azure Arc machines",
-          "description": "Enable or disable the execution of the policy"
+          "description": "Enable or disable the execution of the policy",
+          "deprecated": true
         },
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
-        "defaultValue": "AuditIfNotExists"
+        "defaultValue": "Disabled"
       },
       "IncludeArcMachines-1": {
         "type": "String",
@@ -3100,13 +3101,14 @@
         "type": "String",
         "metadata": {
           "displayName": "Effect for policy:[Preview]: Log Analytics extension should be installed on your Linux Azure Arc machines",
-          "description": "Enable or disable the execution of the policy"
+          "description": "Enable or disable the execution of the policy",
+          "deprecated": true
         },
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
-        "defaultValue": "AuditIfNotExists"
+        "defaultValue": "Disabled"
       },
       "effect-1f68a601-6e6d-4e42-babf-3f643a047ea2": {
         "type": "String",
@@ -9604,19 +9606,6 @@
         ]
       },
       {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "[Preview]: Log Analytics extension should be installed on your Linux Azure Arc machines",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-842c54e8-c2f9-4d79-ae8d-38d8b8019373')]"
-          }
-        },
-        "groupNames": [
-          "U.15.1 - Events Logged"
-        ]
-      },
-      {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ae89ebca-1c92-4898-ac2c-9f63decb045c",
         "definitionVersion": "1.*.*",
         "policyDefinitionReferenceId": "Guest Configuration extension should be installed on your machines",
@@ -9700,19 +9689,6 @@
         "parameters": {
           "effect": {
             "value": "[parameters('effect-d26f7642-7545-4e18-9b75-8c9bbdee3a9a')]"
-          }
-        },
-        "groupNames": [
-          "U.15.1 - Events Logged"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "[Preview]: Log Analytics extension should be installed on your Windows Azure Arc machines",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e')]"
           }
         },
         "groupNames": [
@@ -9881,6 +9857,7 @@
       }
     ],
     "versions": [
+      "2.7.0",
       "2.6.0",
       "2.5.0",
       "2.4.0",

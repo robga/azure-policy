@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "Health Information Trust Alliance (HITRUST) helps organizations from all sectors-but especially healthcare-effectively manage data, information risk, and compliance. HITRUST certification means that the organization has undergone a thorough assessment of the information security program. These policies address a subset of HITRUST controls. For more information, visit https://docs.microsoft.com/azure/governance/policy/samples/hipaa-hitrust-9-2",
     "metadata": {
-      "version": "14.11.0",
+      "version": "14.13.0",
       "category": "Regulatory Compliance"
     },
-    "version": "14.11.0",
+    "version": "14.13.0",
     "policyDefinitionGroups": [
       {
         "name": "hipaa-0101.00a1Organizational.123-00.a",
@@ -1080,10 +1080,6 @@
       {
         "name": "hipaa-11190.01t1Organizational.3-01.t",
         "additionalMetadataId": "/providers/Microsoft.PolicyInsights/policyMetadata/hipaa-11190.01t1Organizational.3-01.t"
-      },
-      {
-        "name": "hipaa-1120.09ab3System.9-09.ab",
-        "additionalMetadataId": "/providers/Microsoft.PolicyInsights/policyMetadata/hipaa-1120.09ab3System.9-09.ab"
       },
       {
         "name": "hipaa-11200.01b2Organizational.3-01.b",
@@ -2613,7 +2609,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "SQL Managed Instance TDE protector should be encrypted with your own key",
+          "displayName": "SQL Managed Instance TDE protector should be encrypted with your own key with Deny",
           "description": "Enable or disable the monitoring of Transparent Data Encryption (TDE) with your own key support. TDE with your own key support provides increased transparency and control over the TDE Protector, increased security with an HSM-backed external service, and promotion of separation of duties."
         }
       },
@@ -9734,16 +9730,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "azureMonitorShouldCollectActivityLogsFromAllRegions",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/41388f1c-2db0-4c25-95b2-35d7f5ccbfa9",
-        "definitionVersion": "2.*.*",
-        "parameters": {},
-        "groupNames": [
-          "hipaa-1120.09ab3System.9-09.ab",
-          "hipaa-1214.09ab2System.3456-09.ab"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "identityDesignateMoreThanOneOwnerMonitoring",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/09024ccc-0c5f-475e-9457-b7c0d9ed487b",
         "definitionVersion": "3.*.*",
@@ -10330,16 +10316,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "theLogAnalyticsAgentShouldBeInstalledOnVirtualMachineScaleSets",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "parameters": {},
-        "groupNames": [
-          "hipaa-12101.09ab1Organizational.3-09.ab",
-          "hipaa-1216.09ab3System.12-09.ab"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "3545c827-26ee-282d-4629-23952a12008b",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/3545c827-26ee-282d-4629-23952a12008b",
         "definitionVersion": "1.*.*",
@@ -10433,16 +10409,6 @@
         },
         "groupNames": [
           "hipaa-1211.09aa3System.4-09.aa"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "azureMonitorLogProfileShouldCollectLogsForCategoriesWrite,Delete,AndAction",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1a4e592a-6a6e-44a5-9814-e36264ca96e7",
-        "definitionVersion": "1.*.*",
-        "parameters": {},
-        "groupNames": [
-          "hipaa-1212.09ab1System.1-09.ab",
-          "hipaa-1219.09ab3System.10-09.ab"
         ]
       },
       {
@@ -11838,6 +11804,8 @@
       }
     ],
     "versions": [
+      "14.13.0",
+      "14.12.0",
       "14.11.0",
       "14.10.0",
       "14.9.0",

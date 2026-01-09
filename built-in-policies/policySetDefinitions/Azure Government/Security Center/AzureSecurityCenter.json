@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
     "metadata": {
-      "version": "47.38.0",
+      "version": "47.38.1",
       "category": "Security Center"
     },
-    "version": "47.38.0",
+    "version": "47.38.1",
     "policyDefinitionGroups": [
       {
         "name": "Azure_Security_Benchmark_v3.0_NS-1",
@@ -1665,7 +1665,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Latest TLS version should be used in your API App",
+          "displayName": "Your API App should use the Latest TLS version",
           "description": "Upgrade to the latest TLS version",
           "deprecated": true
         }
@@ -1678,7 +1678,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Latest TLS version should be used in your Function App",
+          "displayName": "Your Function App should use the Latest TLS version",
           "description": "Upgrade to the latest TLS version",
           "deprecated": true
         }
@@ -1691,7 +1691,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Latest TLS version should be used in your Web App",
+          "displayName": "Latest TLS version should be used in your Web App (Deprecated)",
           "description": "Upgrade to the latest TLS version",
           "deprecated": true
         }
@@ -2296,7 +2296,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Resource logs in App Services should be enabled",
+          "displayName": "Resource logs in App Services should be enabled - Audit",
           "description": "Audit enabling of resource logs on the app. This enables you to recreate activity trails for investigation purposes if a security incident occurs or your network is compromised"
         }
       },
@@ -2497,7 +2497,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "FTPS should be required in your Web App",
+          "displayName": "FTPS should be required in your Web App - Audit",
           "description": "Enable FTPS enforcement for enhanced security"
         }
       },
@@ -4530,7 +4530,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Vulnerabilities in Azure Container Registry images should be remediated",
+          "displayName": "Vulnerabilities in Azure Container Registry images should be remediated - Qualys",
           "description": "Enable or disable monitoring of Azure container registries by Microsoft Defender for Cloud vulnerability assessment (powered by Qualys)",
           "deprecated": true
         }
@@ -4555,7 +4555,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Vulnerabilities in Azure Container Registry images should be remediated",
+          "displayName": "Vulnerabilities in Azure Container Registry images should be remediated - Microsoft Defender Vulnerability Management",
           "description": "Enable or disable monitoring of Azure container registries by Microsoft Defender for Cloud vulnerability assessment (powered by Microsoft Defender Vulnerability Management)"
         }
       },
@@ -4580,7 +4580,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Vulnerabilities in running images should be remediated",
+          "displayName": "Vulnerabilities in running images should be remediated - MDVMA Assessment",
           "description": "Enable or disable monitoring of Kubernetes Service clusters by Defender for Containers running images vulnerability assessment"
         }
       },
@@ -4626,7 +4626,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via IngressHttpsOnly",
           "description": "This parameter is deprecated. The policy is applied to all Kubernetes resources in all Kubernetes namespaces.",
           "deprecated": true
         }
@@ -7181,6 +7181,7 @@
       }
     ],
     "versions": [
+      "47.38.1",
       "47.38.0",
       "47.37.0",
       "47.36.0",

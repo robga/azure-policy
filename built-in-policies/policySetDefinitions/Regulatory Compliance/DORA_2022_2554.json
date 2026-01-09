@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "DORA establishes resilience standards for digital operations in the European Union (EU) financial sector. The regulation governs information and communication technology (ICT) risk, incident response, and third-party oversight.",
     "metadata": {
-      "version": "1.3.0",
+      "version": "1.4.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.3.0",
+    "version": "1.4.0",
     "policyDefinitionGroups": [
       {
         "name": "DORA_2022_2554_9",
@@ -354,7 +354,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect",
+          "displayName": "Effect via RedisCache_AuditSSLPort_Audit",
           "description": "Enable or disable the execution of the policy"
         }
       },
@@ -391,7 +391,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Should Use Private Endpoint",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -827,7 +827,7 @@
         ],
         "metadata": {
           "deprecated": true,
-          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest",
+          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest (Parameter: effect-048248b0-55cd-46da-b1ff-39efd52db260)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -864,7 +864,7 @@
         ],
         "metadata": {
           "deprecated": true,
-          "displayName": "Effect for policy: SQL servers should use customer-managed keys to encrypt data at rest",
+          "displayName": "Effect for policy: SQL servers should use customer-managed keys to encrypt data at rest (Parameter: effect-0d134df8-db83-46fb-ad72-fe0c9428c8dd)",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -953,7 +953,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect",
+          "displayName": "Effect via Secure Web Protocol AINE",
           "description": "The effect determines what happens when the policy rule is evaluated to match."
         }
       },
@@ -993,7 +993,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest",
+          "displayName": "Effect for policy: SQL managed instances should use customer-managed keys to encrypt data at rest - DENY",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -1148,7 +1148,7 @@
           "DataBoxHeavy"
         ],
         "metadata": {
-          "displayName": "Supported SKUs",
+          "displayName": "Supported SKUs via Encryption_Audit",
           "description": "The list of SKUs that support software-based double encryption"
         }
       },
@@ -1160,7 +1160,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Options - Recovery console'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1467,7 +1467,7 @@
           "DataBoxHeavy"
         ],
         "metadata": {
-          "displayName": "Supported SKUs",
+          "displayName": "Supported SKUs via Security Options Recovery Console AINE",
           "description": "The list of SKUs that support customer-managed key encryption key"
         }
       },
@@ -1787,7 +1787,7 @@
         "type": "String",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via CustomerManagedKey_Audit",
           "description": "Auto provision the Log Analytics agent on your subscriptions to monitor and collect security data using a custom workspace.",
           "strongType": "omsWorkspace",
           "deprecated": true
@@ -1959,7 +1959,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via ASC_EnableAdvancedThreatProtectionOnKeyVaults_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2138,7 +2138,7 @@
         "allowedValues": null,
         "metadata": {
           "deprecated": true,
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Windows Defender Exploit Guard AINE",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -2148,7 +2148,7 @@
         "allowedValues": null,
         "metadata": {
           "deprecated": true,
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Log Analytics Extension should be enabled for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -2171,7 +2171,7 @@
         "allowedValues": null,
         "metadata": {
           "deprecated": true,
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via LogAnalytics_OSImage_Audit",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -2181,7 +2181,7 @@
         "allowedValues": null,
         "metadata": {
           "deprecated": true,
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Log Analytics extension should be enabled in virtual machine scale sets for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -2224,38 +2224,41 @@
       },
       "effect-d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Log Analytics extension should be installed on your Windows Azure Arc machines",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "effect-842c54e8-c2f9-4d79-ae8d-38d8b8019373": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Log Analytics extension should be installed on your Linux Azure Arc machines",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "effect-efbde977-ba53-4479-b8e9-10b957924fbf": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: The Log Analytics extension should be installed on Virtual Machine Scale Sets",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "effect-a70ca396-0a34-413a-88e1-b956c1e683be": {
@@ -2327,7 +2330,7 @@
         "defaultValue": "setbypolicy_logAnalytics",
         "allowedValues": null,
         "metadata": {
-          "displayName": "Profile name",
+          "displayName": "Profile name via LogAnalytics_OSImage_VMSS_Audit",
           "description": "The diagnostic settings profile name",
           "deprecated": true
         }
@@ -2336,7 +2339,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy Diagnostic Settings for Service Bus to Log Analytics workspace",
           "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -2351,7 +2354,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable metrics",
+          "displayName": "Enable metrics via Deploy Diagnostic Settings for Service Bus to Log Analytics workspace",
           "description": "Whether to enable metrics stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2364,7 +2367,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable logs",
+          "displayName": "Enable logs via Deploy Diagnostic Settings for Service Bus to Log Analytics workspace",
           "description": "Whether to enable logs stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2387,7 +2390,7 @@
         "defaultValue": "setbypolicy_logAnalytics",
         "allowedValues": null,
         "metadata": {
-          "displayName": "Profile name",
+          "displayName": "Profile name via Search_DeployDiagnosticLog_Deploy_LogAnalytics",
           "description": "The diagnostic settings profile name",
           "deprecated": true
         }
@@ -2396,7 +2399,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy Diagnostic Settings for Search Services to Log Analytics workspace",
           "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -2411,7 +2414,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable metrics",
+          "displayName": "Enable metrics via Deploy Diagnostic Settings for Search Services to Log Analytics workspace",
           "description": "Whether to enable metrics stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2424,7 +2427,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable logs",
+          "displayName": "Enable logs via Deploy Diagnostic Settings for Search Services to Log Analytics workspace",
           "description": "Whether to enable logs stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2447,7 +2450,7 @@
         "defaultValue": "setbypolicy_logAnalytics",
         "allowedValues": null,
         "metadata": {
-          "displayName": "Profile name",
+          "displayName": "Profile name via EventHub_DeployDiagnosticLog_Deploy_LogAnalytics",
           "description": "The diagnostic settings profile name",
           "deprecated": true
         }
@@ -2456,7 +2459,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy Diagnostic Settings for Event Hub to Log Analytics workspace",
           "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -2471,7 +2474,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable metrics",
+          "displayName": "Enable metrics via Deploy Diagnostic Settings for Event Hub to Log Analytics workspace",
           "description": "Whether to enable metrics stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2484,7 +2487,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable logs",
+          "displayName": "Enable logs via Deploy Diagnostic Settings for Event Hub to Log Analytics workspace",
           "description": "Whether to enable logs stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2507,7 +2510,7 @@
         "defaultValue": "setbypolicy_logAnalytics",
         "allowedValues": null,
         "metadata": {
-          "displayName": "Profile name",
+          "displayName": "Profile name via StreamAnalytics_DeployDiagnosticLog_Deploy_LogAnalytics",
           "description": "The diagnostic settings profile name",
           "deprecated": true
         }
@@ -2516,7 +2519,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy Diagnostic Settings for Stream Analytics to Log Analytics workspace",
           "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -2531,7 +2534,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable metrics",
+          "displayName": "Enable metrics via Deploy Diagnostic Settings for Stream Analytics to Log Analytics workspace",
           "description": "Whether to enable metrics stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2544,7 +2547,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable logs",
+          "displayName": "Enable logs via Deploy Diagnostic Settings for Stream Analytics to Log Analytics workspace",
           "description": "Whether to enable logs stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2567,7 +2570,7 @@
         "defaultValue": "setbypolicy_logAnalytics",
         "allowedValues": null,
         "metadata": {
-          "displayName": "Profile name",
+          "displayName": "Profile name via DataLakeStorage_DeployDiagnosticLog_Deploy_LogAnalytics",
           "description": "The diagnostic settings profile name",
           "deprecated": true
         }
@@ -2576,7 +2579,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy Diagnostic Settings for Data Lake Storage Gen1 to Log Analytics workspace",
           "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -2591,7 +2594,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable metrics",
+          "displayName": "Enable metrics via Deploy Diagnostic Settings for Data Lake Storage Gen1 to Log Analytics workspace",
           "description": "Whether to enable metrics stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2604,7 +2607,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable logs",
+          "displayName": "Enable logs via Deploy Diagnostic Settings for Data Lake Storage Gen1 to Log Analytics workspace",
           "description": "Whether to enable logs stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2636,7 +2639,7 @@
         "type": "String",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via DataConnectosSqlLogs",
           "description": "Select the Log Analytics workspace from dropdown list",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -2830,7 +2833,7 @@
         "defaultValue": "setbypolicy_logAnalytics",
         "allowedValues": null,
         "metadata": {
-          "displayName": "Profile name",
+          "displayName": "Profile name via LogicApps_DeployDiagnosticLog_Deploy_LogAnalytics",
           "description": "The diagnostic settings profile name",
           "deprecated": true
         }
@@ -2839,7 +2842,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy Diagnostic Settings for Logic Apps to Log Analytics workspace",
           "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -2854,7 +2857,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable metrics",
+          "displayName": "Enable metrics via Deploy Diagnostic Settings for Logic Apps to Log Analytics workspace",
           "description": "Whether to enable metrics stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2867,7 +2870,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable logs",
+          "displayName": "Enable logs via Deploy Diagnostic Settings for Logic Apps to Log Analytics workspace",
           "description": "Whether to enable logs stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2890,7 +2893,7 @@
         "defaultValue": "setbypolicy_logAnalytics",
         "allowedValues": null,
         "metadata": {
-          "displayName": "Profile name",
+          "displayName": "Profile name via Key Vault Deploy Diagnostic Log to Log Analytics",
           "description": "The diagnostic settings profile name",
           "deprecated": true
         }
@@ -2899,7 +2902,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy Diagnostic Settings for Key Vault to Log Analytics workspace",
           "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -2914,7 +2917,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable metrics",
+          "displayName": "Enable metrics via Deploy Diagnostic Settings for Key Vault to Log Analytics workspace",
           "description": "Whether to enable metrics stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2927,7 +2930,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable logs",
+          "displayName": "Enable logs via Deploy Diagnostic Settings for Key Vault to Log Analytics workspace",
           "description": "Whether to enable logs stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -2963,7 +2966,7 @@
         "defaultValue": "setbypolicy_logAnalytics",
         "allowedValues": null,
         "metadata": {
-          "displayName": "Profile name",
+          "displayName": "Profile name via Batch_DeployDiagnosticLog_Deploy_LogAnalytics",
           "description": "The diagnostic settings profile name",
           "deprecated": true
         }
@@ -2972,7 +2975,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy Diagnostic Settings for Batch Account to Log Analytics workspace",
           "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -2987,7 +2990,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable metrics",
+          "displayName": "Enable metrics via Deploy Diagnostic Settings for Batch Account to Log Analytics workspace",
           "description": "Whether to enable metrics stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -3000,7 +3003,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable logs",
+          "displayName": "Enable logs via Deploy Diagnostic Settings for Batch Account to Log Analytics workspace",
           "description": "Whether to enable logs stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -3023,7 +3026,7 @@
         "defaultValue": "setbypolicy_logAnalytics",
         "allowedValues": null,
         "metadata": {
-          "displayName": "Profile name",
+          "displayName": "Profile name via DataLakeAnalytics_DeployDiagnosticLog_Deploy_LogAnalytics",
           "description": "The diagnostic settings profile name",
           "deprecated": true
         }
@@ -3032,7 +3035,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy Diagnostic Settings for Data Lake Analytics to Log Analytics workspace",
           "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -3047,7 +3050,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable metrics",
+          "displayName": "Enable metrics via Deploy Diagnostic Settings for Data Lake Analytics to Log Analytics workspace",
           "description": "Whether to enable metrics stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -3060,7 +3063,7 @@
           "False"
         ],
         "metadata": {
-          "displayName": "Enable logs",
+          "displayName": "Enable logs via Deploy Diagnostic Settings for Data Lake Analytics to Log Analytics workspace",
           "description": "Whether to enable logs stream to the Log Analytics workspace - True or False",
           "deprecated": true
         }
@@ -3069,7 +3072,7 @@
         "type": "String",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines",
           "description": "Log Analytics workspace is used to receive performance data. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -3081,7 +3084,7 @@
         "defaultValue": [],
         "allowedValues": null,
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines",
           "description": "Example values: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3103,7 +3106,7 @@
         "type": "String",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Log Analytics workspace",
+          "displayName": "Log Analytics workspace via LogAnalyticsExtension_Windows_VM_DINE",
           "description": "Log Analytics workspace is used to receive performance data. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
           "strongType": "omsWorkspace",
           "assignPermissions": true,
@@ -3115,7 +3118,7 @@
         "defaultValue": [],
         "allowedValues": null,
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Deploy - Configure Log Analytics extension to be enabled on Windows virtual machine scale sets",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -5077,48 +5080,6 @@
         }
       },
       {
-        "policyDefinitionReferenceId": "d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "groupNames": [
-          "DORA_2022_2554_10.1",
-          "DORA_2022_2554_10.2"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "groupNames": [
-          "DORA_2022_2554_10.1",
-          "DORA_2022_2554_10.2"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-842c54e8-c2f9-4d79-ae8d-38d8b8019373')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "groupNames": [
-          "DORA_2022_2554_10.1",
-          "DORA_2022_2554_10.2"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-efbde977-ba53-4479-b8e9-10b957924fbf')]"
-          }
-        }
-      },
-      {
         "policyDefinitionReferenceId": "2f080164-9f4d-497e-9db6-416dc9f7b48a",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f080164-9f4d-497e-9db6-416dc9f7b48a",
         "definitionVersion": "1.*.*",
@@ -5201,6 +5162,7 @@
       }
     ],
     "versions": [
+      "1.4.0",
       "1.3.0",
       "1.2.0",
       "1.1.1",

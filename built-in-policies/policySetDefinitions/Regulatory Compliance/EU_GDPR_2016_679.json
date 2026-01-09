@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "Comprehensive data protection law regulating personal data processing within the EU.",
     "metadata": {
-      "version": "1.6.0",
+      "version": "1.7.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.6.0",
+    "version": "1.7.0",
     "policyDefinitionGroups": [
       {
         "name": "EU_GDPR_2016_679_Art._24",
@@ -118,7 +118,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Workspace_PrivateEndpoint_Audit_V2",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -167,7 +167,7 @@
           "Microsoft.Security/securitySolutions/delete"
         ],
         "metadata": {
-          "displayName": "Operation Name",
+          "displayName": "Operation Name via Linux Password 110 AINE",
           "description": "Security Operation name for which activity log alert should exist"
         },
         "defaultValue": "Microsoft.Security/policies/write"
@@ -299,7 +299,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via NetworkSecurityGroup_FlowLog_Audit",
           "description": "The required resource logs retention in days"
         }
       },
@@ -461,7 +461,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Vnet_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -502,7 +502,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Security Options Audit AINE",
           "description": "The required resource logs retention in days"
         }
       },
@@ -659,7 +659,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via RequireLatestTls_FunctionApp_Audit",
           "description": "The required resource logs retention in days if exporting to an Azure Storage account"
         }
       },
@@ -746,7 +746,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Storage_AuditForHTTPSEnabled_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -795,7 +795,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via AzureLinuxBaseline_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -814,14 +814,15 @@
       },
       "effect-efbde977-ba53-4479-b8e9-10b957924fbf": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: The Log Analytics extension should be installed on Virtual Machine Scale Sets",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "IncludeArcMachines-e6955644-301c-44b5-a4c4-528577de6861": {
@@ -832,7 +833,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via System Audit Policies Privilege Use AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -857,7 +858,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Linux Password 121 AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -882,7 +883,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via LinuxNoPasswordForSSH_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -957,7 +958,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows Defender Exploit Guard AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1092,7 +1093,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Security Options Recovery Console AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -1135,7 +1136,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via ActivityLog_CaptureAllCategories",
           "description": "The required resource logs retention in days"
         }
       },
@@ -1198,7 +1199,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via SynaspeWorkspaceAadOnlyAuthentication_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1273,7 +1274,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via System Audit Policies Account Management AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1295,7 +1296,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Windows machines that do not have the password complexity setting enabled",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1365,7 +1366,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Windows Password Complexity AINE",
           "description": "The required resource logs retention in days"
         }
       },
@@ -1669,7 +1670,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via ManagedDiskEncryptionSetsAllowed_Deny",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -1677,7 +1678,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -1701,7 +1702,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via DependencyAgent_OSImage_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1710,7 +1711,7 @@
         "type": "string",
         "defaultValue": "70",
         "metadata": {
-          "displayName": "Maximum password age",
+          "displayName": "Maximum password age via Audit Windows machines that do not have the maximum password age set to specified number of days",
           "description": "The Maximum password age setting determines the period of time (in days) that a password can be used before the system requires the user to change it.",
           "portalReview": "true"
         }
@@ -1749,7 +1750,7 @@
           "TLS1_2"
         ],
         "metadata": {
-          "displayName": "Minimum TLS Version",
+          "displayName": "Minimum TLS Version via Windows Maximum Password AINE",
           "description": "Minimum version of TLS required to access data in this storage account"
         }
       },
@@ -1819,7 +1820,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via LogAnalytics_WorkspaceMismatch_VM_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1943,14 +1944,15 @@
       },
       "effect-842c54e8-c2f9-4d79-ae8d-38d8b8019373": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Log Analytics extension should be installed on your Linux Azure Arc machines",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "effect-cb510bfd-1cba-4d9f-a230-cb0976f4bb71": {
@@ -2164,7 +2166,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via LinuxPassword232_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -2318,7 +2320,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via OSAndDataDiskCMKRequired_Deny",
           "description": "The required resource logs retention in days"
         }
       },
@@ -2515,7 +2517,7 @@
           "Microsoft.Authorization/policyAssignments/delete"
         ],
         "metadata": {
-          "displayName": "Operation Name",
+          "displayName": "Operation Name via SoftDeleteMustBeEnabled_Audit",
           "description": "Policy Operation name for which activity log alert should exist"
         },
         "defaultValue": "Microsoft.Authorization/policyAssignments/write"
@@ -2559,7 +2561,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via ASC_EnableVTPM_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2572,7 +2574,7 @@
           "1.2"
         ],
         "metadata": {
-          "displayName": "Minimum TLS version",
+          "displayName": "Minimum TLS Version via Windows machines should be configured to use secure communication protocols",
           "description": "The minimum TLS protocol version that should be enabled. Windows machines with lower TLS versions will be marked as non-compliant."
         }
       },
@@ -2608,7 +2610,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Secure Web Protocol AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2617,7 +2619,7 @@
         "type": "string",
         "defaultValue": "24",
         "metadata": {
-          "displayName": "Enforce password history",
+          "displayName": "Enforce password history via Windows machines should meet requirements for 'Security Settings - Account Policies'",
           "description": "Specifies limits on password reuse - how many times a new password must be created for a user account before the password can be repeated."
         }
       },
@@ -2625,7 +2627,7 @@
         "type": "string",
         "defaultValue": "1,70",
         "metadata": {
-          "displayName": "Maximum password age",
+          "displayName": "Maximum password age via Windows machines should meet requirements for 'Security Settings - Account Policies'",
           "description": "Specifies the maximum number of days that may elapse before a user account password must be changed. The format of the value is two integers separated by a comma, denoting an inclusive range."
         }
       },
@@ -2633,7 +2635,7 @@
         "type": "string",
         "defaultValue": "1",
         "metadata": {
-          "displayName": "Minimum password age",
+          "displayName": "Minimum password age via Windows machines should meet requirements for 'Security Settings - Account Policies'",
           "description": "Specifies the minimum number of days that must elapse before a user account password can be changed."
         }
       },
@@ -2641,7 +2643,7 @@
         "type": "string",
         "defaultValue": "14",
         "metadata": {
-          "displayName": "Minimum password length",
+          "displayName": "Minimum password length via Windows machines should meet requirements for 'Security Settings - Account Policies'",
           "description": "Specifies the minimum number of characters that a user account password may contain."
         }
       },
@@ -2681,7 +2683,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Security Settings Account Policies AINE",
           "description": "The required resource logs retention in days"
         }
       },
@@ -2717,7 +2719,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via GeoRedundant_DBForMySQL_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2726,7 +2728,7 @@
         "type": "string",
         "defaultValue": "24",
         "metadata": {
-          "displayName": "Enforce password history",
+          "displayName": "Enforce password history via Audit Windows machines that allow re-use of the passwords after the specified number of unique passwords",
           "description": "The Enforce password history setting determines the number of unique new passwords that must be associated with a user account before an old password can be reused.",
           "portalReview": "true"
         }
@@ -2751,7 +2753,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via WindowsPasswordEnforce_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2846,7 +2848,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Azure Windows Baseline AINE",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3030,7 +3032,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via ASC_APIMApiEndpointsShouldbeAuthenticated_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3065,7 +3067,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via System Audit Policies Detailed Tracking AINE",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3074,7 +3076,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Log Analytics Extension should be enabled for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3126,7 +3128,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via LogAnalytics_OSImage_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3196,7 +3198,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via SecurityOptionsMicrosoftNetworkServer_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -3288,14 +3290,15 @@
       },
       "effect-d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Log Analytics extension should be installed on your Windows Azure Arc machines",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "effect-2a1a9cdf-e04d-429a-8416-3bfb72a1b26f": {
@@ -3339,7 +3342,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via StorageAccountInfrastructureEncryptionEnabled_Audit",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3552,7 +3555,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via TdOnSynapseWorkspaces_Audit",
           "description": "The required resource logs retention (in days)"
         }
       },
@@ -3719,7 +3722,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via GeoRedundant_StorageAccounts_Audit",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3728,7 +3731,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Log Analytics extension should be enabled in virtual machine scale sets for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3750,7 +3753,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via LogAnalytics_OSImage_VMSS_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -3830,7 +3833,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via VulnerabilityAssessmentOnManagedInstance_Audit",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3898,7 +3901,7 @@
           "Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/delete"
         ],
         "metadata": {
-          "displayName": "Operation Name",
+          "displayName": "Operation Name via StorageAccountCustomerManagedKeyEnabled_Audit",
           "description": "Administrative Operation name for which activity log alert should be configured"
         },
         "defaultValue": "Microsoft.Sql/servers/firewallRules/write"
@@ -3935,7 +3938,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect",
+          "displayName": "Effect via HealthcareAPIs_RestrictCORSAccess_Audit",
           "description": "The effect determines what happens when the policy rule is evaluated to match."
         }
       },
@@ -4021,7 +4024,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via StorageEncryptionScopesShouldUseDoubleEncryption_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -4103,7 +4106,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Security Options Accounts AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -4236,7 +4239,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via WindowsPasswordEncryption_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -4343,7 +4346,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via DisableLocalAuth_AuditDeny",
           "description": "The required resource logs retention in days"
         }
       },
@@ -4363,7 +4366,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Audit Diagnostic Log",
           "description": "The required resource logs retention in days"
         }
       },
@@ -4442,7 +4445,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect for policy: All Internet traffic should be routed via your deployed Azure Firewall",
+          "displayName": "effect for policy: All Internet traffic should be routed via Network Watcher Enabled your deployed Azure Firewall",
           "description": "For more information about effects, visit https://aka.ms/policyeffects"
         }
       },
@@ -4467,7 +4470,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Effect",
+          "displayName": "Effect via PrivateLinkEnabled_Audit",
           "description": "Enable or disable the execution of the policy"
         }
       },
@@ -4556,7 +4559,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Should Use Private Endpoint",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -4565,7 +4568,7 @@
         "type": "string",
         "defaultValue": "14",
         "metadata": {
-          "displayName": "Minimum password length",
+          "displayName": "Minimum password length via Audit Windows machines that do not restrict the minimum password length to specified number of characters",
           "description": "The Minimum password length setting determines the least number of characters that can make up a password for a user account.",
           "portalReview": "true"
         }
@@ -4590,7 +4593,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via WindowsPasswordLength_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -4599,7 +4602,7 @@
         "type": "string",
         "defaultValue": "1",
         "metadata": {
-          "displayName": "Minimum password age",
+          "displayName": "Minimum password age via Audit Windows machines that do not have the minimum password age set to specified number of days",
           "description": "The Minimum password age setting determines the period of time (in days) that a password must be used before the user can change it.",
           "portalReview": "true"
         }
@@ -4665,7 +4668,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via WindowsMinimumPassword_AINE",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -4673,7 +4676,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -5589,22 +5592,6 @@
           },
           "effect": {
             "value": "[parameters('effect-87845465-c458-45f3-af66-dcd62176f397')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "groupNames": [
-          "EU_GDPR_2016_679_Art._24",
-          "EU_GDPR_2016_679_Art._25",
-          "EU_GDPR_2016_679_Art._28",
-          "EU_GDPR_2016_679_Art._32"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-efbde977-ba53-4479-b8e9-10b957924fbf')]"
           }
         }
       },
@@ -6726,22 +6713,6 @@
           },
           "effect": {
             "value": "[parameters('effect-ff25f3c8-b739-4538-9d07-3d6d25cfb255')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "groupNames": [
-          "EU_GDPR_2016_679_Art._24",
-          "EU_GDPR_2016_679_Art._25",
-          "EU_GDPR_2016_679_Art._28",
-          "EU_GDPR_2016_679_Art._32"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-842c54e8-c2f9-4d79-ae8d-38d8b8019373')]"
           }
         }
       },
@@ -8031,22 +8002,6 @@
         "parameters": {
           "effect": {
             "value": "[parameters('effect-fdccbe47-f3e3-4213-ad5d-ea459b2fa077')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "groupNames": [
-          "EU_GDPR_2016_679_Art._24",
-          "EU_GDPR_2016_679_Art._25",
-          "EU_GDPR_2016_679_Art._28",
-          "EU_GDPR_2016_679_Art._32"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e')]"
           }
         }
       },
@@ -9542,6 +9497,7 @@
       }
     ],
     "versions": [
+      "1.7.0",
       "1.6.0",
       "1.5.0",
       "1.4.0",

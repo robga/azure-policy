@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Disables Grafana Enterprise upgrade in Grafana workspace.",
     "metadata": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "Managed Grafana"
     },
-    "version": "1.0.0",
+    "version": "1.1.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -33,7 +33,7 @@
           },
           {
             "field": "Microsoft.Dashboard/grafana/enterpriseConfigurations",
-            "notEquals": "null"
+            "exists": true
           }
         ]
       },
@@ -42,6 +42,7 @@
       }
     },
     "versions": [
+      "1.1.0",
       "1.0.0"
     ]
   },

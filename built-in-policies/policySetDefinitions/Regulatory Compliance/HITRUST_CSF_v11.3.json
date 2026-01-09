@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "A comprehensive security and privacy framework for managing compliance in industries like healthcare and finance.",
     "metadata": {
-      "version": "1.6.0",
+      "version": "1.7.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.6.0",
+    "version": "1.7.0",
     "policyDefinitionGroups": [
       {
         "name": "HITRUST_CSF_v11.3_01.c",
@@ -143,7 +143,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via MySQL_FlexibleServers_ADOnlyEnabled_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -207,7 +207,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Linux Password 110 AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -241,7 +241,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via System Audit Policies Privilege Use AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -290,7 +290,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Cosmos_PrivateNetworkAccess_AuditDeny",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -312,7 +312,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Windows machines that do not have the password complexity setting enabled",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -448,7 +448,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows Password Complexity AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -457,7 +457,7 @@
         "type": "string",
         "defaultValue": "70",
         "metadata": {
-          "displayName": "Maximum password age",
+          "displayName": "Maximum password age via Audit Windows machines that do not have the maximum password age set to specified number of days",
           "description": "The Maximum password age setting determines the period of time (in days) that a password can be used before the system requires the user to change it.",
           "portalReview": "true"
         }
@@ -482,7 +482,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows Maximum Password AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -655,7 +655,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via User Rights Assignment AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -810,7 +810,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Security Options User Account Control AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -871,7 +871,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via SecurityOptionsNetworkAccess_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -950,7 +950,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Security Options Accounts AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -1020,7 +1020,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via DisableLocalAuth_AuditDeny",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -1028,7 +1028,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes clusters should not use the default namespace",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -1054,7 +1054,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Block Default Namespace",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -1064,7 +1064,7 @@
           "default"
         ],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes clusters should not use the default namespace",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -1072,7 +1072,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes clusters should not use the default namespace",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -1084,7 +1084,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'Security Options - Network Security'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1330,7 +1330,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via Security Options Network Security AINE",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -1338,7 +1338,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes cluster containers should only use allowed capabilities",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -1364,7 +1364,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Container Allowed Capabilities",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -1372,7 +1372,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes cluster containers should only use allowed capabilities",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -1380,7 +1380,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes cluster containers should only use allowed capabilities",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -1406,7 +1406,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Containers exclusions",
+          "displayName": "Containers exclusions via Kubernetes cluster containers should only use allowed capabilities",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identify is the name of container. Use an empty list to apply this policy to all containers in all namespaces."
         }
       },
@@ -1414,7 +1414,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Image exclusions",
+          "displayName": "Image exclusions via Kubernetes cluster containers should only use allowed capabilities",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identifier is the image of container. Prefix-matching can be signified with `*`. For example: `myregistry.azurecr.io/istio:*`. It is recommended that users use the fully-qualified Docker image name (e.g. start with a domain name) in order to avoid unexpectedly exempting images from an untrusted repository.",
           "portalReview": true
         }
@@ -1427,7 +1427,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Audit Linux machines that do not have the passwd file permissions set to 0644",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1453,7 +1453,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via Linux Password 121 AINE",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -1461,7 +1461,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes cluster containers should run with a read only root file system",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -1487,7 +1487,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via ReadOnlyRootFileSystem",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -1495,7 +1495,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes cluster containers should run with a read only root file system",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -1503,7 +1503,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes cluster containers should run with a read only root file system",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -1511,7 +1511,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Containers exclusions",
+          "displayName": "Containers exclusions via Kubernetes cluster containers should run with a read only root file system",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identify is the name of container. Use an empty list to apply this policy to all containers in all namespaces."
         }
       },
@@ -1519,7 +1519,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Image exclusions",
+          "displayName": "Image exclusions via Kubernetes cluster containers should run with a read only root file system",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identifier is the image of container. Prefix-matching can be signified with `*`. For example: `myregistry.azurecr.io/istio:*`. It is recommended that users use the fully-qualified Docker image name (e.g. start with a domain name) in order to avoid unexpectedly exempting images from an untrusted repository.",
           "portalReview": true
         }
@@ -1533,7 +1533,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via Kubernetes clusters should not allow container privilege escalation",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -1541,7 +1541,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes clusters should not allow container privilege escalation",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -1567,7 +1567,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Container No Privilege Escalation",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -1575,7 +1575,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes clusters should not allow container privilege escalation",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -1583,7 +1583,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes clusters should not allow container privilege escalation",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -1591,7 +1591,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Containers exclusions",
+          "displayName": "Containers exclusions via Kubernetes clusters should not allow container privilege escalation",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identify is the name of container. Use an empty list to apply this policy to all containers in all namespaces."
         }
       },
@@ -1599,7 +1599,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Image exclusions",
+          "displayName": "Image exclusions via Kubernetes clusters should not allow container privilege escalation",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identifier is the image of container. Prefix-matching can be signified with `*`. For example: `myregistry.azurecr.io/istio:*`. It is recommended that users use the fully-qualified Docker image name (e.g. start with a domain name) in order to avoid unexpectedly exempting images from an untrusted repository.",
           "portalReview": true
         }
@@ -1624,7 +1624,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via ASC_UpgradeVersion_KubernetesService_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1691,7 +1691,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Administrative Templates Network AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1884,7 +1884,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows Firewall Properties AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -1905,7 +1905,7 @@
         "type": "string",
         "defaultValue": "",
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Azure Windows Baseline AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true",
           "deprecated": true
@@ -2689,7 +2689,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via WAF_AppGatewayMode_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2706,7 +2706,7 @@
         "type": "string",
         "defaultValue": "1,70",
         "metadata": {
-          "displayName": "Maximum password age",
+          "displayName": "Maximum password age via Windows machines should meet requirements for 'Security Settings - Account Policies'",
           "description": "Specifies the maximum number of days that may elapse before a user account password must be changed. The format of the value is two integers separated by a comma, denoting an inclusive range."
         }
       },
@@ -2883,7 +2883,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Security Settings Account Policies AINE",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -2891,7 +2891,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -2911,7 +2911,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via DependencyAgent_OSImage_Audit",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -2920,7 +2920,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Log Analytics Extension should be enabled for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -2983,7 +2983,7 @@
           "Microsoft.Security/securitySolutions/delete"
         ],
         "metadata": {
-          "displayName": "Operation Name",
+          "displayName": "Operation Name via LogAnalytics_OSImage_Audit",
           "description": "Security Operation name for which activity log alert should exist"
         },
         "defaultValue": "Microsoft.Security/policies/write"
@@ -3016,7 +3016,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via NetworkSecurityGroup_FlowLog_Audit",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3052,7 +3052,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Security_Audit_MustBeDeployed",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3093,7 +3093,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Security Options Audit AINE",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3113,20 +3113,21 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Audit Diagnostic Log (afe0c3be-ba3b-4544-ba52-0c99672a8ad6)",
           "description": "The required resource logs retention in days if exporting to an Azure Storage account"
         }
       },
       "effect-efbde977-ba53-4479-b8e9-10b957924fbf": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: The Log Analytics extension should be installed on Virtual Machine Scale Sets",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "For more information about effects, visit https://aka.ms/policyeffects",
+          "deprecated": true
         }
       },
       "effect-428256e6-1fac-4f48-a757-df34c2b3336d": {
@@ -3145,7 +3146,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via VMSS_LogAnalyticsAgent_AINE",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3157,7 +3158,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Windows machines should meet requirements for 'System Audit Policies - Account Management'",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3190,7 +3191,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via System Audit Policies Account Management AINE",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3261,7 +3262,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via LogAnalytics_WorkspaceMismatch_VM_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3322,7 +3323,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via System Audit Policies Policy Change AINE",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3370,7 +3371,7 @@
           "Microsoft.Authorization/policyAssignments/delete"
         ],
         "metadata": {
-          "displayName": "Operation Name",
+          "displayName": "Operation Name via ActivityLog_PolicyOperations_Audit",
           "description": "Policy Operation name for which activity log alert should exist"
         },
         "defaultValue": "Microsoft.Authorization/policyAssignments/write"
@@ -3391,7 +3392,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Audit Diagnostic Log (cf820ca0-f99e-4f3e-84fb-66e913812d21)",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3411,7 +3412,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Audit Diagnostic Log (34f95f76-5386-4de7-b824-0d8478470c9d)",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3458,7 +3459,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via SqlServerAuditing_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -3505,7 +3506,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via System Audit Policies Detailed Tracking AINE",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3537,7 +3538,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via ActivityLogRetention_365orGreater",
           "description": "The required resource logs retention (in days)"
         }
       },
@@ -3557,7 +3558,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Analytics_AuditDiagnosticLog_Audit",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3588,7 +3589,7 @@
           "Microsoft.ClassicNetwork/networkSecurityGroups/securityRules/delete"
         ],
         "metadata": {
-          "displayName": "Operation Name",
+          "displayName": "Operation Name via ActivityLog_AdministrativeOperations_Audit",
           "description": "Administrative Operation name for which activity log alert should be configured"
         },
         "defaultValue": "Microsoft.Sql/servers/firewallRules/write"
@@ -3609,7 +3610,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Audit Diagnostic Log (f9be5368-9bf5-4b84-9e0a-7850da98bb46)",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3629,7 +3630,7 @@
         "type": "String",
         "defaultValue": "365",
         "metadata": {
-          "displayName": "Required retention (days)",
+          "displayName": "Required retention (days) via Audit Diagnostic Log (f8d36e2f-389b-4ee4-898d-21aeb69a0f45)",
           "description": "The required resource logs retention in days"
         }
       },
@@ -3654,7 +3655,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source",
+          "displayName": "Source via ASC_Standard_pricing_tier",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -3662,7 +3663,7 @@
         "type": "Boolean",
         "defaultValue": false,
         "metadata": {
-          "displayName": "Warn",
+          "displayName": "Warn via Kubernetes cluster services should only use allowed external IPs",
           "description": "Whether or not to return warnings back to the user in the kubectl cli"
         }
       },
@@ -3688,7 +3689,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via Allowed External IPs",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. Providing a value for this parameter is optional. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -3696,7 +3697,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes cluster services should only use allowed external IPs",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -3704,7 +3705,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes cluster services should only use allowed external IPs",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -3848,7 +3849,7 @@
           "azure-extensions-usage-system"
         ],
         "metadata": {
-          "displayName": "Namespace exclusions",
+          "displayName": "Namespace exclusions via ASC_Email_notification",
           "description": "List of Kubernetes namespaces to exclude from policy evaluation. System namespaces \"kube-system\", \"gatekeeper-system\" and \"azure-arc\" are always excluded by design. \"azure-extensions-usage-system\" is optional to remove."
         }
       },
@@ -3856,7 +3857,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces."
         }
       },
@@ -3864,7 +3865,7 @@
         "type": "object",
         "defaultValue": {},
         "metadata": {
-          "displayName": "Kubernetes label selector",
+          "displayName": "Kubernetes label selector via Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities",
           "description": "Label query to select Kubernetes resources for policy evaluation. An empty label selector matches all Kubernetes resources."
         }
       },
@@ -3872,7 +3873,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Containers exclusions",
+          "displayName": "Containers exclusions via Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identify is the name of container. Use an empty list to apply this policy to all containers in all namespaces."
         }
       },
@@ -3880,7 +3881,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Image exclusions",
+          "displayName": "Image exclusions via Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities",
           "description": "The list of InitContainers and Containers to exclude from policy evaluation. The identifier is the image of container. Prefix-matching can be signified with `*`. For example: `myregistry.azurecr.io/istio:*`. It is recommended that users use the fully-qualified Docker image name (e.g. start with a domain name) in order to avoid unexpectedly exempting images from an untrusted repository.",
           "portalReview": true
         }
@@ -3951,7 +3952,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via ASC_BootComponent_Signature_Linux_Audit",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -3960,7 +3961,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Log Analytics extension should be enabled in virtual machine scale sets for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -4360,7 +4361,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via LogAnalytics_OSImage_VMSS_Audit",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -4368,7 +4369,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
+          "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
         }
       },
@@ -4404,7 +4405,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via DependencyAgent_OSImage_VMSS_Audit",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -4437,7 +4438,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via Security Options Recovery Console AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -4474,7 +4475,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers",
+          "displayName": "Include Arc connected servers via SecurityOptionsMicrosoftNetworkServer_AINE",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -7068,21 +7069,6 @@
         }
       },
       {
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "groupNames": [
-          "HITRUST_CSF_v11.3_09.aa",
-          "HITRUST_CSF_v11.3_09.ab",
-          "HITRUST_CSF_v11.3_11.a"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-efbde977-ba53-4479-b8e9-10b957924fbf')]"
-          }
-        }
-      },
-      {
         "policyDefinitionReferenceId": "428256e6-1fac-4f48-a757-df34c2b3336d",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/428256e6-1fac-4f48-a757-df34c2b3336d",
         "definitionVersion": "5.*.*",
@@ -8273,6 +8259,7 @@
       }
     ],
     "versions": [
+      "1.7.0",
       "1.6.0",
       "1.5.0",
       "1.4.0",

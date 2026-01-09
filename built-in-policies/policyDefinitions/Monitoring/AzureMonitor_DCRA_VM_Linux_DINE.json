@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Deploy Association to link Linux virtual machines to the specified Data Collection Rule or the specified Data Collection Endpoint. The list of locations and OS images are updated over time as support is increased.",
     "metadata": {
-      "version": "4.5.0",
+      "version": "4.6.0",
       "category": "Monitoring"
     },
-    "version": "4.5.0",
+    "version": "4.6.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -167,7 +167,8 @@
                       "RHEL-HA",
                       "RHEL-SAP",
                       "RHEL-SAP-APPS",
-                      "RHEL-SAP-HA"
+                      "RHEL-SAP-HA",
+                      "RHEL-SAP-HANA"
                     ]
                   },
                   {
@@ -186,6 +187,10 @@
                       },
                       {
                         "field": "Microsoft.Compute/imageSku",
+                        "like": "10*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSku",
                         "like": "rhel-lvm7*"
                       },
                       {
@@ -195,6 +200,10 @@
                       {
                         "field": "Microsoft.Compute/imageSku",
                         "like": "rhel-lvm9*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSku",
+                        "like": "rhel-lvm10*"
                       }
                     ]
                   }
@@ -447,7 +456,9 @@
                     "field": "Microsoft.Compute/imageSku",
                     "in": [
                       "rocky-community-8-arm",
-                      "rocky-community-9-arm"
+                      "rocky-community-9-arm",
+                      "rocky-community-8",
+                      "rocky-community-9"
                     ]
                   }
                 ]
@@ -511,7 +522,9 @@
                       "11",
                       "11-gen2",
                       "12",
-                      "12-gen2"
+                      "12-gen2",
+                      "11-backports-arm64",
+                      "12-backports-arm64"
                     ]
                   }
                 ]
@@ -638,6 +651,7 @@
       }
     },
     "versions": [
+      "4.6.0",
       "4.5.0",
       "4.4.1",
       "4.4.0",

@@ -5,10 +5,10 @@
     "policyType": "BuiltIn",
     "mode": "Indexed",
     "metadata": {
-      "version": "2.0.1",
+      "version": "2.1.0",
       "category": "Security Center"
     },
-    "version": "2.0.1",
+    "version": "2.1.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -129,6 +129,10 @@
                       {
                         "field": "Microsoft.Compute/imageSku",
                         "like": "2022-*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSku",
+                        "like": "2025-*"
                       }
                     ]
                   }
@@ -276,6 +280,22 @@
                     "equals": "Windows-10"
                   }
                 ]
+              },
+              {
+                "allOf": [
+                  {
+                    "field": "Microsoft.Compute/imagePublisher",
+                    "equals": "center-for-internet-security-inc"
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageOffer",
+                    "equals": "cis-windows-server"
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageSKU",
+                    "equals": "cis-windows-server2022-l1-gen1"
+                  }
+                ]
               }
             ]
           }
@@ -356,6 +376,7 @@
       }
     },
     "versions": [
+      "2.1.0",
       "2.0.1",
       "2.0.0-PREVIEW"
     ]

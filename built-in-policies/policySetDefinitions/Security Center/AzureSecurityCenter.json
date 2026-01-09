@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
     "metadata": {
-      "version": "57.54.0",
+      "version": "57.55.0",
       "category": "Security Center"
     },
-    "version": "57.54.0",
+    "version": "57.55.0",
     "policyDefinitionGroups": [
       {
         "name": "Azure_Security_Benchmark_v3.0_NS-1",
@@ -883,7 +883,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "SQL servers should be configured with auditing retention days greater than 90 days",
+          "displayName": "SQL Server Auditing Retention Period Control - Monitor compliance for 90+ day retention requirement",
           "description": "Enable or disable the monitoring of SQL servers with auditing retention period less than 90",
           "deprecated": true
         }
@@ -1735,7 +1735,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Latest TLS version should be used in your API App",
+          "displayName": "Your API App should use the Latest TLS version",
           "description": "Upgrade to the latest TLS version",
           "deprecated": true
         }
@@ -1748,7 +1748,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Latest TLS version should be used in your Function App",
+          "displayName": "Your Function App should use the Latest TLS version",
           "description": "Upgrade to the latest TLS version",
           "deprecated": true
         }
@@ -1761,7 +1761,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Latest TLS version should be used in your Web App",
+          "displayName": "Latest TLS version should be used in your Web App (Deprecated)",
           "description": "Upgrade to the latest TLS version",
           "deprecated": true
         }
@@ -2379,7 +2379,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "SQL server TDE protector should be encrypted with your own key",
+          "displayName": "SQL server TDE protector should be encrypted with your own key with DENY",
           "description": "Enable or disable the monitoring of Transparent Data Encryption (TDE) with your own key support. TDE with your own key support provides increased transparency and control over the TDE Protector, increased security with an HSM-backed external service, and promotion of separation of duties."
         }
       },
@@ -2392,7 +2392,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "SQL Managed Instance TDE protector should be encrypted with your own key",
+          "displayName": "SQL Managed Instance TDE protector should be encrypted with your own key with DENY",
           "description": "Enable or disable the monitoring of Transparent Data Encryption (TDE) with your own key support. TDE with your own key support provides increased transparency and control over the TDE Protector, increased security with an HSM-backed external service, and promotion of separation of duties."
         }
       },
@@ -2460,14 +2460,15 @@
       },
       "ArcLinuxMonitoringEffect": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Log Analytics agent should be installed on your Linux Azure Arc machines",
-          "description": "Enable or disable Log Analytics agent should be installed on your Linux Azure Arc machines"
+          "description": "Enable or disable Log Analytics agent should be installed on your Linux Azure Arc machines",
+          "deprecated": true
         }
       },
       "keyVaultsAdvancedDataSecurityMonitoringEffect": {
@@ -3791,7 +3792,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via MDC_K8sRuningImagesVulnerabilityAssessmentBasedOnMDVM_Audit",
           "description": "List of Kubernetes namespaces to only include in policy evaluation. An empty list means the policy is applied to all resources in all namespaces.",
           "deprecated": true
         }
@@ -4068,7 +4069,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Vulnerabilities in Azure Container Registry images should be remediated",
+          "displayName": "Vulnerabilities in Azure Container Registry images should be remediated - Qualys",
           "description": "Enable or disable monitoring of Azure container registries by Microsoft Defender for Cloud vulnerability assessment (powered by Qualys)",
           "deprecated": true
         }
@@ -4081,7 +4082,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Vulnerabilities in Azure Container Registry images should be remediated",
+          "displayName": "Vulnerabilities in Azure Container Registry images should be remediated - Microsoft Defender Vulnerability Management",
           "description": "Enable or disable monitoring of Azure container registries by Microsoft Defender for Cloud vulnerability assessment (powered by Microsoft Defender Vulnerability Management)"
         }
       },
@@ -4106,7 +4107,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Vulnerabilities in running images should be remediated",
+          "displayName": "Vulnerabilities in running images should be remediated - MDVMA Assessment",
           "description": "Enable or disable monitoring of Kubernetes Service clusters by Defender for Containers running images vulnerability assessment"
         }
       },
@@ -4229,7 +4230,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "Resource logs in App Services should be enabled",
+          "displayName": "Resource logs in App Services should be enabled - Audit",
           "description": "Audit enabling of resource logs on the app. This enables you to recreate activity trails for investigation purposes if a security incident occurs or your network is compromised"
         }
       },
@@ -4466,7 +4467,7 @@
           "Disabled"
         ],
         "metadata": {
-          "displayName": "FTPS should be required in your Web App",
+          "displayName": "FTPS should be required in your Web App - Audit",
           "description": "Enable FTPS enforcement for enhanced security"
         }
       },
@@ -5060,7 +5061,7 @@
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Namespace inclusions",
+          "displayName": "Namespace inclusions via IngressHttpsOnly",
           "description": "This parameter is deprecated. The policy is applied to all Kubernetes resources in all Kubernetes namespaces.",
           "deprecated": true
         }
@@ -6645,32 +6646,6 @@
         },
         "groupNames": [
           "Azure_Security_Benchmark_v3.0_NS-3"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "ArcWindowsMonitoring",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('ArcWindowsMonitoringEffect')]"
-          }
-        },
-        "groupNames": [
-          "Azure_Security_Benchmark_v3.0_LT-5"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "ArcLinuxMonitoring",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('ArcLinuxMonitoringEffect')]"
-          }
-        },
-        "groupNames": [
-          "Azure_Security_Benchmark_v3.0_LT-5"
         ]
       },
       {
@@ -8647,6 +8622,7 @@
       }
     ],
     "versions": [
+      "57.55.0",
       "57.54.0",
       "57.53.0",
       "57.52.0",

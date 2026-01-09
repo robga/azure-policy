@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "FedRAMP is a U.S. government-wide program that provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud-based products and services. FedRAMP defines a set of controls for Low, Moderate, or High security impact level systems based on NIST baseline controls. These policies address a subset of FedRAMP (Moderate) controls. Additional policies will be added in upcoming releases. For more information, visit https://www.fedramp.gov/documents-templates/",
     "metadata": {
-      "version": "17.18.0",
+      "version": "17.19.0",
       "category": "Regulatory Compliance"
     },
-    "version": "17.18.0",
+    "version": "17.19.0",
     "policyDefinitionGroups": [
       {
         "name": "FedRAMP_Moderate_R4_AC-1",
@@ -2525,7 +2525,7 @@
       },
       "effect-7d092e0a-7acd-40d2-a975-dca21cae48c4": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -2604,7 +2604,7 @@
       },
       "effect-53503636-bcc9-4748-9663-5348217f160f": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -2681,7 +2681,7 @@
           "Deny",
           "Disabled"
         ],
-        "defaultValue": "Audit"
+        "defaultValue": "Disabled"
       },
       "effect-a6abeaec-4d90-4a02-805f-6b26c4d3fbe9": {
         "type": "String",
@@ -2736,7 +2736,7 @@
       },
       "effect-52630df9-ca7e-442b-853b-c6ce548b31a2": {
         "type": "String",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -5235,16 +5235,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d69b1763-b96d-40b8-a2d9-ca31e9fd0d3e",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "FedRAMP_Moderate_R4_AU-12",
-          "FedRAMP_Moderate_R4_SI-4"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "6ba6d016-e7c3-4842-b8f2-4992ebc0d72d",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6ba6d016-e7c3-4842-b8f2-4992ebc0d72d",
         "definitionVersion": "1.*.*",
@@ -5294,16 +5284,6 @@
           "FedRAMP_Moderate_R4_AC-17(1)",
           "FedRAMP_Moderate_R4_SC-7",
           "FedRAMP_Moderate_R4_SC-7(3)"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/842c54e8-c2f9-4d79-ae8d-38d8b8019373",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "FedRAMP_Moderate_R4_AU-12",
-          "FedRAMP_Moderate_R4_SI-4"
         ]
       },
       {
@@ -9895,6 +9875,7 @@
       }
     ],
     "versions": [
+      "17.19.0",
       "17.18.0",
       "17.17.0",
       "17.16.0",

@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address a subset of Reserve Bank of India IT Framework for Non-Banking Financial Companies (NBFC) controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/rbiitfnbfc-initiative.",
     "metadata": {
-      "version": "2.17.1",
+      "version": "2.18.0",
       "category": "Regulatory Compliance"
     },
-    "version": "2.17.1",
+    "version": "2.18.0",
     "policyDefinitionGroups": [
       {
         "name": "RBI_ITF_NBFC_v2017_6",
@@ -305,7 +305,7 @@
           "Deny",
           "Disabled"
         ],
-        "defaultValue": "Audit"
+        "defaultValue": "Disabled"
       },
       "effect-a6abeaec-4d90-4a02-805f-6b26c4d3fbe9": {
         "type": "String",
@@ -1355,15 +1355,6 @@
         ]
       },
       {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/efbde977-ba53-4479-b8e9-10b957924fbf",
-        "definitionVersion": "1.*.*",
-        "policyDefinitionReferenceId": "efbde977-ba53-4479-b8e9-10b957924fbf",
-        "parameters": {},
-        "groupNames": [
-          "RBI_ITF_NBFC_v2017_3.1.g"
-        ]
-      },
-      {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea0dfaed-95fb-448c-934e-d6e713ce393d",
         "definitionVersion": "1.*.*",
         "policyDefinitionReferenceId": "ea0dfaed-95fb-448c-934e-d6e713ce393d",
@@ -2026,6 +2017,7 @@
       }
     ],
     "versions": [
+      "2.18.0",
       "2.17.1",
       "2.17.0-PREVIEW",
       "2.16.0-PREVIEW",

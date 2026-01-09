@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Linux virtual machines should be monitored and secured through the deployed Azure Monitor Agent. The Azure Monitor Agent collects telemetry data from the guest OS. This policy will audit virtual machines with supported OS images in supported regions. Learn more: https://aka.ms/AMAOverview.",
     "metadata": {
-      "version": "3.4.0",
+      "version": "3.5.0",
       "category": "Monitoring"
     },
-    "version": "3.4.0",
+    "version": "3.5.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -145,7 +145,8 @@
                       "RHEL-HA",
                       "RHEL-SAP",
                       "RHEL-SAP-APPS",
-                      "RHEL-SAP-HA"
+                      "RHEL-SAP-HA",
+                      "RHEL-SAP-HANA"
                     ]
                   },
                   {
@@ -164,6 +165,10 @@
                       },
                       {
                         "field": "Microsoft.Compute/imageSku",
+                        "like": "10*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSku",
                         "like": "rhel-lvm7*"
                       },
                       {
@@ -173,6 +178,10 @@
                       {
                         "field": "Microsoft.Compute/imageSku",
                         "like": "rhel-lvm9*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSku",
+                        "like": "rhel-lvm10*"
                       }
                     ]
                   }
@@ -425,7 +434,9 @@
                     "field": "Microsoft.Compute/imageSku",
                     "in": [
                       "rocky-community-8-arm",
-                      "rocky-community-9-arm"
+                      "rocky-community-9-arm",
+                      "rocky-community-8",
+                      "rocky-community-9"
                     ]
                   }
                 ]
@@ -489,7 +500,9 @@
                       "11",
                       "11-gen2",
                       "12",
-                      "12-gen2"
+                      "12-gen2",
+                      "11-backports-arm64",
+                      "12-backports-arm64"
                     ]
                   }
                 ]
@@ -550,6 +563,7 @@
       }
     },
     "versions": [
+      "3.5.0",
       "3.4.0",
       "3.3.0",
       "3.2.0",
