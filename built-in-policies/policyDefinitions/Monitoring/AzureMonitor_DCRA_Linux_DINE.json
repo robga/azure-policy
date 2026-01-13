@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Deploy Association to link Linux virtual machines, virtual machine scale sets, and Arc machines to the specified Data Collection Rule or the specified Data Collection Endpoint. The list of locations and OS images are updated over time as support is increased.",
     "metadata": {
-      "version": "6.7.0",
+      "version": "6.8.0",
       "category": "Monitoring"
     },
-    "version": "6.7.0",
+    "version": "6.8.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -82,6 +82,7 @@
               "centralindia",
               "centralus",
               "centraluseuap",
+              "chilecentral",
               "eastasia",
               "eastus",
               "eastus2",
@@ -90,6 +91,7 @@
               "francesouth",
               "germanynorth",
               "germanywestcentral",
+              "indonesiacentral",
               "israelcentral",
               "italynorth",
               "japaneast",
@@ -99,7 +101,9 @@
               "koreacentral",
               "koreasouth",
               "malaysiasouth",
+              "malaysiawest",
               "mexicocentral",
+              "newzealandnorth",
               "northcentralus",
               "northeurope",
               "norwayeast",
@@ -745,6 +749,7 @@
       }
     },
     "versions": [
+      "6.8.0",
       "6.7.0",
       "6.6.0",
       "6.5.1",

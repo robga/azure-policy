@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Deploy Association to link Linux virtual machines to the specified Data Collection Rule or the specified Data Collection Endpoint. The list of locations and OS images are updated over time as support is increased.",
     "metadata": {
-      "version": "4.6.0",
+      "version": "4.7.0",
       "category": "Monitoring"
     },
-    "version": "4.6.0",
+    "version": "4.7.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -86,6 +86,7 @@
               "centralindia",
               "centralus",
               "centraluseuap",
+              "chilecentral",
               "eastasia",
               "eastus",
               "eastus2",
@@ -94,6 +95,7 @@
               "francesouth",
               "germanynorth",
               "germanywestcentral",
+              "indonesiacentral",
               "israelcentral",
               "italynorth",
               "japaneast",
@@ -103,7 +105,9 @@
               "koreacentral",
               "koreasouth",
               "malaysiasouth",
+              "malaysiawest",
               "mexicocentral",
+              "newzealandnorth",
               "northcentralus",
               "northeurope",
               "norwayeast",
@@ -651,6 +655,7 @@
       }
     },
     "versions": [
+      "4.7.0",
       "4.6.0",
       "4.5.0",
       "4.4.1",

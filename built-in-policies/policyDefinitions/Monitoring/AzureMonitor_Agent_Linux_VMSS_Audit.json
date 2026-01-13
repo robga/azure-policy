@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Linux virtual machine scale sets should be monitored and secured through the deployed Azure Monitor Agent. The Azure Monitor Agent collects telemetry data from the guest OS. This policy will audit virtual machine scale sets with supported OS images in supported regions. Learn more: https://aka.ms/AMAOverview.",
     "metadata": {
-      "version": "3.5.0",
+      "version": "3.6.0",
       "category": "Monitoring"
     },
-    "version": "3.5.0",
+    "version": "3.6.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -64,6 +64,7 @@
               "centralindia",
               "centralus",
               "centraluseuap",
+              "chilecentral",
               "eastasia",
               "eastus",
               "eastus2",
@@ -72,6 +73,7 @@
               "francesouth",
               "germanynorth",
               "germanywestcentral",
+              "indonesiacentral",
               "israelcentral",
               "italynorth",
               "japaneast",
@@ -81,7 +83,9 @@
               "koreacentral",
               "koreasouth",
               "malaysiasouth",
+              "malaysiawest",
               "mexicocentral",
+              "newzealandnorth",
               "northcentralus",
               "northeurope",
               "norwayeast",
@@ -563,6 +567,7 @@
       }
     },
     "versions": [
+      "3.6.0",
       "3.5.0",
       "3.4.0",
       "3.3.0",

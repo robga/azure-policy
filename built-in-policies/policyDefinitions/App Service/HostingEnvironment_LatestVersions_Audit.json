@@ -1,18 +1,19 @@
 {
   "properties": {
-    "displayName": "App Service Environment should be provisioned with latest versions",
+    "displayName": "[Deprecated]: App Service Environment should be provisioned with latest versions",
     "policyType": "BuiltIn",
     "mode": "Indexed",
-    "description": "Only allow App Service Environment version 2 or version 3 to be provisioned. Older versions of App Service Environment require manual management of Azure resources and have greater scaling limitations.",
+    "description": "Only allow App Service Environment version 2 or version 3 to be provisioned. This policy is deprecated because App Service Environment v1 and v2 are retired and no longer supported. Learn more about policy definition deprecation at aka.ms/policydefdeprecation.",
     "metadata": {
-      "version": "1.0.0",
-      "category": "App Service"
+      "version": "1.1.0-deprecated",
+      "category": "App Service",
+      "deprecated": true
     },
-    "version": "1.0.0",
+    "version": "1.1.0",
     "parameters": {
       "effect": {
         "type": "string",
-        "defaultValue": "Audit",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "Audit",
           "Deny",
@@ -42,6 +43,7 @@
       }
     },
     "versions": [
+      "1.1.0",
       "1.0.0"
     ]
   },

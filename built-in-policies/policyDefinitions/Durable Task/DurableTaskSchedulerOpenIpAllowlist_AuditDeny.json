@@ -1,0 +1,56 @@
+{
+  "properties": {
+    "displayName": "Durable Task schedulers should not allow open IP allowlists",
+    "description": "Deny Durable Task schedulers that include 0.0.0.0/0 in their IP allowlist to prevent exposure to the public internet. Remove the open entry so that only trusted networks can reach the scheduler.",
+    "policyType": "BuiltIn",
+    "mode": "Indexed",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Durable Task"
+    },
+    "version": "1.0.0",
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        }
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.DurableTask/schedulers"
+          },
+          {
+            "count": {
+              "field": "Microsoft.DurableTask/schedulers/ipAllowlist[*]",
+              "where": {
+                "field": "Microsoft.DurableTask/schedulers/ipAllowlist[*]",
+                "equals": "0.0.0.0/0"
+              }
+            },
+            "greater": 0
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    },
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/d82527a7-91cd-409f-b96e-049600b16b9e",
+  "name": "d82527a7-91cd-409f-b96e-049600b16b9e"
+}

@@ -4,11 +4,11 @@
     "policyType": "BuiltIn",
     "description": "This initiative deploys Azure policies for App Service ensuring boundary protection of this resource while it operates within the logically separated structure of Azure Virtual Enclaves. https://aka.ms/VirtualEnclaves",
     "metadata": {
-      "version": "1.0.0-preview",
+      "version": "1.1.0-preview",
       "category": "VirtualEnclaves",
       "preview": true
     },
-    "version": "1.0.0-preview",
+    "version": "1.1.0-preview",
     "parameters": {
       "linuxJavaVersion": {
         "type": "String",
@@ -120,11 +120,6 @@
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/91a78b24-f231-4a8a-8da9-02c35b2b6510",
         "policyDefinitionReferenceId": "AppServiceAppsShouldHaveResourceLogsEnabled",
         "definitionVersion": "2.*.*"
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/eb4d34ab-0929-491c-bbf3-61e13da19f9a",
-        "policyDefinitionReferenceId": "AppServiceEnvironmentShouldBeProvisionedWithLatestVersions",
-        "definitionVersion": "1.*.*"
       },
       {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d639b3af-a535-4bef-8dcf-15078cddf5e2",
@@ -283,6 +278,7 @@
       }
     ],
     "versions": [
+      "1.1.0-PREVIEW",
       "1.0.0-PREVIEW"
     ]
   },

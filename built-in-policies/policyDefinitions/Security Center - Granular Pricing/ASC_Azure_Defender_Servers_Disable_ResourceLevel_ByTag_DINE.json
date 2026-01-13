@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Azure Defender for Servers provides real-time threat protection for server workloads and generates hardening recommendations as well as alerts about suspicious activities. This policy will disable the Defender for Servers plan for all resources (VMs, VMSSs and ARC Machines) that have the selected tag name and tag value(s).",
     "metadata": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "Security Center - Granular Pricing"
     },
-    "version": "1.0.0",
+    "version": "1.1.0",
     "parameters": {
       "inclusionTagName": {
         "type": "String",
@@ -65,8 +65,16 @@
             "/providers/Microsoft.Authorization/roleDefinitions/fb1c8493-542b-48eb-b624-b4c8fea62acd"
           ],
           "existenceCondition": {
-            "field": "Microsoft.Security/pricings/pricingTier",
-            "equals": "Free"
+            "allOf": [
+              {
+                "field": "Microsoft.Security/pricings/pricingTier",
+                "equals": "Free"
+              },
+              {
+                "field": "Microsoft.Security/pricings/inherited",
+                "equals": "False"
+              }
+            ]
           },
           "deployment": {
             "properties": {
@@ -104,6 +112,7 @@
       }
     },
     "versions": [
+      "1.1.0",
       "1.0.0"
     ]
   },
