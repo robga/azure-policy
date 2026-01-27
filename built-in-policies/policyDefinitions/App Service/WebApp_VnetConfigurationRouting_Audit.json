@@ -3,12 +3,12 @@
     "displayName": "App Service apps should enable configuration routing to Azure Virtual Network",
     "policyType": "BuiltIn",
     "mode": "Indexed",
-    "description": "By default, app configuration such as pulling container images and mounting content storage will not be routed through the regional virtual network integration. Using the API to set routing options to true enables configuration traffic through the Azure Virtual Network. These settings allow features like network security groups and user defined routes to be used, and service endpoints to be private. For more information, visit https://aka.ms/appservice-vnet-configuration-routing.",
+    "description": "By default, app configuration like pulling container images and mounting content storage is not routed through regional VNET integration. For API versions before 2024-11-01, set 'vnetImagePullEnabled' and 'vnetContentShareEnabled' to true. For 2024-11-01+, set 'outboundVnetRouting.imagePullTraffic' and 'outboundVnetRouting.contentShareTraffic' to true. Learn more at https://aka.ms/appservice-vnet-configuration-routing.",
     "metadata": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "App Service"
     },
-    "version": "1.0.0",
+    "version": "1.1.0",
     "parameters": {
       "effect": {
         "type": "string",
@@ -38,12 +38,44 @@
           {
             "anyOf": [
               {
-                "field": "Microsoft.Web/sites/vnetImagePullEnabled",
-                "notEquals": "true"
+                "allOf": [
+                  {
+                    "value": "[requestContext().apiVersion]",
+                    "less": "2024-11-01"
+                  },
+                  {
+                    "anyOf": [
+                      {
+                        "field": "Microsoft.Web/sites/vnetImagePullEnabled",
+                        "notEquals": "true"
+                      },
+                      {
+                        "field": "Microsoft.Web/sites/vnetContentShareEnabled",
+                        "notEquals": "true"
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "field": "Microsoft.Web/sites/vnetContentShareEnabled",
-                "notEquals": "true"
+                "allOf": [
+                  {
+                    "value": "[requestContext().apiVersion]",
+                    "greaterOrEquals": "2024-11-01"
+                  },
+                  {
+                    "anyOf": [
+                      {
+                        "field": "Microsoft.Web/sites/outboundVnetRouting.imagePullTraffic",
+                        "notEquals": "true"
+                      },
+                      {
+                        "field": "Microsoft.Web/sites/outboundVnetRouting.contentShareTraffic",
+                        "notEquals": "true"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -54,6 +86,7 @@
       }
     },
     "versions": [
+      "1.1.0",
       "1.0.0"
     ]
   },

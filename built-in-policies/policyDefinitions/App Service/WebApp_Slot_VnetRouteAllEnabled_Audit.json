@@ -3,12 +3,12 @@
     "displayName": "App Service app slots should enable outbound non-RFC 1918 traffic to Azure Virtual Network",
     "policyType": "BuiltIn",
     "mode": "Indexed",
-    "description": "By default, if one uses regional Azure Virtual Network (VNET) integration, the app only routes RFC1918 traffic into that respective virtual network. Using the API to set 'vnetRouteAllEnabled' to true enables all outbound traffic into the Azure Virtual Network. This setting allows features like network security groups and user defined routes to be used for all outbound traffic from the App Service app.",
+    "description": "By default, regional VNET integration only routes RFC1918 traffic into the virtual network. For API versions before 2024-11-01, set 'vnetRouteAllEnabled' to true to enable all outbound traffic into the Azure Virtual Network. For 2024-11-01+, set 'outboundVnetRouting.applicationTraffic' to true. This enables network security groups and user defined routes for all outbound traffic.",
     "metadata": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "App Service"
     },
-    "version": "1.0.0",
+    "version": "1.1.0",
     "parameters": {
       "effect": {
         "type": "string",
@@ -36,8 +36,32 @@
             "notContains": "functionapp"
           },
           {
-            "field": "Microsoft.Web/sites/slots/vnetRouteAllEnabled",
-            "notEquals": "true"
+            "anyOf": [
+              {
+                "allOf": [
+                  {
+                    "value": "[requestContext().apiVersion]",
+                    "less": "2024-11-01"
+                  },
+                  {
+                    "field": "Microsoft.Web/sites/slots/vnetRouteAllEnabled",
+                    "notEquals": "true"
+                  }
+                ]
+              },
+              {
+                "allOf": [
+                  {
+                    "value": "[requestContext().apiVersion]",
+                    "greaterOrEquals": "2024-11-01"
+                  },
+                  {
+                    "field": "Microsoft.Web/sites/slots/outboundVnetRouting.applicationTraffic",
+                    "notEquals": "true"
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -46,6 +70,7 @@
       }
     },
     "versions": [
+      "1.1.0",
       "1.0.0"
     ]
   },
