@@ -3,12 +3,12 @@
     "displayName": "Function app slots should enable configuration routing to Azure Virtual Network",
     "policyType": "BuiltIn",
     "mode": "Indexed",
-    "description": "By default, app configuration such as pulling container images and mounting content storage will not be routed through the regional virtual network integration. Using the API to set routing options to true enables configuration traffic through the Azure Virtual Network. For more information, visit https://aka.ms/appservice-vnet-configuration-routing. Note that this policy should only be applied to function apps that are not running on the Flex Consumption or Consumption hosting plans.",
+    "description": "By default, app configuration like pulling container images and mounting content storage is not routed through regional VNET integration. For API versions before 2024-11-01, set 'vnetImagePullEnabled' and 'vnetContentShareEnabled' to true. For 2024-11-01+, set 'outboundVnetRouting.imagePullTraffic' and 'outboundVnetRouting.contentShareTraffic' to true. Not for Flex/Consumption plans. Learn more: https://aka.ms/appservice-vnet-configuration-routing.",
     "metadata": {
-      "version": "1.1.0",
+      "version": "1.2.0",
       "category": "App Service"
     },
-    "version": "1.1.0",
+    "version": "1.2.0",
     "parameters": {
       "effect": {
         "type": "string",
@@ -46,12 +46,44 @@
           {
             "anyOf": [
               {
-                "field": "Microsoft.Web/sites/slots/vnetImagePullEnabled",
-                "notEquals": "true"
+                "allOf": [
+                  {
+                    "value": "[requestContext().apiVersion]",
+                    "less": "2024-11-01"
+                  },
+                  {
+                    "anyOf": [
+                      {
+                        "field": "Microsoft.Web/sites/slots/vnetImagePullEnabled",
+                        "notEquals": "true"
+                      },
+                      {
+                        "field": "Microsoft.Web/sites/slots/vnetContentShareEnabled",
+                        "notEquals": "true"
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "field": "Microsoft.Web/sites/slots/vnetContentShareEnabled",
-                "notEquals": "true"
+                "allOf": [
+                  {
+                    "value": "[requestContext().apiVersion]",
+                    "greaterOrEquals": "2024-11-01"
+                  },
+                  {
+                    "anyOf": [
+                      {
+                        "field": "Microsoft.Web/sites/slots/outboundVnetRouting.imagePullTraffic",
+                        "notEquals": "true"
+                      },
+                      {
+                        "field": "Microsoft.Web/sites/slots/outboundVnetRouting.contentShareTraffic",
+                        "notEquals": "true"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -62,6 +94,7 @@
       }
     },
     "versions": [
+      "1.2.0",
       "1.1.0",
       "1.0.0"
     ]

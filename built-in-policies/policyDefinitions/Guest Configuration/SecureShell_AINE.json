@@ -3,9 +3,9 @@
     "displayName": "[Preview]: Audit SSH security posture for Windows",
     "policyType": "BuiltIn",
     "mode": "Indexed",
-    "description": "This policy audits SSH server security configuration on Windows Server 2025 machines (Azure VMs and Arc-enabled machines). For more information including pre-requisites, settings in scope, defaults, and customization, see https://learn.microsoft.com/azure/osconfig/overviewsshposture-control-windows.",
+    "description": "This policy audits SSH server security configuration on Windows Server 2019, 2022, and 2025 machines (Azure VMs and Arc-enabled machines). For more information including pre-requisites, settings in scope, defaults, and customization, see https://learn.microsoft.com/azure/osconfig/overviewsshposture-control-windows.",
     "metadata": {
-      "version": "1.0.0-preview",
+      "version": "1.1.0-preview",
       "category": "Guest Configuration",
       "preview": true,
       "requiredProviders": [
@@ -36,7 +36,7 @@
         }
       }
     },
-    "version": "1.0.0-preview",
+    "version": "1.1.0-preview",
     "parameters": {
       "IncludeArcMachines": {
         "type": "string",
@@ -286,8 +286,20 @@
                             "equals": "MicrosoftWindowsServer"
                           },
                           {
-                            "field": "Microsoft.Compute/imageSKU",
-                            "like": "2025*"
+                            "anyOf": [
+                              {
+                                "field": "Microsoft.Compute/imageSKU",
+                                "like": "2019*"
+                              },
+                              {
+                                "field": "Microsoft.Compute/imageSKU",
+                                "like": "2022*"
+                              },
+                              {
+                                "field": "Microsoft.Compute/imageSKU",
+                                "like": "2025*"
+                              }
+                            ]
                           }
                         ]
                       },
@@ -326,8 +338,20 @@
                                     "notLike": "SQL2008*"
                                   },
                                   {
-                                    "field": "Microsoft.Compute/imageSKU",
-                                    "like": "2025*"
+                                    "anyOf": [
+                                      {
+                                        "field": "Microsoft.Compute/imageSKU",
+                                        "like": "2019*"
+                                      },
+                                      {
+                                        "field": "Microsoft.Compute/imageSKU",
+                                        "like": "2022*"
+                                      },
+                                      {
+                                        "field": "Microsoft.Compute/imageSKU",
+                                        "like": "2025*"
+                                      }
+                                    ]
                                   }
                                 ]
                               }
@@ -356,10 +380,6 @@
                           {
                             "field": "Microsoft.HybridCompute/imageOffer",
                             "like": "windows*"
-                          },
-                          {
-                            "field": "Microsoft.HybridCompute/machines/osVersion",
-                            "like": "10.0.26*"
                           },
                           {
                             "field": "Microsoft.HybridCompute/machines/osSku",
@@ -408,6 +428,7 @@
       }
     },
     "versions": [
+      "1.1.0-PREVIEW",
       "1.0.0-PREVIEW"
     ]
   },

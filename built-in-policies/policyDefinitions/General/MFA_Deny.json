@@ -5,10 +5,10 @@
     "mode": "All",
     "description": "This policy definition blocks resource create and update operations when the caller is not authenticated via MFA. For more information, visit https://aka.ms/mfaforazure.",
     "metadata": {
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "General"
     },
-    "version": "1.0.1",
+    "version": "1.1.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -28,6 +28,10 @@
       "if": {
         "allOf": [
           {
+            "value": "[contains(requestContext().identity, 'idtyp')]",
+            "equals": true
+          },
+          {
             "value": "[requestContext().identity.idtyp]",
             "equals": "user"
           },
@@ -46,6 +50,7 @@
       }
     },
     "versions": [
+      "1.1.0",
       "1.0.1",
       "1.0.0-PREVIEW"
     ]
