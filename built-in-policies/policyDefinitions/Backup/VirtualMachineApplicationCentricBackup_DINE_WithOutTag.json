@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Enforce backup for all virtual machines by deploying a recovery services vault in the same location and resource group as the virtual machine. Doing this is useful when different application teams in your organization are allocated separate resource groups and need to manage their own backups and restores. You can optionally exclude virtual machines containing a specified tag to control the scope of assignment. See https://aka.ms/AzureVMAppCentricBackupExcludeTag.",
     "metadata": {
-      "version": "9.4.0",
+      "version": "9.5.0",
       "category": "Backup"
     },
-    "version": "9.4.0",
+    "version": "9.5.0",
     "parameters": {
       "exclusionTagName": {
         "type": "String",
@@ -118,7 +118,19 @@
                       "2022-datacenter-core",
                       "2022-datacenter-core-smalldisk-g2",
                       "2022-datacenter-core-smalldisk",
-                      "2022-datacenter-azure-edition-hotpatch"
+                      "2022-datacenter-azure-edition-hotpatch",
+                      "2025-datacenter-core",
+                      "2025-datacenter-smalldisk",
+                      "2025-datacenter-core-smalldisk",
+                      "2025-datacenter-azure-edition-core-smalldisk",
+                      "2025-datacenter-azure-edition-core",
+                      "2025-datacenter-azure-edition",
+                      "2025-datacenter-azure-edition-smalldisk",
+                      "2025-datacenter",
+                      "2025-datacenter-core-smalldisk-g2",
+                      "2025-datacenter-core-g2",
+                      "2025-datacenter-smalldisk-g2",
+                      "2025-datacenter-g2"
                     ]
                   }
                 ]
@@ -415,6 +427,26 @@
                       {
                         "field": "Microsoft.Compute/imageSKU",
                         "like": "22_04-lts-gen2"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSKU",
+                        "like": "ubuntu-pro*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSKU",
+                        "like": "server*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSKU",
+                        "like": "minimal*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSKU",
+                        "equals": "cvm"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSKU",
+                        "equals": "specialized-hardware"
                       }
                     ]
                   }
@@ -604,6 +636,7 @@
       }
     },
     "versions": [
+      "9.5.0",
       "9.4.0",
       "9.3.0",
       "9.2.0",

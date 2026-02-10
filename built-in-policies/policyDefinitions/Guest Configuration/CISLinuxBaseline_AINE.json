@@ -5,7 +5,7 @@
     "mode": "Indexed",
     "description": "This policy provides you the ability to customize and deploy CIS Security Benchmarks for audit purposes to your Linux workloads across Azure, on-premises and hybrid environments. The contents of the CIS Security Benchmarks are in parity with the benchmarks published at https://cisecurity.org. The policy is powered by azure-osconfig. Requires that prerequisites are deployed to the policy assignment scope. For details, visit https://aka.ms/gcpol.",
     "metadata": {
-      "version": "1.0.0-preview",
+      "version": "1.0.1-preview",
       "category": "Guest Configuration",
       "requiredProviders": [
         "Microsoft.GuestConfiguration"
@@ -19,7 +19,7 @@
         }
       }
     },
-    "version": "1.0.0-preview",
+    "version": "1.0.1-preview",
     "parameters": {
       "IncludeArcMachines": {
         "type": "String",
@@ -39,7 +39,8 @@
         "metadata": {
           "description": "A customized Baseline Security JSON payload, for customizing security rules",
           "displayName": "Baseline Settings",
-          "strongType": "MachineConfiguration/BaselineSettings"
+          "strongType": "MachineConfiguration/BaselineSettings",
+          "portalReview": "true"
         },
         "defaultValue": ""
       },
@@ -313,6 +314,7 @@
       }
     },
     "versions": [
+      "1.0.1-PREVIEW",
       "1.0.0-PREVIEW"
     ]
   },
