@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "Cybersecurity framework by the Cloud Security Alliance (CSA), offering security controls specifically for cloud environments.",
     "metadata": {
-      "version": "1.7.0",
+      "version": "1.8.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.7.0",
+    "version": "1.8.0",
     "policyDefinitionGroups": [
       {
         "name": "CSA_v4.0.12_CEK_02",
@@ -2086,7 +2086,8 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via DoubleEncryptionRequired_Deny",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_linux-11ac78e3-31bc-4f0c-8434-37ab963cea07": {
@@ -2094,19 +2095,21 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-11ac78e3-31bc-4f0c-8434-37ab963cea07": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Dependency agent should be enabled for listed virtual machine images",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "IncludeArcMachines-4ceb8dc2-559c-478b-a15b-733fbf1e3738": {
@@ -2117,7 +2120,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers via DependencyAgent_OSImage_Audit",
+          "displayName": "Include Arc connected servers",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -4683,7 +4686,8 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via VirtualMachines_EnableAzureBackup_Audit",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
@@ -4691,19 +4695,21 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-deeddb44-9f94-4903-9fa0-081d524406e3": {
@@ -4727,7 +4733,7 @@
           "Original"
         ],
         "metadata": {
-          "displayName": "Source via DependencyAgent_OSImage_VMSS_Audit",
+          "displayName": "Source",
           "description": "The source k8s object for constraint evaluation. 'Original' means only evaluate against the specific GroupVersionKind specified in the policy definition. 'Generated' means only evaluate against k8s objects generated by Gatekeeper ExpansionTemplates. 'All' means evaluate against both the original object and any generated ones."
         }
       },
@@ -6590,34 +6596,6 @@
         "parameters": {
           "effect": {
             "value": "[parameters('effect-c4857be7-912a-4c75-87e6-e30292bcdf78')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "definitionVersion": "2.*.*",
-        "groupNames": [
-          "CSA_v4.0.12_CCC_06",
-          "CSA_v4.0.12_CEK_05",
-          "CSA_v4.0.12_CEK_06",
-          "CSA_v4.0.12_CEK_07",
-          "CSA_v4.0.12_CEK_20",
-          "CSA_v4.0.12_DCS_05",
-          "CSA_v4.0.12_DCS_06",
-          "CSA_v4.0.12_UEM_04",
-          "CSA_v4.0.12_UEM_07",
-          "CSA_v4.0.12_UEM_12"
-        ],
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
           }
         }
       },
@@ -9006,28 +8984,6 @@
         }
       },
       {
-        "policyDefinitionReferenceId": "e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "definitionVersion": "2.*.*",
-        "groupNames": [
-          "CSA_v4.0.12_AIS_07",
-          "CSA_v4.0.12_CCC_07",
-          "CSA_v4.0.12_TVM_04",
-          "CSA_v4.0.12_TVM_08"
-        ],
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          }
-        }
-      },
-      {
         "policyDefinitionReferenceId": "deeddb44-9f94-4903-9fa0-081d524406e3",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/deeddb44-9f94-4903-9fa0-081d524406e3",
         "definitionVersion": "2.*.*-preview",
@@ -9088,6 +9044,7 @@
       }
     ],
     "versions": [
+      "1.8.0",
       "1.7.0",
       "1.6.0",
       "1.5.0",

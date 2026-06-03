@@ -1,14 +1,14 @@
 {
   "properties": {
     "displayName": "App Service app slots should have local authentication methods disabled for SCM site deployments",
-    "description": "Disabling local authentication methods for SCM sites improves security by ensuring that App Service slots exclusively require Microsoft Entra identities for authentication. Learn more at: https://aka.ms/app-service-disable-basic-auth.",
     "policyType": "BuiltIn",
     "mode": "Indexed",
+    "description": "Disabling local authentication methods for SCM sites improves security by ensuring that App Service slots exclusively require Microsoft Entra identities for authentication. Learn more at: https://aka.ms/app-service-disable-basic-auth.",
     "metadata": {
-      "version": "1.0.4",
+      "version": "1.1.0",
       "category": "App Service"
     },
-    "version": "1.0.4",
+    "version": "1.1.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -25,8 +25,16 @@
     },
     "policyRule": {
       "if": {
-        "field": "type",
-        "equals": "Microsoft.Web/sites/slots"
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Web/sites/slots"
+          },
+          {
+            "field": "kind",
+            "notContains": "functionapp"
+          }
+        ]
       },
       "then": {
         "effect": "[parameters('effect')]",
@@ -41,6 +49,7 @@
       }
     },
     "versions": [
+      "1.1.0",
       "1.0.4"
     ]
   },

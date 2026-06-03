@@ -1,0 +1,406 @@
+{
+  "properties": {
+    "displayName": "Control the use of App Service for Cloud in Mission Platforms",
+    "policyType": "BuiltIn",
+    "description": "This policy applies exclusively to Mission Platform products and services; usage outside of these scopes is not supported. This initiative deploys Azure policies for App Service ensuring boundary protection of this resource while it operates within the logically separated structure of Mission Platform.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Mission"
+    },
+    "version": "1.0.0",
+    "parameters": {
+      "linuxJavaVersion": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Linux Java version",
+          "description": "Specify a supported Java version for Function apps"
+        },
+        "defaultValue": "17"
+      },
+      "LinuxPHPVersion": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Linux PHP version",
+          "description": "Specify a supported PHP version for App Service"
+        },
+        "defaultValue": "8.2"
+      },
+      "linuxPythonVersion": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Linux Python version",
+          "description": "Specify a supported Python version for App Service"
+        },
+        "defaultValue": "3.11"
+      },
+      "restrict-site-access-rules_allowedServiceTags": {
+        "type": "Array",
+        "defaultValue": [],
+        "metadata": {
+          "displayName": "Restrict Site Access Rules - Allowed Service Tags",
+          "description": "List of allowed service tags for site access rules restrictions"
+        }
+      },
+      "restrict-slot-access-rules_allowedServiceTags": {
+        "type": "Array",
+        "defaultValue": [],
+        "metadata": {
+          "displayName": "Restrict Slot Access Rules - Allowed Service Tags",
+          "description": "List of allowed service tags for slot access rules restrictions"
+        }
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1b5ef780-c53c-4a64-87f3-bb9c8c8094ba",
+        "policyDefinitionReferenceId": "AppServiceShouldDisablePublicNetworkAccess",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/701a595d-38fb-4a66-ae6d-fb3735217622",
+        "policyDefinitionReferenceId": "AppServiceShouldDisableSlotsPublicNetworkAccess",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/fb74e86f-d351-4b8d-b034-93da7391c01f",
+        "policyDefinitionReferenceId": "AppServiceEnvironmentShouldHaveInternalEncryptionEnabled",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4ee5b817-627a-435a-8932-116193268172",
+        "policyDefinitionReferenceId": "AppServiceUseTheLatestTlsVersion",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4dcfb8b5-05cd-4090-a931-2ec29057e1fc",
+        "policyDefinitionReferenceId": "AppServiceShouldUseHttpsTrafficOnly",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a4af4a39-4135-47fb-b175-47fbdf85311d",
+        "policyDefinitionReferenceId": "AppServiceShouldOnlyBeAccessibleOverHttps",
+        "definitionVersion": "4.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6d555dd1-86f2-4f1c-8ed7-5abae7c6cbab",
+        "policyDefinitionReferenceId": "AppServiceFaShouldOnlyBeAccessibleOverHttps",
+        "definitionVersion": "5.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a096cbd0-4693-432f-9374-682f485f23f3",
+        "policyDefinitionReferenceId": "AppServiceConfigureFunctionAppsToOnlyBeAccessibleOverHttps",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5e5dbe3f-2702-4ffc-8b1e-0cae008a5c71",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppSlotsShouldOnlyBeAccessibleOverHttps",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/08cf2974-d178-48a0-b26d-f6b8e555748b",
+        "policyDefinitionReferenceId": "AppServiceConfigureFunctionAppsSlotsTodOnlyBeAccessibleOverHttps",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0f98368e-36bc-4716-8ac2-8f8067203b63",
+        "policyDefinitionReferenceId": "AppServiceConfigureAppServiceAppsToOnlyBeAccessibleOverHttps",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ae1b9a8c-dfce-4605-bd91-69213b4a26fc",
+        "policyDefinitionReferenceId": "AppServiceAppSlotsShouldOnlyBeAccessibleOverHttps",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a18c77f2-3d6d-497a-9f61-849a7e8a3b79",
+        "policyDefinitionReferenceId": "AppServiceConfigureAppServiceAppSlotsToOnlyAccessibleOverHttps",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2b9ad585-36bc-4615-b300-fd4435808332",
+        "policyDefinitionReferenceId": "AppServiceAppsShouldUseManagedIdentity",
+        "definitionVersion": "3.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0da106f2-4ca3-48e8-bc85-c638fe6aea8f",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppsShouldUseManagedIdentity",
+        "definitionVersion": "3.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8c122334-9d20-4eb8-89ea-ac9a705b74ae",
+        "policyDefinitionReferenceId": "AppServiceAppsShouldUseLatestHttpVersion",
+        "definitionVersion": "4.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/91a78b24-f231-4a8a-8da9-02c35b2b6510",
+        "policyDefinitionReferenceId": "AppServiceAppsShouldHaveResourceLogsEnabled",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d639b3af-a535-4bef-8dcf-15078cddf5e2",
+        "policyDefinitionReferenceId": "AppServiceAppSlotsShouldHaveResourceLogsEnabled",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/496223c3-ad65-4ecd-878a-bae78737e9ed",
+        "policyDefinitionReferenceId": "AppServiceAppsThatUseJavaShouldUseLatestVersion",
+        "definitionVersion": "3.*.*",
+        "parameters": {
+          "LinuxJavaVersion": {
+            "value": "[parameters('linuxJavaVersion')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7008174a-fd10-4ef0-817e-fc820a951d73",
+        "policyDefinitionReferenceId": "AppServiceAppsThatUsePythonShouldUseLatestVersion",
+        "definitionVersion": "4.*.*",
+        "parameters": {
+          "LinuxPythonVersion": {
+            "value": "[parameters('linuxPythonVersion')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7261b898-8a84-4db8-9e04-18527132abb3",
+        "policyDefinitionReferenceId": "AppServiceAppsThatUsePHPShouldUseLatestVersion",
+        "definitionVersion": "3.*.*",
+        "parameters": {
+          "LinuxPHPVersion": {
+            "value": "[parameters('linuxPHPVersion')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9d0b6ea4-93e2-4578-bf2f-6bb17d22b4bc",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppsThatUseJavaShouldUseLatestVersion",
+        "definitionVersion": "3.*.*",
+        "parameters": {
+          "LinuxJavaVersion": {
+            "value": "[parameters('linuxJavaVersion')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7238174a-fd10-4ef0-817e-fc820a951d73",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppsThatUsePythonShouldUseLatestVersion",
+        "definitionVersion": "4.*.*",
+        "parameters": {
+          "LinuxPythonVersion": {
+            "value": "[parameters('linuxPythonVersion')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cae7c12e-764b-4c87-841a-fdc6675d196f",
+        "policyDefinitionReferenceId": "AppServiceAppSlotsShouldNotHaveCORSConfiguredToAccessYourApps",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a08ae1ab-8d1d-422b-a123-df82b307ba61",
+        "policyDefinitionReferenceId": "AppServiceAppSlotsShouldHaveRemoteDebuggingTurnedOff",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4a15c15f-90d5-4a1f-8b63-2903944963fd",
+        "policyDefinitionReferenceId": "AppServiceAppSlotsShouldUseManagedIdentity",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/95bccee9-a7f8-4bec-9ee9-62c3473701fc",
+        "policyDefinitionReferenceId": "AppServiceAppSlotsShouldHaveAuthenticationEnabled",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cb510bfd-1cba-4d9f-a230-cb0976f4bb71",
+        "policyDefinitionReferenceId": "AppServiceAppShouldHaveRemoteDebuggingTurnedOff",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5744710e-cc2f-4ee8-8809-3b11e89f4bc9",
+        "policyDefinitionReferenceId": "AppServiceAppShouldNotHaveCORSConfiguredAccessYourApps",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cca5adfe-626b-4cc6-8522-f5b6ed2391bd",
+        "policyDefinitionReferenceId": "AppServiceAppSlotsTurnOffRemoteDebugging",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/70adbb40-e092-42d5-a6f8-71c540a5efdb",
+        "policyDefinitionReferenceId": "AppServiceConfigureFunctionAppSlotsToTurnOffRemoteDebugging",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/25a5046c-c423-4805-9235-e844ae9ef49b",
+        "policyDefinitionReferenceId": "AppServiceConfigureFunctionAppsToTurnOffRemoteDebugging",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/89691ef9-8c50-49a8-8950-9c7fba41699e",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppSlotsShouldHaveRemoteDebuggingTurnedOff",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a1a22235-dd10-4062-bd55-7d62778f41b0",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppSlotsShouldNotHaveCORSConfiguredToAccessYourApps",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c75248c1-ea1d-4a9c-8fc9-29a6aabd5da8",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppsShouldHaveAuthenticationEnabled",
+        "definitionVersion": "3.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0e60b895-3786-45da-8377-9c6b4b6ac5f9",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppsShouldHaveRemoteDebuggingTurnedOff",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0820b7b9-23aa-4725-a1ce-ae4558f718e5",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppsShouldNotHaveCORSConfiguredAccessYourApps",
+        "definitionVersion": "2.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/11c82d0c-db9f-4d7b-97c5-f3f9aa957da2",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppsSlotsShouldNotHavePublicNetworkAccess",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/969ac98b-88a8-449f-883c-2e9adb123127",
+        "policyDefinitionReferenceId": "AppServiceFunctionAppsShouldNotHavePublicNetworkAccess",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b0779e02-7159-4057-bcbf-bd6132847d2b",
+        "policyDefinitionReferenceId": "AppNetAccess",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0e3ccb86-ad68-43a5-8cd0-42035638b199",
+        "policyDefinitionReferenceId": "AppSlotNetAccess",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea6df8ed-090c-4fda-8379-cb1b428e8fdb",
+        "policyDefinitionReferenceId": "appVnetInject",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/df42d971-b39b-43a4-a987-b29d1bfbffba",
+        "policyDefinitionReferenceId": "appSlotVnetInject",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/86b1d4f9-358c-407c-9bb0-52bf287b222f",
+        "policyDefinitionReferenceId": "AppVnetRouting",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/41c4164d-a848-48d3-b10f-c3076787f0f5",
+        "policyDefinitionReferenceId": "AppSlotVnetRouting",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/73aa9838-1906-4490-aa32-f7b89a8f4554",
+        "policyDefinitionReferenceId": "AppRfc1918Routing",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/3235e3fc-9982-4886-9346-2dc3535b1496",
+        "policyDefinitionReferenceId": "AppSlotRfc1918Routing",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a83269e2-b4f7-4a3f-b5ed-897c787cbc7c",
+        "policyDefinitionReferenceId": "AppRestrictExternalPE",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f36fcc62-6b1b-46e3-9a94-97af3eb4a55e",
+        "policyDefinitionReferenceId": "AppRestrictSiteAccessRules",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "allowedServiceTags": {
+            "value": "[parameters('restrict-site-access-rules_allowedServiceTags')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/86bd411a-a3c4-45a5-9af5-e365febff482",
+        "policyDefinitionReferenceId": "AppRestrictSlotAccessRules",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "allowedServiceTags": {
+            "value": "[parameters('restrict-slot-access-rules_allowedServiceTags')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1d1e7723-ab70-4ce1-a12e-bf6977859d06",
+        "policyDefinitionReferenceId": "AppDenyNetDelete",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d349a603-3f16-4a04-88ac-9db1ca4013d1",
+        "policyDefinitionReferenceId": "AppSlotDenyNetDelete",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/50d7880f-06c8-402f-9236-0417e5b1559c",
+        "policyDefinitionReferenceId": "ASERestrictILBMode",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b5c4b32e-8699-4bfa-8868-9ed118e9982f",
+        "policyDefinitionReferenceId": "ASERestrictNetAccess",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a475e840-2781-4c79-aaf0-4047828759b1",
+        "policyDefinitionReferenceId": "ASERestrictExternalPE",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bfe08d89-8736-48a7-b88e-76fa3f286881",
+        "policyDefinitionReferenceId": "ASERequireEncryption",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b546c248-6dee-41e6-82f7-978634aeb73d",
+        "policyDefinitionReferenceId": "AppConfigNetAccess",
+        "definitionVersion": "1.*.*"
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/32a7ec27-785d-4efb-98bd-9a0fffc7777c",
+        "policyDefinitionReferenceId": "AppConfigRestrictSiteAccessRules",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "allowedServiceTags": {
+            "value": "[parameters('restrict-site-access-rules_allowedServiceTags')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f9fd212a-5a3c-4754-a9af-560ec3b1ae13",
+        "policyDefinitionReferenceId": "AppConfigRestrictSlotAccessRules",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "allowedServiceTags": {
+            "value": "[parameters('restrict-slot-access-rules_allowedServiceTags')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/21c2b371-0891-40a0-82e6-629defc1f36a",
+        "policyDefinitionReferenceId": "AppConfigSlotNetAccess",
+        "definitionVersion": "1.*.*"
+      }
+    ],
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  "id": "/providers/Microsoft.Authorization/policySetDefinitions/8d844a0d-ea22-48f3-a6f2-07e6e2111a27",
+  "name": "8d844a0d-ea22-48f3-a6f2-07e6e2111a27"
+}

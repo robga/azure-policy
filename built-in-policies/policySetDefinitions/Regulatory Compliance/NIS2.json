@@ -5,9 +5,9 @@
     "description": "The NIS2 Directive enhances the cybersecurity and resilience of critical infrastructure and digital services across the European Union, ensuring a higher level of protection against cyber threats.",
     "metadata": {
       "category": "Regulatory Compliance",
-      "version": "1.1.0"
+      "version": "1.2.0"
     },
-    "version": "1.1.0",
+    "version": "1.2.0",
     "policyDefinitionGroups": [
       {
         "name": "NIS2_LT._Logging_and_Threat_Detection_1",
@@ -75,7 +75,8 @@
         "type": "Array",
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         },
         "defaultValue": []
       },
@@ -179,7 +180,8 @@
         "type": "Array",
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         },
         "defaultValue": []
       }
@@ -1268,38 +1270,6 @@
         "definitionVersion": "3.*.*",
         "policyDefinitionReferenceId": "All network ports should be restricted on network security groups associated to your virtual machine",
         "parameters": {},
-        "groupNames": [
-          "NIS2_PV._Posture_and_Vulnerability_Management_5"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "definitionVersion": "2.*.*",
-        "policyDefinitionReferenceId": "Dependency agent should be enabled for listed virtual machine images",
-        "parameters": {
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-1')]"
-          },
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-1')]"
-          }
-        },
-        "groupNames": [
-          "NIS2_PV._Posture_and_Vulnerability_Management_5"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "definitionVersion": "2.*.*",
-        "policyDefinitionReferenceId": "Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-        "parameters": {
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-1')]"
-          },
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-1')]"
-          }
-        },
         "groupNames": [
           "NIS2_PV._Posture_and_Vulnerability_Management_5"
         ]
@@ -2395,6 +2365,7 @@
       }
     ],
     "versions": [
+      "1.2.0",
       "1.1.0",
       "1.0.1",
       "1.0.0-PREVIEW"

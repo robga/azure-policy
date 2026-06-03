@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "A comprehensive security and privacy framework for managing compliance in industries like healthcare and finance.",
     "metadata": {
-      "version": "1.7.0",
+      "version": "1.8.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.7.0",
+    "version": "1.8.0",
     "policyDefinitionGroups": [
       {
         "name": "HITRUST_CSF_v11.3_01.c",
@@ -2884,7 +2884,8 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Security Settings Account Policies AINE",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_linux-11ac78e3-31bc-4f0c-8434-37ab963cea07": {
@@ -2892,26 +2893,28 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-11ac78e3-31bc-4f0c-8434-37ab963cea07": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Dependency agent should be enabled for listed virtual machine images",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_windows-32133ab0-ee4b-4b44-98d6-042180979d50": {
         "type": "Array",
         "defaultValue": [],
         "metadata": {
-          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via DependencyAgent_OSImage_Audit",
+          "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope",
           "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'",
           "deprecated": true
         }
@@ -4362,7 +4365,8 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via LogAnalytics_OSImage_VMSS_Audit",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
@@ -4370,19 +4374,21 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-ab6a902f-9493-453b-928d-62c30b11b5a6": {
@@ -4405,7 +4411,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers via DependencyAgent_OSImage_VMSS_Audit",
+          "displayName": "Include Arc connected servers",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -6900,25 +6906,6 @@
         }
       },
       {
-        "policyDefinitionReferenceId": "11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "definitionVersion": "2.*.*",
-        "groupNames": [
-          "HITRUST_CSF_v11.3_06.h"
-        ],
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          }
-        }
-      },
-      {
         "policyDefinitionReferenceId": "9b597639-28e4-48eb-b506-56b05d366257",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9b597639-28e4-48eb-b506-56b05d366257",
         "definitionVersion": "1.*.*",
@@ -8109,26 +8096,6 @@
         }
       },
       {
-        "policyDefinitionReferenceId": "e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "definitionVersion": "2.*.*",
-        "groupNames": [
-          "HITRUST_CSF_v11.3_10.c",
-          "HITRUST_CSF_v11.3_10.m"
-        ],
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          }
-        }
-      },
-      {
         "policyDefinitionReferenceId": "ab6a902f-9493-453b-928d-62c30b11b5a6",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ab6a902f-9493-453b-928d-62c30b11b5a6",
         "definitionVersion": "1.*.*",
@@ -8259,6 +8226,7 @@
       }
     ],
     "versions": [
+      "1.8.0",
       "1.7.0",
       "1.6.0",
       "1.5.0",

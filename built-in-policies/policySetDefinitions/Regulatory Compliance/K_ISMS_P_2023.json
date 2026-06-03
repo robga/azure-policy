@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "K-ISMS-P establishes requirements for protecting personal data and securing information systems in South Korea. The framework establishes administrative, physical, and technical controls for data privacy and system security.",
     "metadata": {
-      "version": "1.7.0",
+      "version": "1.8.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.7.0",
+    "version": "1.8.0",
     "policyDefinitionGroups": [
       {
         "name": "K_ISMS_P_2023_2.0",
@@ -4001,7 +4001,8 @@
         "allowedValues": null,
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Dependency agent should be enabled for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_linux-11ac78e3-31bc-4f0c-8434-37ab963cea07": {
@@ -4010,7 +4011,8 @@
         "allowedValues": null,
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_windows-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
@@ -4019,7 +4021,8 @@
         "allowedValues": null,
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
@@ -4028,7 +4031,8 @@
         "allowedValues": null,
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "IncludeArcMachines-33936777-f2ac-45aa-82ec-07958ec9ade4": {
@@ -8959,26 +8963,6 @@
         "parameters": {}
       },
       {
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "groupNames": [
-          "K_ISMS_P_2023_2.10.1",
-          "K_ISMS_P_2023_2.10.2"
-        ],
-        "parameters": {}
-      },
-      {
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "groupNames": [
-          "K_ISMS_P_2023_2.10.1",
-          "K_ISMS_P_2023_2.10.2"
-        ],
-        "parameters": {}
-      },
-      {
         "policyDefinitionReferenceId": "da0f98fe-a24b-4ad5-af69-bd0400233661",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/da0f98fe-a24b-4ad5-af69-bd0400233661",
         "definitionVersion": "2.*.*",
@@ -9049,40 +9033,6 @@
           },
           "LinuxPythonVersion": {
             "value": "[parameters('LinuxPythonVersion-7238174a-fd10-4ef0-817e-fc820a951d73')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "definitionVersion": "2.*.*",
-        "groupNames": [
-          "K_ISMS_P_2023_2.10.1",
-          "K_ISMS_P_2023_2.10.2"
-        ],
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "definitionVersion": "2.*.*",
-        "groupNames": [
-          "K_ISMS_P_2023_2.10.1",
-          "K_ISMS_P_2023_2.10.2"
-        ],
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
           }
         }
       },
@@ -9602,6 +9552,7 @@
       }
     ],
     "versions": [
+      "1.8.0",
       "1.7.0",
       "1.6.0",
       "1.5.0",

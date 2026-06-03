@@ -1,0 +1,50 @@
+{
+  "properties": {
+    "displayName": "App Service Plans should use App Service Environment.",
+    "policyType": "BuiltIn",
+    "mode": "Indexed",
+    "description": "This policy applies exclusively to Mission Platform products and services; usage outside of these scopes is not supported. Require the use of App Service Environment for App Service Plans.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Mission"
+    },
+    "version": "1.0.0",
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Audit"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Web/serverFarms"
+          },
+          {
+            "exists": "false",
+            "field": "Microsoft.Web/serverfarms/hostingEnvironmentProfile.id"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    },
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/51cf6de4-d195-4172-abd3-ec28ff386558",
+  "name": "51cf6de4-d195-4172-abd3-ec28ff386558"
+}

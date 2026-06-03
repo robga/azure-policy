@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address the Dutch Baseline Informatiebeveiliging (BIO) controls specifically for the 'thema-uitwerking Clouddiensten' and include policies covered under the SOC2 and ISO 27001:2013 controls.",
     "metadata": {
-      "version": "1.14.0",
+      "version": "1.15.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.14.0",
+    "version": "1.15.0",
     "policyDefinitionGroups": [
       {
         "name": "B.01 - Laws and regulations",
@@ -1079,26 +1079,28 @@
       },
       "effect-11ac78e3-31bc-4f0c-8434-37ab963cea07": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Dependency agent should be enabled for listed virtual machine images",
-          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This parameter is no longer used due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This parameter is no longer used due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-32133ab0-ee4b-4b44-98d6-042180979d50": {
@@ -2968,14 +2970,15 @@
       },
       "effect-04c4380f-3fae-46e8-96c9-30193528f602": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: [Preview]: Network traffic data collection agent should be installed on Linux virtual machines",
-          "description": "The effect determines what happens when the policy rule is evaluated to match; for more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-057ef27e-665e-4328-8ea3-04b3122bd9fb": {
@@ -2992,14 +2995,15 @@
       },
       "effect-2f2ee1de-44aa-4762-b6bd-0893fc3f306d": {
         "type": "String",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: [Preview]: Network traffic data collection agent should be installed on Windows virtual machines",
-          "description": "Enable or disable Dependency Agent for Windows VMs monitoring"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-e3e008c3-56b9-4133-8fd7-d3347377402a": {
@@ -4950,46 +4954,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "PreviewAuditDependencyAgentDeploymentVmImageOSUnlisted",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "definitionVersion": "2.*.*",
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          }
-        },
-        "groupNames": [
-          "U.15.1 - Events logged",
-          "U.15.3 - Events logged"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "PreviewAuditDependencyAgentDeploymentInVMSSVmImageOSUnlisted",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "definitionVersion": "2.*.*",
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          }
-        },
-        "groupNames": [
-          "U.15.1 - Events logged",
-          "U.15.3 - Events logged"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "AuditDiagnosticSetting",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7f89b1eb-583c-429a-8828-af049802c1d9",
         "definitionVersion": "2.*.*",
@@ -6801,19 +6765,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "PreviewNetworkTrafficDataCollectionAgentShouldBeInstalledOnLinuxVirtualMachines",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-04c4380f-3fae-46e8-96c9-30193528f602')]"
-          }
-        },
-        "groupNames": [
-          "U.15.1 - Events logged"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "ResourceLogsInAzureDataLakeStoreShouldBeEnabled",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/057ef27e-665e-4328-8ea3-04b3122bd9fb",
         "definitionVersion": "5.*.*",
@@ -7912,19 +7863,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "PreviewNetworkTrafficDataCollectionAgentShouldBeInstalledOnWindowsVirtualMachines",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-2f2ee1de-44aa-4762-b6bd-0893fc3f306d')]"
-          }
-        },
-        "groupNames": [
-          "U.15.1 - Events logged"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "ResourceLogsInLogicAppsShouldBeEnabled",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/34f95f76-5386-4de7-b824-0d8478470c9d",
         "definitionVersion": "5.*.*",
@@ -8276,6 +8214,7 @@
       }
     ],
     "versions": [
+      "1.15.0",
       "1.14.0",
       "1.13.0",
       "1.12.0",

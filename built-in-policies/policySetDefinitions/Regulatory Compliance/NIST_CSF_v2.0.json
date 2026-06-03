@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "Risk-based approach to managing cybersecurity threats, offering guidance for improving cybersecurity practices.",
     "metadata": {
-      "version": "1.5.0",
+      "version": "1.6.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.5.0",
+    "version": "1.6.0",
     "policyDefinitionGroups": [
       {
         "name": "NIST_CSF_v2.0_PR.AA",
@@ -2186,7 +2186,8 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via VirtualMachines_EnableAzureBackup_Audit",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
@@ -2194,19 +2195,21 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       }
     },
@@ -3792,28 +3795,10 @@
             "value": "[parameters('effect-1bc02227-0cb6-4e11-8f53-eb0b22eab7e8')]"
           }
         }
-      },
-      {
-        "policyDefinitionReferenceId": "e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "definitionVersion": "2.*.*",
-        "groupNames": [
-          "NIST_CSF_v2.0_DE.CM_09"
-        ],
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          }
-        }
       }
     ],
     "versions": [
+      "1.6.0",
       "1.5.0",
       "1.4.0",
       "1.3.1",

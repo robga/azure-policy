@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "Comprehensive data protection law regulating personal data processing within the EU.",
     "metadata": {
-      "version": "1.7.0",
+      "version": "1.8.0",
       "category": "Regulatory Compliance"
     },
-    "version": "1.7.0",
+    "version": "1.8.0",
     "policyDefinitionGroups": [
       {
         "name": "EU_GDPR_2016_679_Art._24",
@@ -1671,7 +1671,8 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via ManagedDiskEncryptionSetsAllowed_Deny",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_linux-11ac78e3-31bc-4f0c-8434-37ab963cea07": {
@@ -1679,19 +1680,21 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-11ac78e3-31bc-4f0c-8434-37ab963cea07": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Dependency agent should be enabled for listed virtual machine images",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This parameter is no longer used due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "IncludeArcMachines-4ceb8dc2-559c-478b-a15b-733fbf1e3738": {
@@ -1702,7 +1705,7 @@
           "false"
         ],
         "metadata": {
-          "displayName": "Include Arc connected servers via DependencyAgent_OSImage_Audit",
+          "displayName": "Include Arc connected servers",
           "description": "By selecting this option, you agree to be charged monthly per Arc connected machine.",
           "portalReview": "true"
         }
@@ -2476,14 +2479,15 @@
       },
       "effect-04c4380f-3fae-46e8-96c9-30193528f602": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Network traffic data collection agent should be installed on Linux virtual machines",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-ca610c1d-041c-4332-9d88-7ed3094967c7": {
@@ -4654,14 +4658,15 @@
       },
       "effect-2f2ee1de-44aa-4762-b6bd-0893fc3f306d": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Network traffic data collection agent should be installed on Windows virtual machines",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_windows-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
@@ -4669,7 +4674,8 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Windows OS to add to scope via WindowsMinimumPassword_AINE",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
@@ -4677,19 +4683,21 @@
         "defaultValue": [],
         "metadata": {
           "displayName": "Optional: List of virtual machine images that have supported Linux OS to add to scope via Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "Example value: '/subscriptions/<subscriptionId>/resourceGroups/YourResourceGroup/providers/Microsoft.Compute/images/ContosoStdImage'"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect for policy: Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
-          "description": "For more information about effects, visit https://aka.ms/policyeffects"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         }
       },
       "effect-deeddb44-9f94-4903-9fa0-081d524406e3": {
@@ -6488,28 +6496,6 @@
         }
       },
       {
-        "policyDefinitionReferenceId": "11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/11ac78e3-31bc-4f0c-8434-37ab963cea07",
-        "definitionVersion": "2.*.*",
-        "groupNames": [
-          "EU_GDPR_2016_679_Art._24",
-          "EU_GDPR_2016_679_Art._25",
-          "EU_GDPR_2016_679_Art._28",
-          "EU_GDPR_2016_679_Art._32"
-        ],
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-11ac78e3-31bc-4f0c-8434-37ab963cea07')]"
-          }
-        }
-      },
-      {
         "policyDefinitionReferenceId": "4ceb8dc2-559c-478b-a15b-733fbf1e3738",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4ceb8dc2-559c-478b-a15b-733fbf1e3738",
         "definitionVersion": "2.*.*",
@@ -7229,22 +7215,6 @@
         "parameters": {
           "effect": {
             "value": "[parameters('effect-c75248c1-ea1d-4a9c-8fc9-29a6aabd5da8')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "groupNames": [
-          "EU_GDPR_2016_679_Art._24",
-          "EU_GDPR_2016_679_Art._25",
-          "EU_GDPR_2016_679_Art._28",
-          "EU_GDPR_2016_679_Art._32"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-04c4380f-3fae-46e8-96c9-30193528f602')]"
           }
         }
       },
@@ -9410,44 +9380,6 @@
         }
       },
       {
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "groupNames": [
-          "EU_GDPR_2016_679_Art._24",
-          "EU_GDPR_2016_679_Art._25",
-          "EU_GDPR_2016_679_Art._28",
-          "EU_GDPR_2016_679_Art._32"
-        ],
-        "parameters": {
-          "effect": {
-            "value": "[parameters('effect-2f2ee1de-44aa-4762-b6bd-0893fc3f306d')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e2dd799a-a932-4e9d-ac17-d473bc3c6c10",
-        "definitionVersion": "2.*.*",
-        "groupNames": [
-          "EU_GDPR_2016_679_Art._24",
-          "EU_GDPR_2016_679_Art._25",
-          "EU_GDPR_2016_679_Art._28",
-          "EU_GDPR_2016_679_Art._32"
-        ],
-        "parameters": {
-          "listOfImageIdToInclude_windows": {
-            "value": "[parameters('listOfImageIdToInclude_windows-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          },
-          "listOfImageIdToInclude_linux": {
-            "value": "[parameters('listOfImageIdToInclude_linux-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          },
-          "effect": {
-            "value": "[parameters('effect-e2dd799a-a932-4e9d-ac17-d473bc3c6c10')]"
-          }
-        }
-      },
-      {
         "policyDefinitionReferenceId": "deeddb44-9f94-4903-9fa0-081d524406e3",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/deeddb44-9f94-4903-9fa0-081d524406e3",
         "definitionVersion": "2.*.*-preview",
@@ -9497,6 +9429,7 @@
       }
     ],
     "versions": [
+      "1.8.0",
       "1.7.0",
       "1.6.0",
       "1.5.0",

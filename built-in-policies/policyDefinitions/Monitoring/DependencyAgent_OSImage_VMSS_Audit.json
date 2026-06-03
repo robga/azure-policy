@@ -1,14 +1,15 @@
 {
   "properties": {
-    "displayName": "Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
+    "displayName": "[Deprecated]: Dependency agent should be enabled in virtual machine scale sets for listed virtual machine images",
     "policyType": "BuiltIn",
     "mode": "Indexed",
     "description": "Reports virtual machine scale sets as non-compliant if the virtual machine image is in the list defined and the agent is not installed. The list of OS images is updated over time as support is updated.",
     "metadata": {
-      "version": "2.1.0",
-      "category": "Monitoring"
+      "version": "2.2.0-deprecated",
+      "category": "Monitoring",
+      "deprecated": true
     },
-    "version": "2.1.0",
+    "version": "2.2.0",
     "parameters": {
       "listOfImageIdToInclude_windows": {
         "type": "Array",
@@ -28,14 +29,14 @@
       },
       "effect": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
         ],
         "metadata": {
           "displayName": "Effect",
-          "description": "Enable or disable the execution of the policy"
+          "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. For more information, see https://aka.ms/dependencyagentretirement."
         }
       }
     },
@@ -421,6 +422,7 @@
       }
     },
     "versions": [
+      "2.2.0",
       "2.1.0",
       "2.0.0"
     ]

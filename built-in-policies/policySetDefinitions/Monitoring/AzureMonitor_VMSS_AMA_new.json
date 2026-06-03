@@ -4,16 +4,17 @@
     "policyType": "BuiltIn",
     "description": "Enable Azure Monitor for the virtual machines scale set (VMSS) with AMA.",
     "metadata": {
-      "version": "1.2.0",
+      "version": "1.3.0",
       "category": "Monitoring"
     },
-    "version": "1.2.0",
+    "version": "1.3.0",
     "parameters": {
       "enableProcessesAndDependencies": {
         "type": "Boolean",
         "metadata": {
           "displayName": "Enable Processes and Dependencies",
-          "description": "This is the flag for enabling processes and dependencies data collection in VMInsights"
+          "description": "Deprecated. This parameter is no longer used due to the planned retirement of the Dependency Agent on June 30, 2028. There is no replacement for the Dependency Agent. For more information, see https://aka.ms/dependencyagentretirement.",
+          "deprecated": true
         },
         "allowedValues": [
           true,
@@ -206,44 +207,6 @@
         }
       },
       {
-        "policyDefinitionReferenceId": "DependencyAgentExtension_Windows_VMSS_AMA_Deploy",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/af0082fd-fa58-4349-b916-b0e47abb0935",
-        "parameters": {
-          "listOfImageIdToInclude": {
-            "value": "[parameters('listOfImageIdToInclude_windows')]"
-          },
-          "effect": {
-            "value": "[parameters('effect')]"
-          },
-          "enableProcessesAndDependencies": {
-            "value": "[parameters('enableProcessesAndDependencies')]"
-          },
-          "scopeToSupportedImages": {
-            "value": "[parameters('scopeToSupportedImages')]"
-          }
-        }
-      },
-      {
-        "policyDefinitionReferenceId": "DependencyAgentExtension_Linux_VMSS_AMA_Deploy",
-        "definitionVersion": "3.*.*-preview",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2fea0c12-e7d4-4e03-b7bf-c34b2b8d787d",
-        "parameters": {
-          "listOfImageIdToInclude": {
-            "value": "[parameters('listOfImageIdToInclude_linux')]"
-          },
-          "effect": {
-            "value": "[parameters('effect')]"
-          },
-          "enableProcessesAndDependencies": {
-            "value": "[parameters('enableProcessesAndDependencies')]"
-          },
-          "scopeToSupportedImages": {
-            "value": "[parameters('scopeToSupportedImages')]"
-          }
-        }
-      },
-      {
         "policyDefinitionReferenceId": "DataCollectionRuleAssociation_Linux",
         "definitionVersion": "6.*.*",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2ea82cdd-f2e8-4500-af75-67a2e084ca74",
@@ -277,6 +240,7 @@
       }
     ],
     "versions": [
+      "1.3.0",
       "1.2.0",
       "1.1.0",
       "1.0.0"

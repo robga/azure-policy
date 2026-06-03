@@ -5,10 +5,10 @@
     "mode": "All",
     "description": "New capabilities are continuously being added to Defender for Containers plan, which may require the user's explicit enablement. Use this policy to make sure all new capabilities will be enabled.",
     "metadata": {
-      "version": "1.5.0",
+      "version": "1.6.0",
       "category": "Security Center"
     },
-    "version": "1.5.0",
+    "version": "1.6.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -74,7 +74,8 @@
         "type": "String",
         "metadata": {
           "displayName": "Container Security Gating Enabled",
-          "description": "Controls the container Security Gating"
+          "description": "Controls the container Security Gating",
+          "deprecated": true
         },
         "allowedValues": [
           "True",
@@ -166,10 +167,6 @@
                           {
                             "field": "Microsoft.Security/pricings/extensions[*].isEnabled",
                             "equals": "[parameters('isContainerSensorEnabled')]"
-                          },
-                          {
-                            "value": "[coalesce(tryGet(current('Microsoft.Security/pricings/extensions[*].additionalExtensionProperties'), 'SecurityGatingEnabled'), '')]",
-                            "equals": "[parameters('isSecurityGatingEnabled')]"
                           }
                         ]
                       },
@@ -209,9 +206,6 @@
                 "isContainerSensorEnabled": {
                   "value": "[parameters('isContainerSensorEnabled')]"
                 },
-                "isSecurityGatingEnabled": {
-                  "value": "[parameters('isSecurityGatingEnabled')]"
-                },
                 "isContainerIntegrityContributionEnabled": {
                   "value": "[parameters('isContainerIntegrityContributionEnabled')]"
                 }
@@ -230,9 +224,6 @@
                     "type": "String"
                   },
                   "isContainerSensorEnabled": {
-                    "type": "String"
-                  },
-                  "isSecurityGatingEnabled": {
                     "type": "String"
                   },
                   "isContainerIntegrityContributionEnabled": {
@@ -261,10 +252,7 @@
                         },
                         {
                           "name": "ContainerSensor",
-                          "isEnabled": "[parameters('isContainerSensorEnabled')]",
-                          "additionalExtensionProperties": {
-                            "SecurityGatingEnabled": "[parameters('isSecurityGatingEnabled')]"
-                          }
+                          "isEnabled": "[parameters('isContainerSensorEnabled')]"
                         },
                         {
                           "name": "ContainerIntegrityContribution",
@@ -281,6 +269,7 @@
       }
     },
     "versions": [
+      "1.6.0",
       "1.5.0",
       "1.4.0",
       "1.3.0",
