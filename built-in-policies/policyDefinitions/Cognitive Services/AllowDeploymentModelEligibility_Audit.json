@@ -1,0 +1,91 @@
+{
+  "properties": {
+    "displayName": "[Preview]: Foundry model deployments should meet eligibility requirements",
+    "policyType": "BuiltIn",
+    "mode": "Microsoft.CognitiveServices.Data",
+    "description": "Ensures that model deployments in Microsoft Foundry comply with organizational eligibility requirements based on model attributes, such as availability status (preview or GA) and distribution source",
+    "metadata": {
+      "version": "1.0.0-preview",
+      "category": "Cognitive Services",
+      "preview": true
+    },
+    "version": "1.0.0-preview",
+    "parameters": {
+      "effect": {
+        "type": "string",
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy."
+        }
+      },
+      "onlyAllowDirectFromAzure": {
+        "type": "Boolean",
+        "defaultValue": false,
+        "metadata": {
+          "displayName": "Only Allow Direct From Azure",
+          "description": "If true, only models distributed directly from Azure are allowed for deployment."
+        }
+      },
+      "denyPreviewModels": {
+        "type": "Boolean",
+        "defaultValue": false,
+        "metadata": {
+          "displayName": "Deny Preview Models",
+          "description": "If true, preview models are not allowed for deployment."
+        }
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.CognitiveServices.Data/accounts/deployments"
+          },
+          {
+            "anyOf": [
+              {
+                "allOf": [
+                  {
+                    "value": "[parameters('onlyAllowDirectFromAzure')]",
+                    "equals": true
+                  },
+                  {
+                    "field": "Microsoft.CognitiveServices.Data/accounts/deployments/model.isDirectFromAzure",
+                    "equals": false
+                  }
+                ]
+              },
+              {
+                "allOf": [
+                  {
+                    "value": "[parameters('denyPreviewModels')]",
+                    "equals": true
+                  },
+                  {
+                    "field": "Microsoft.CognitiveServices.Data/accounts/deployments/model.modelLifecycleStatus",
+                    "equals": "Preview"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    },
+    "versions": [
+      "1.0.0-PREVIEW"
+    ]
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/8791d062-ba96-4c34-b604-8538f7e30ca0",
+  "name": "8791d062-ba96-4c34-b604-8538f7e30ca0"
+}
