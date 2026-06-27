@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address a subset of CMMC 2.0 Level 2 practices. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/cmmc2l2-initiative.",
     "metadata": {
-      "version": "2.22.0",
+      "version": "2.23.0",
       "category": "Regulatory Compliance"
     },
-    "version": "2.22.0",
+    "version": "2.23.0",
     "policyDefinitionGroups": [
       {
         "name": "CMMC_2.0_L2_AC.L1-3.1.1",
@@ -3350,18 +3350,6 @@
         ]
       },
       {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "parameters": {},
-        "groupNames": [
-          "CMMC_2.0_L2_SI.L2-3.14.7",
-          "CMMC_2.0_L2_AU.L2-3.3.1",
-          "CMMC_2.0_L2_AU.L2-3.3.2",
-          "CMMC_2.0_L2_SI.L2-3.14.6"
-        ]
-      },
-      {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/34f95f76-5386-4de7-b824-0d8478470c9d",
         "definitionVersion": "5.*.*",
         "policyDefinitionReferenceId": "34f95f76-5386-4de7-b824-0d8478470c9d",
@@ -3414,18 +3402,6 @@
         },
         "groupNames": [
           "CMMC_2.0_L2_AU.L2-3.3.1",
-          "CMMC_2.0_L2_AU.L2-3.3.2"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "parameters": {},
-        "groupNames": [
-          "CMMC_2.0_L2_AU.L2-3.3.1",
-          "CMMC_2.0_L2_SI.L2-3.14.6",
-          "CMMC_2.0_L2_SI.L2-3.14.7",
           "CMMC_2.0_L2_AU.L2-3.3.2"
         ]
       },
@@ -5370,6 +5346,7 @@
       }
     ],
     "versions": [
+      "2.23.0",
       "2.22.0",
       "2.21.1",
       "2.21.0-PREVIEW",

@@ -1,16 +1,15 @@
 {
   "properties": {
-    "displayName": "[Preview]: Linux Workloads should comply with the Official CIS Security Benchmark",
+    "displayName": "Linux Workloads should comply with the Official CIS Security Benchmark",
     "policyType": "BuiltIn",
     "mode": "Indexed",
     "description": "This policy provides you the ability to customize and deploy CIS Security Benchmarks for audit purposes to your Linux workloads across Azure, on-premises and hybrid environments. The contents of the CIS Security Benchmarks are in parity with the benchmarks published at https://cisecurity.org. The policy is powered by azure-osconfig. Requires that prerequisites are deployed to the policy assignment scope. For details, visit https://aka.ms/gcpol.",
     "metadata": {
-      "version": "2.0.0-preview",
+      "version": "2.1.0",
       "category": "Guest Configuration",
       "requiredProviders": [
         "Microsoft.GuestConfiguration"
       ],
-      "preview": true,
       "guestConfiguration": {
         "name": "CISLinuxSecurityBaseline",
         "version": "1.*",
@@ -19,7 +18,7 @@
         }
       }
     },
-    "version": "2.0.0-preview",
+    "version": "2.1.0",
     "parameters": {
       "IncludeArcMachines": {
         "type": "String",
@@ -257,10 +256,6 @@
           {
             "allOf": [
               {
-                "value": "[parameters('IncludeArcMachines')]",
-                "equals": "true"
-              },
-              {
                 "anyOf": [
                   {
                     "allOf": [
@@ -287,6 +282,10 @@
                     ]
                   }
                 ]
+              },
+              {
+                "value": "[parameters('IncludeArcMachines')]",
+                "equals": "true"
               }
             ]
           }
@@ -313,6 +312,7 @@
       }
     },
     "versions": [
+      "2.1.0",
       "2.0.0-PREVIEW",
       "1.0.1-PREVIEW",
       "1.0.0-PREVIEW"

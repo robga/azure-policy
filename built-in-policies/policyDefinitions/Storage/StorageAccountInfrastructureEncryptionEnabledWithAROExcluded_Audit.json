@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "displayName": "Storage accounts should have infrastructure encryption (excluding storage accounts managed by Azure Red Hat OpenShift)",
+    "policyType": "BuiltIn",
+    "mode": "Indexed",
+    "description": "Enable infrastructure encryption for higher level of assurance that the data is secure. When infrastructure encryption is enabled, data in a storage account is encrypted twice. Storage accounts in resource groups managed by Azure Red Hat OpenShift are excluded from evaluation.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Storage"
+    },
+    "version": "1.0.0",
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Audit"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "value": "[resourcegroup().managedBy]",
+            "notContains": "/providers/Microsoft.RedHatOpenShift/"
+          },
+          {
+            "field": "Microsoft.Storage/storageAccounts/encryption.requireInfrastructureEncryption",
+            "notEquals": "true"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    },
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/f87b2739-92be-4121-af7f-39c0a5a24f20",
+  "name": "f87b2739-92be-4121-af7f-39c0a5a24f20"
+}

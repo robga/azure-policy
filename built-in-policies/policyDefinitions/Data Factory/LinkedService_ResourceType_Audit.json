@@ -5,10 +5,10 @@
     "mode": "All",
     "description": "Define the allow list of Azure Data Factory linked service types. Restricting allowed resource types enables control over the boundary of data movement. For example, restrict a scope to only allow blob storage with Data Lake Storage Gen1 and Gen2 for analytics or a scope to only allow SQL and Kusto access for real-time queries.",
     "metadata": {
-      "version": "1.1.0",
+      "version": "1.2.0",
       "category": "Data Factory"
     },
-    "version": "1.1.0",
+    "version": "1.2.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -75,8 +75,11 @@
           "Office365",
           "Oracle",
           "PostgreSql",
+          "PostgreSqlV2",
           "Salesforce",
+          "SalesforceV2",
           "SalesforceServiceCloud",
+          "SalesforceServiceCloudV2",
           "SapBw",
           "SapHana",
           "SapOpenHub",
@@ -84,6 +87,7 @@
           "Sftp",
           "SharePointOnlineList",
           "Snowflake",
+          "SnowflakeV2",
           "SqlServer",
           "Sybase",
           "Teradata",
@@ -96,8 +100,10 @@
           "AzureMLService",
           "MongoDb",
           "GoogleBigQuery",
+          "GoogleBigQueryV2",
           "Impala",
           "ServiceNow",
+          "ServiceNowV2",
           "Dynamics",
           "AzureDatabricks",
           "AmazonMWS",
@@ -156,6 +162,7 @@
       }
     },
     "versions": [
+      "1.2.0",
       "1.1.0"
     ]
   },

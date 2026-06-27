@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "FedRAMP is a US government-wide program that provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud-based products and services. FedRAMP defines a set of controls for Low, Moderate, or High security impact level systems based on NIST baseline controls. These policies address a subset of FedRAMP (High) controls. For more information, visit https://docs.microsoft.com/azure/compliance/offerings/offering-fedramp",
     "metadata": {
-      "version": "17.16.0",
+      "version": "17.17.0",
       "category": "Regulatory Compliance"
     },
-    "version": "17.16.0",
+    "version": "17.17.0",
     "policyDefinitionGroups": [
       {
         "name": "FedRAMP_High_R4_AC-1",
@@ -5605,20 +5605,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "FedRAMP_High_R4_AU-6",
-          "FedRAMP_High_R4_AU-6(4)",
-          "FedRAMP_High_R4_AU-6(5)",
-          "FedRAMP_High_R4_AU-12",
-          "FedRAMP_High_R4_AU-12(1)",
-          "FedRAMP_High_R4_SI-4"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "399b2637-a50f-4f95-96f8-3a145476eb15",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/399b2637-a50f-4f95-96f8-3a145476eb15",
         "definitionVersion": "3.*.*",
@@ -5626,20 +5612,6 @@
         "groupNames": [
           "FedRAMP_High_R4_SC-8",
           "FedRAMP_High_R4_SC-8(1)"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "FedRAMP_High_R4_AU-6",
-          "FedRAMP_High_R4_AU-6(4)",
-          "FedRAMP_High_R4_AU-6(5)",
-          "FedRAMP_High_R4_AU-12",
-          "FedRAMP_High_R4_AU-12(1)",
-          "FedRAMP_High_R4_SI-4"
         ]
       },
       {
@@ -5966,6 +5938,7 @@
       }
     ],
     "versions": [
+      "17.17.0",
       "17.16.0",
       "17.15.0",
       "17.14.0",

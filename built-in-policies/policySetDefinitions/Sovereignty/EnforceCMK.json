@@ -1,15 +1,15 @@
 {
   "properties": {
-    "displayName": "[Preview]: Enforce Encryption-at-Rest with Customer Managed Keys (CMK) with Azure Key Vault Premium Keys across Azure Services",
+    "displayName": "[Preview]: Enforce Encryption-at-Rest with Customer Managed Keys (CMK) across Azure Services",
     "policyType": "BuiltIn",
-    "description": "Help restrict and audit Azure Services to use CMK with Azure Key Vault Premium keys",
+    "description": "Help restrict and audit Azure services to use customer-managed keys for encryption at rest across supported services.",
     "metadata": {
-      "version": "1.0.0-preview",
+      "version": "2.0.0-preview",
       "category": "Sovereignty",
       "preview": true,
       "SovereigntyLevel": "Level 2 - Encryption at-rest/in-transit"
     },
-    "version": "1.0.0-preview",
+    "version": "2.0.0-preview",
     "parameters": {
       "effect": {
         "type": "String",
@@ -23,6 +23,42 @@
           "Disabled"
         ],
         "defaultValue": "Deny"
+      },
+      "effect_deny": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect-Deny",
+          "description": "This effect applies to policies that support Deny effect."
+        },
+        "allowedValues": [
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "effect_audit": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect-Audit",
+          "description": "This effect applies to policies that support Audit effect."
+        },
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ],
+        "defaultValue": "Audit"
+      },
+      "effect_auditIfNotExists": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect-AuditIfNotExists",
+          "description": "This effect applies to policies that support AuditIfNotExists effect."
+        },
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ],
+        "defaultValue": "AuditIfNotExists"
       },
       "86efb160-8de7-451d-bc08-5d475b0aadae_supportedSKUs": {
         "type": "Array",
@@ -461,9 +497,140 @@
             "value": "[parameters('effect')]"
           }
         }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnAzureAISearch",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/356da939-f20a-4bb9-86f8-5db445b0e354",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_deny')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnEventHub",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a1ad735a-e96f-45d2-a7b2-9a4932cab7ec",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnStorageAccount",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6fac406b-40ca-413b-bf8e-0bf964659c25",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnMySQL",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83cef61d-dbd1-4b20-a4fc-5fbc7da10833",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_auditIfNotExists')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnPostgreSQL",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/18adea5e-f416-4d0f-8aa8-d24321e3e274",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_auditIfNotExists')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnAPIforFHIR",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/051cba44-2429-45b9-9649-46cec11c7119",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnFHIRService",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c42dee8c-0202-4a12-bd8e-3e171cbf64dd",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnDICOMService",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/14961b63-a1eb-4378-8725-7e84ca8db0e6",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnHealthBot",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4d080fa5-a6d2-4f98-ba9c-f482d0d335c0",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnFluidRelay",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/46388f67-373c-4018-98d3-2b83172dd13a",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnElasticSanVolumeGroup",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7698f4ed-80ce-4e13-b408-ee135fa400a5",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnArcSQLManagedInstance",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/413923f0-ff16-41ae-8583-90c5c5d9fa8f",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "customerManagedKeysOnServiceBus",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9c376cb6-0545-4233-a22c-074540d4d935",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect')]"
+          }
+        }
       }
     ],
     "versions": [
+      "2.0.0-PREVIEW",
       "1.0.0-PREVIEW"
     ]
   },

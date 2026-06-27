@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "SWIFT's Customer Security Programme (CSP) helps financial institutions ensure their defences against cyberattacks are up to date and effective, to protect the integrity of the wider financial network. Users compare the security measures they have implemented with those detailed in the Customer Security Controls Framework (CSCF). These policies address a subset of SWIFT controls. For more information, visit https://docs.microsoft.com/azure/governance/policy/samples/swift-cscf-v2021",
     "metadata": {
-      "version": "2.13.0",
+      "version": "2.14.0",
       "category": "Regulatory Compliance"
     },
-    "version": "2.13.0",
+    "version": "2.14.0",
     "policyDefinitionGroups": [
       {
         "name": "SWIFT_CSCF_v2022_1.1",
@@ -508,18 +508,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "SWIFT_CSCF_v2022_1.1",
-          "SWIFT_CSCF_v2022_1.5A",
-          "SWIFT_CSCF_v2022_6.4",
-          "SWIFT_CSCF_v2022_6.5A"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "55615ac9-af46-4a59-874e-391cc3dfb490",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/55615ac9-af46-4a59-874e-391cc3dfb490",
         "definitionVersion": "3.*.*",
@@ -531,18 +519,6 @@
         "groupNames": [
           "SWIFT_CSCF_v2022_1.1",
           "SWIFT_CSCF_v2022_1.5A"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "SWIFT_CSCF_v2022_1.1",
-          "SWIFT_CSCF_v2022_1.5A",
-          "SWIFT_CSCF_v2022_6.4",
-          "SWIFT_CSCF_v2022_6.5A"
         ]
       },
       {
@@ -3730,6 +3706,7 @@
       }
     ],
     "versions": [
+      "2.14.0",
       "2.13.0",
       "2.12.0",
       "2.11.0",

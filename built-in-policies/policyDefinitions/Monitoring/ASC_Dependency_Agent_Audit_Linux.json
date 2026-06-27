@@ -1,19 +1,19 @@
 {
   "properties": {
-    "displayName": "[Preview]: Network traffic data collection agent should be installed on Linux virtual machines",
+    "displayName": "[Deprecated]: Network traffic data collection agent should be installed on Linux virtual machines",
     "policyType": "BuiltIn",
     "mode": "Indexed",
-    "description": "Security Center uses the Microsoft Dependency agent to collect network traffic data from your Azure virtual machines to enable advanced network protection features such as traffic visualization on the network map, network hardening recommendations and specific network threats.",
+    "description": "Deprecated. This policy is no longer enforced due to the planned retirement of the Dependency agent on June 30, 2028. There is no replacement for the Dependency Agent. For more information, see https://aka.ms/dependencyagentretirement.",
     "metadata": {
-      "version": "1.0.2-preview",
+      "version": "1.1.0-deprecated",
       "category": "Monitoring",
-      "preview": true
+      "deprecated": true
     },
-    "version": "1.0.2-preview",
+    "version": "1.1.0",
     "parameters": {
       "effect": {
         "type": "string",
-        "defaultValue": "AuditIfNotExists",
+        "defaultValue": "Disabled",
         "allowedValues": [
           "AuditIfNotExists",
           "Disabled"
@@ -203,6 +203,7 @@
       }
     },
     "versions": [
+      "1.1.0",
       "1.0.2-PREVIEW"
     ]
   },

@@ -4,12 +4,12 @@
     "policyType": "BuiltIn",
     "description": "Help restrict and audit Azure Services to use HTTPS/SSL",
     "metadata": {
-      "version": "1.0.0-preview",
+      "version": "1.1.0-preview",
       "category": "Sovereignty",
       "preview": true,
       "SovereigntyLevel": "Level 2 - Encryption at-rest/in-transit"
     },
-    "version": "1.0.0-preview",
+    "version": "1.1.0-preview",
     "parameters": {
       "effect_deny": {
         "type": "String",
@@ -46,6 +46,18 @@
         "metadata": {
           "displayName": "Effect-AuditIfNotExists",
           "description": "This effect applies to policies that support AuditIfNotExists effect."
+        }
+      },
+      "effect_audit": {
+        "type": "String",
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ],
+        "metadata": {
+          "displayName": "Effect-Audit",
+          "description": "This effect applies to policies that support Audit effect."
         }
       },
       "1a5b4dca-0b6f-4cf5-907c-56316bc1bf3d_source": {
@@ -335,9 +347,30 @@
             "value": "[parameters('effect_deny')]"
           }
         }
+      },
+      {
+        "policyDefinitionReferenceId": "sslOnPostgreSQLServers",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d158790f-bfb0-486c-8631-2dc6b4e8e6af",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "sslOnMySQLServers",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e802a67a-daf5-4436-9ea6-f6d821dd0c5d",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
       }
     ],
     "versions": [
+      "1.1.0-PREVIEW",
       "1.0.0-PREVIEW"
     ]
   },

@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "The US National Institute of Standards and Technology (NIST) promotes and maintains measurement standards and guidelines to help protect the information and information systems of federal agencies. In response to Executive Order 13556 on managing controlled unclassified information (CUI), it published NIST SP 800-171. These policies address a subset of NIST SP 800-171 Rev. 2 controls. For more information, visit https://docs.microsoft.com/azure/compliance/offerings/offering-nist-800-171",
     "metadata": {
-      "version": "15.18.0",
+      "version": "15.19.0",
       "category": "Regulatory Compliance"
     },
-    "version": "15.18.0",
+    "version": "15.19.0",
     "policyDefinitionGroups": [
       {
         "name": "NIST_SP_800-171_R2_3.1.1",
@@ -3151,30 +3151,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-171_R2_3.3.1",
-          "NIST_SP_800-171_R2_3.3.2",
-          "NIST_SP_800-171_R2_3.14.6",
-          "NIST_SP_800-171_R2_3.14.7"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-171_R2_3.3.1",
-          "NIST_SP_800-171_R2_3.3.2",
-          "NIST_SP_800-171_R2_3.14.6",
-          "NIST_SP_800-171_R2_3.14.7"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "91a78b24-f231-4a8a-8da9-02c35b2b6510",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/91a78b24-f231-4a8a-8da9-02c35b2b6510",
         "definitionVersion": "2.*.*",
@@ -4648,6 +4624,7 @@
       }
     ],
     "versions": [
+      "15.19.0",
       "15.18.0",
       "15.17.0",
       "15.16.0",

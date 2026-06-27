@@ -3,12 +3,12 @@
     "displayName": "Set prerequisite for Scheduling recurring updates on Azure virtual machines.",
     "policyType": "BuiltIn",
     "mode": "Indexed",
-    "description": "This policy will set the prerequisite needed to schedule recurring updates on Azure Update Manager by configuring patch orchestration to 'Customer Managed Schedules'. This change will automatically set the patch mode to 'AutomaticByPlatform' and enables 'BypassPlatformSafetyChecksOnUserSchedule' to 'True' on Azure VMs. The prerequisite is not applicable for Arc-enabled servers. Learn more - https://learn.microsoft.com/en-us/azure/update-manager/dynamic-scope-overview?tabs=avms#prerequisites",
+    "description": "This policy will set the prerequisite needed to schedule recurring updates on Azure Update Manager by configuring patch orchestration to 'Customer Managed Schedules'. This change will automatically set the patch mode to 'AutomaticByPlatform' and enables 'BypassPlatformSafetyChecksOnUserSchedule' to 'True' on Azure VMs. The prerequisite is not applicable for Arc-enabled servers. Learn more - https://learn.microsoft.com/azure/update-manager/dynamic-scope-overview?tabs=avms#prerequisites",
     "metadata": {
-      "version": "1.3.0",
+      "version": "1.4.0",
       "category": "Azure Update Manager"
     },
-    "version": "1.3.0",
+    "version": "1.4.0",
     "parameters": {
       "resourceGroups": {
         "type": "Array",
@@ -224,9 +224,12 @@
                                   "microsoftserveroperatingsystems-previews",
                                   "windowsserverhotpatch-previews",
                                   "sql2016sp1-ws2016",
-                                  "sql2016sp2-ws201",
+                                  "sql2016sp2-ws2016",
                                   "sql2017-ws2016",
+                                  "sql2017-ws2019",
                                   "sql2019-ws2019",
+                                  "sql2019-ws2022",
+                                  "sql2022-ws2022",
                                   "dynamics",
                                   "process-server"
                                 ]
@@ -929,7 +932,7 @@
                                 "allOf": [
                                   {
                                     "field": "Microsoft.Compute/imageOffer",
-                                    "equals": "sles-15-sp6*"
+                                    "like": "sles-15-sp6*"
                                   },
                                   {
                                     "field": "Microsoft.Compute/imageSku",
@@ -2690,7 +2693,7 @@
                           },
                           {
                             "field": "Microsoft.Compute/imageOffer",
-                            "equals": "arcgis-enterprise*"
+                            "like": "arcgis-enterprise*"
                           },
                           {
                             "field": "Microsoft.Compute/imageSku",
@@ -2982,6 +2985,7 @@
       }
     },
     "versions": [
+      "1.4.0",
       "1.3.0",
       "1.2.0",
       "1.1.0-PREVIEW",

@@ -1,15 +1,14 @@
 {
   "properties": {
-    "displayName": "[Preview]: Soft delete should be enabled for Backup Vaults",
+    "displayName": "Soft delete should be enabled for Backup Vaults",
     "description": "This policy audits if soft delete is enabled for Backup vaults in the scope. Soft delete can help you recover your data after it has been deleted. Learn more at https://aka.ms/AB-SoftDelete",
     "policyType": "BuiltIn",
     "mode": "Indexed",
     "metadata": {
-      "version": "1.0.0-preview",
-      "preview": true,
+      "version": "1.0.1",
       "category": "Backup"
     },
-    "version": "1.0.0-preview",
+    "version": "1.0.1",
     "parameters": {
       "effect": {
         "type": "String",
@@ -73,6 +72,7 @@
       }
     },
     "versions": [
+      "1.0.1",
       "1.0.0-PREVIEW"
     ]
   },

@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "The US National Institute of Standards and Technology (NIST) promotes and maintains measurement standards and guidelines to help protect the information and information systems of federal agencies. In response to Executive Order 13556 on managing controlled unclassified information (CUI), it published NIST SP 800-171. These policies address a subset of NIST SP 800-171 Rev. 2 controls. For more information, visit https://docs.microsoft.com/azure/compliance/offerings/offering-nist-800-171",
     "metadata": {
-      "version": "15.22.0",
+      "version": "15.23.0",
       "category": "Regulatory Compliance"
     },
-    "version": "15.22.0",
+    "version": "15.23.0",
     "policyDefinitionGroups": [
       {
         "name": "NIST_SP_800-171_R2_3.1.1",
@@ -3610,30 +3610,6 @@
           "NIST_SP_800-171_R2_3.14.1",
           "NIST_SP_800-171_R2_3.14.2",
           "NIST_SP_800-171_R2_3.14.3",
-          "NIST_SP_800-171_R2_3.14.6",
-          "NIST_SP_800-171_R2_3.14.7"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-171_R2_3.3.1",
-          "NIST_SP_800-171_R2_3.3.2",
-          "NIST_SP_800-171_R2_3.14.6",
-          "NIST_SP_800-171_R2_3.14.7"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-171_R2_3.3.1",
-          "NIST_SP_800-171_R2_3.3.2",
           "NIST_SP_800-171_R2_3.14.6",
           "NIST_SP_800-171_R2_3.14.7"
         ]
@@ -7309,6 +7285,7 @@
       }
     ],
     "versions": [
+      "15.23.0",
       "15.22.0",
       "15.21.0",
       "15.20.0",

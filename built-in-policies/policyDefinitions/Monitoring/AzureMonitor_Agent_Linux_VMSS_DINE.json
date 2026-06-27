@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "Automate the deployment of Azure Monitor Agent extension on your Linux virtual machine scale sets for collecting telemetry data from the guest OS. This policy will install the extension if the OS and region are supported and system-assigned managed identity is enabled, and skip install otherwise. Learn more: https://aka.ms/AMAOverview.",
     "metadata": {
-      "version": "3.10.0",
+      "version": "3.11.0",
       "category": "Monitoring"
     },
-    "version": "3.10.0",
+    "version": "3.11.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -223,11 +223,11 @@
                             "anyOf": [
                               {
                                 "field": "Microsoft.Compute/imageSku",
-                                "like": "12*"
+                                "like": "15*"
                               },
                               {
                                 "field": "Microsoft.Compute/imageSku",
-                                "like": "15*"
+                                "like": "16*"
                               }
                             ]
                           }
@@ -239,11 +239,11 @@
                             "anyOf": [
                               {
                                 "field": "Microsoft.Compute/imageOffer",
-                                "like": "sles-12*"
+                                "like": "sles-15*"
                               },
                               {
                                 "field": "Microsoft.Compute/imageOffer",
-                                "like": "sles-15*"
+                                "like": "sles-16*"
                               }
                             ]
                           },
@@ -289,12 +289,6 @@
                   {
                     "field": "Microsoft.Compute/imageSku",
                     "in": [
-                      "14.04.0-lts",
-                      "14.04.1-lts",
-                      "14.04.2-lts",
-                      "14.04.3-lts",
-                      "14.04.4-lts",
-                      "14.04.5-lts",
                       "16_04_0-lts-gen2",
                       "16_04-lts-gen2",
                       "16.04-lts",
@@ -355,52 +349,16 @@
                       {
                         "field": "Microsoft.Compute/imageSku",
                         "like": "ol9*"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "allOf": [
-                  {
-                    "field": "Microsoft.Compute/imagePublisher",
-                    "equals": "OpenLogic"
-                  },
-                  {
-                    "field": "Microsoft.Compute/imageOffer",
-                    "in": [
-                      "CentOS",
-                      "Centos-LVM",
-                      "CentOS-SRIOV"
-                    ]
-                  },
-                  {
-                    "anyOf": [
-                      {
-                        "field": "Microsoft.Compute/imageSku",
-                        "like": "7*"
                       },
                       {
                         "field": "Microsoft.Compute/imageSku",
-                        "like": "8*"
+                        "like": "9*"
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "allOf": [
-                  {
-                    "field": "Microsoft.Compute/imagePublisher",
-                    "equals": "cloudera"
-                  },
-                  {
-                    "field": "Microsoft.Compute/imageOffer",
-                    "equals": "cloudera-centos-os"
                   },
                   {
                     "field": "Microsoft.Compute/imageSku",
-                    "like": "7*"
+                    "notContains": "arm64"
                   }
                 ]
               },
@@ -421,8 +379,16 @@
                         "like": "8*"
                       },
                       {
-                        "field": "Microsoft.Compute/imageSku",
-                        "like": "9*"
+                        "allOf": [
+                          {
+                            "field": "Microsoft.Compute/imageSku",
+                            "like": "9*"
+                          },
+                          {
+                            "field": "Microsoft.Compute/imageSku",
+                            "notContains": "arm"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -472,6 +438,26 @@
                 "allOf": [
                   {
                     "field": "Microsoft.Compute/imagePublisher",
+                    "equals": "resf"
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageOffer",
+                    "equals": "rockylinux-aarch64"
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageSku",
+                    "in": [
+                      "rockylinux-aarch64-8",
+                      "rockylinux-aarch64-9",
+                      "rockylinux-aarch64-9-lvm"
+                    ]
+                  }
+                ]
+              },
+              {
+                "allOf": [
+                  {
+                    "field": "Microsoft.Compute/imagePublisher",
                     "equals": "credativ"
                   },
                   {
@@ -497,7 +483,8 @@
                     "in": [
                       "debian-10",
                       "debian-11",
-                      "debian-12"
+                      "debian-12",
+                      "debian-13"
                     ]
                   },
                   {
@@ -509,8 +496,12 @@
                       "11-gen2",
                       "12",
                       "12-gen2",
+                      "13",
+                      "13-gen2",
                       "11-backports-arm64",
-                      "12-backports-arm64"
+                      "11-backports-arm64-v2",
+                      "12-backports-arm64",
+                      "13-backports-arm64"
                     ]
                   }
                 ]
@@ -529,16 +520,59 @@
                     ]
                   },
                   {
+                    "anyOf": [
+                      {
+                        "field": "Microsoft.Compute/imageSku",
+                        "like": "cbl-mariner-2*"
+                      },
+                      {
+                        "field": "Microsoft.Compute/imageSku",
+                        "like": "azure-linux-3*"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "allOf": [
+                  {
+                    "field": "Microsoft.Compute/imagePublisher",
+                    "equals": "SUSE"
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageOffer",
+                    "like": "opensuse-leap-15*"
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageOffer",
+                    "notContains": "arm64"
+                  },
+                  {
                     "field": "Microsoft.Compute/imageSku",
                     "in": [
-                      "1-gen2",
-                      "cbl-mariner-1",
-                      "cbl-mariner-2",
-                      "cbl-mariner-2-arm64",
-                      "cbl-mariner-2-gen2",
-                      "azure-linux-3",
-                      "azure-linux-3-arm64",
-                      "azure-linux-3-gen2"
+                      "gen1",
+                      "gen2"
+                    ]
+                  }
+                ]
+              },
+              {
+                "allOf": [
+                  {
+                    "field": "Microsoft.Compute/imagePublisher",
+                    "equals": "susellc"
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageOffer",
+                    "in": [
+                      "opensuse-leap-x86-64"
+                    ]
+                  },
+                  {
+                    "field": "Microsoft.Compute/imageSku",
+                    "in": [
+                      "gen1",
+                      "gen2"
                     ]
                   }
                 ]
@@ -587,7 +621,7 @@
                 "variables": {
                   "extensionName": "AzureMonitorLinuxAgent",
                   "extensionPublisher": "Microsoft.Azure.Monitor",
-                  "extensionTypeHandlerVersion": "1.36",
+                  "extensionTypeHandlerVersion": "1.41",
                   "extensionType": "AzureMonitorLinuxAgent"
                 },
                 "resources": [
@@ -620,6 +654,7 @@
       }
     },
     "versions": [
+      "3.11.0",
       "3.10.0",
       "3.9.0",
       "3.8.0",

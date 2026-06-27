@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "National Institute of Standards and Technology (NIST) SP 800-53 Rev. 5 provides a standardized approach for assessing, monitoring and authorizing cloud computing products and services to manage information security risk. These policies address a subset of NIST SP 800-53 R5 controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/nist800-53r5-initiative",
     "metadata": {
-      "version": "14.19.0",
+      "version": "14.20.0",
       "category": "Regulatory Compliance"
     },
-    "version": "14.19.0",
+    "version": "14.20.0",
     "policyDefinitionGroups": [
       {
         "name": "NIST_SP_800-53_R5_AC-1",
@@ -7974,20 +7974,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-53_R5_AU-6",
-          "NIST_SP_800-53_R5_AU-6(4)",
-          "NIST_SP_800-53_R5_AU-6(5)",
-          "NIST_SP_800-53_R5_AU-12",
-          "NIST_SP_800-53_R5_AU-12(1)",
-          "NIST_SP_800-53_R5_SI-4"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "399b2637-a50f-4f95-96f8-3a145476eb15",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/399b2637-a50f-4f95-96f8-3a145476eb15",
         "definitionVersion": "3.*.*",
@@ -7995,20 +7981,6 @@
         "groupNames": [
           "NIST_SP_800-53_R5_SC-8",
           "NIST_SP_800-53_R5_SC-8(1)"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "NIST_SP_800-53_R5_AU-6",
-          "NIST_SP_800-53_R5_AU-6(4)",
-          "NIST_SP_800-53_R5_AU-6(5)",
-          "NIST_SP_800-53_R5_AU-12",
-          "NIST_SP_800-53_R5_AU-12(1)",
-          "NIST_SP_800-53_R5_SI-4"
         ]
       },
       {
@@ -12943,6 +12915,7 @@
       }
     ],
     "versions": [
+      "14.20.0",
       "14.19.0",
       "14.18.0",
       "14.17.0",

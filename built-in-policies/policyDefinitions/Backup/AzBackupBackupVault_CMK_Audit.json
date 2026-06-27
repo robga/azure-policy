@@ -1,15 +1,14 @@
 {
   "properties": {
-    "displayName": "[Preview]: Azure Backup Vaults should use customer-managed keys for encrypting backup data. Also an option to enforce Infra Encryption.",
+    "displayName": "Azure Backup Vaults should use customer-managed keys for encrypting backup data. Also an option to enforce Infra Encryption.",
     "description": "This policy follows the 'effect' if Encryption Settings are enabled for Backup vaults in the scope. Additionally, option to check if Backup Vault also has Infrastructure Encryption enabled. Learn more at https://aka.ms/az-backup-vault-encryption-at-rest-with-cmk. Please note that when 'Deny' effect is used, it would need you to enable Encryption Settings on the existing Backup Vaults in order to allow other update operations on the vault go through.",
     "policyType": "BuiltIn",
     "mode": "Indexed",
     "metadata": {
-      "version": "1.0.0-preview",
-      "preview": true,
+      "version": "1.0.1",
       "category": "Backup"
     },
-    "version": "1.0.0-preview",
+    "version": "1.0.1",
     "parameters": {
       "effect": {
         "type": "String",
@@ -71,6 +70,7 @@
       }
     },
     "versions": [
+      "1.0.1",
       "1.0.0-PREVIEW"
     ]
   },

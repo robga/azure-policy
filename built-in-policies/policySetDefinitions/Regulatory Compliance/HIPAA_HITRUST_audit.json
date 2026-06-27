@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "Health Information Trust Alliance (HITRUST) helps organizations from all sectors-but especially healthcare-effectively manage data, information risk, and compliance. HITRUST certification means that the organization has undergone a thorough assessment of the information security program. These policies address a subset of HITRUST controls. For more information, visit https://docs.microsoft.com/azure/governance/policy/samples/hipaa-hitrust-9-2",
     "metadata": {
-      "version": "14.13.0",
+      "version": "14.14.0",
       "category": "Regulatory Compliance"
     },
-    "version": "14.13.0",
+    "version": "14.14.0",
     "policyDefinitionGroups": [
       {
         "name": "hipaa-0101.00a1Organizational.123-00.a",
@@ -8633,26 +8633,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "networkTrafficDataCollectionAgentShouldBeInstalledOnWindowsVirtualMachines",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "hipaa-0835.09n1Organizational.1-09.n",
-          "hipaa-0887.09n2Organizational.5-09.n"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "networkTrafficDataCollectionAgentShouldBeInstalledOnLinuxVirtualMachines",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "hipaa-0836.09.n2Organizational.1-09.n",
-          "hipaa-0885.09n2Organizational.3-09.n"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "4e45863d-9ea9-32b4-a204-2680bc6007a6",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4e45863d-9ea9-32b4-a204-2680bc6007a6",
         "definitionVersion": "1.*.*",
@@ -11804,6 +11784,7 @@
       }
     ],
     "versions": [
+      "14.14.0",
       "14.13.0",
       "14.12.0",
       "14.11.0",

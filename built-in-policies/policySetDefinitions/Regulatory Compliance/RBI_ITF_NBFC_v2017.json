@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address a subset of Reserve Bank of India IT Framework for Non-Banking Financial Companies (NBFC) controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/rbiitfnbfc-initiative.",
     "metadata": {
-      "version": "2.18.0",
+      "version": "2.19.0",
       "category": "Regulatory Compliance"
     },
-    "version": "2.18.0",
+    "version": "2.19.0",
     "policyDefinitionGroups": [
       {
         "name": "RBI_ITF_NBFC_v2017_6",
@@ -1230,16 +1230,6 @@
         ]
       },
       {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "parameters": {},
-        "groupNames": [
-          "RBI_ITF_NBFC_v2017_3.1.g",
-          "RBI_ITF_NBFC_v2017_4.2"
-        ]
-      },
-      {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f9d614c5-c173-4d56-95a7-b4437057d193",
         "definitionVersion": "2.*.*",
         "policyDefinitionReferenceId": "f9d614c5-c173-4d56-95a7-b4437057d193",
@@ -1546,15 +1536,6 @@
         "groupNames": [
           "RBI_ITF_NBFC_v2017_3.1.g",
           "RBI_ITF_NBFC_v2017_3.1.f"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "parameters": {},
-        "groupNames": [
-          "RBI_ITF_NBFC_v2017_3.1.g"
         ]
       },
       {
@@ -2017,6 +1998,7 @@
       }
     ],
     "versions": [
+      "2.19.0",
       "2.18.0",
       "2.17.1",
       "2.17.0-PREVIEW",

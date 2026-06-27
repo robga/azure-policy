@@ -5,10 +5,10 @@
     "mode": "Indexed",
     "description": "You can use Azure Update Manager in Azure to save recurring deployment schedules to install operating system updates for your Windows Server and Linux machines in Azure, in on-premises environments, and in other cloud environments connected using Azure Arc-enabled servers. This policy will also change the patch mode for the Azure Virtual Machine to 'AutomaticByPlatform'. See more: https://aka.ms/umc-scheduled-patching",
     "metadata": {
-      "version": "3.14.0",
+      "version": "3.15.0",
       "category": "Azure Update Manager"
     },
-    "version": "3.14.0",
+    "version": "3.15.0",
     "parameters": {
       "maintenanceConfigurationResourceId": {
         "type": "String",
@@ -255,9 +255,12 @@
                                   "microsoftserveroperatingsystems-previews",
                                   "windowsserverhotpatch-previews",
                                   "sql2016sp1-ws2016",
-                                  "sql2016sp2-ws201",
+                                  "sql2016sp2-ws2016",
                                   "sql2017-ws2016",
+                                  "sql2017-ws2019",
                                   "sql2019-ws2019",
+                                  "sql2019-ws2022",
+                                  "sql2022-ws2022",
                                   "dynamics",
                                   "process-server"
                                 ]
@@ -972,7 +975,7 @@
                                 "allOf": [
                                   {
                                     "field": "Microsoft.Compute/imageOffer",
-                                    "equals": "sles-15-sp6*"
+                                    "like": "sles-15-sp6*"
                                   },
                                   {
                                     "field": "Microsoft.Compute/imageSku",
@@ -2733,7 +2736,7 @@
                           },
                           {
                             "field": "Microsoft.Compute/imageOffer",
-                            "equals": "arcgis-enterprise*"
+                            "like": "arcgis-enterprise*"
                           },
                           {
                             "field": "Microsoft.Compute/imageSku",
@@ -3028,6 +3031,7 @@
       }
     },
     "versions": [
+      "3.15.0",
       "3.14.0",
       "3.13.0",
       "3.12.0",

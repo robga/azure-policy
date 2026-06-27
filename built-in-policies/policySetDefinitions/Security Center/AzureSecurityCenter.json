@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "The Microsoft cloud security benchmark initiative represents the policies and controls implementing security recommendations defined in Microsoft cloud security benchmark, see https://aka.ms/azsecbm. This also serves as the Microsoft Defender for Cloud default policy initiative. You can directly assign this initiative, or manage its policies and compliance results within Microsoft Defender for Cloud.",
     "metadata": {
-      "version": "57.56.0",
+      "version": "57.58.0",
       "category": "Security Center"
     },
-    "version": "57.56.0",
+    "version": "57.58.0",
     "policyDefinitionGroups": [
       {
         "name": "Azure_Security_Benchmark_v3.0_NS-1",
@@ -5799,6 +5799,19 @@
         ]
       },
       {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f0308946-498a-43fd-8d44-a75b47cd2aef",
+        "definitionVersion": "1.*.*",
+        "policyDefinitionReferenceId": "disableUnrestrictedNetworkToStorageAccountMonitoringExARO",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('disableUnrestrictedNetworkToStorageAccountMonitoringEffect')]"
+          }
+        },
+        "groupNames": [
+          "Azure_Security_Benchmark_v3.0_NS-2"
+        ]
+      },
+      {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a451c1ef-c6ca-483d-87ed-f49761e3ffb5",
         "definitionVersion": "1.*.*",
         "policyDefinitionReferenceId": "useRbacRulesMonitoring",
@@ -6592,32 +6605,6 @@
         },
         "groupNames": [
           "Azure_Security_Benchmark_v3.0_DP-5"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "ASCDependencyAgentAuditWindowsEffect",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('ASCDependencyAgentAuditWindowsEffect')]"
-          }
-        },
-        "groupNames": [
-          "Azure_Security_Benchmark_v3.0_LT-4"
-        ]
-      },
-      {
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "policyDefinitionReferenceId": "ASCDependencyAgentAuditLinuxEffect",
-        "parameters": {
-          "effect": {
-            "value": "[parameters('ASCDependencyAgentAuditLinuxEffect')]"
-          }
-        },
-        "groupNames": [
-          "Azure_Security_Benchmark_v3.0_LT-4"
         ]
       },
       {
@@ -7481,9 +7468,35 @@
         ]
       },
       {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f5c8be13-ecfa-4ed7-beee-fcd8a6d9519d",
+        "definitionVersion": "1.*.*",
+        "policyDefinitionReferenceId": "storageAccountsShouldUseCustomerManagedKeyForEncryptionExAROMonitoringEffect",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('storageAccountsShouldUseCustomerManagedKeyForEncryptionMonitoringEffect')]"
+          }
+        },
+        "groupNames": [
+          "Azure_Security_Benchmark_v3.0_DP-5"
+        ]
+      },
+      {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a1a9cdf-e04d-429a-8416-3bfb72a1b26f",
         "definitionVersion": "1.*.*",
         "policyDefinitionReferenceId": "storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesMonitoringEffect",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesMonitoringEffect')]"
+          }
+        },
+        "groupNames": [
+          "Azure_Security_Benchmark_v3.0_NS-2"
+        ]
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ed9bd083-7bfb-4fec-bbb4-12635e096a09",
+        "definitionVersion": "1.*.*",
+        "policyDefinitionReferenceId": "storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesExAROMonitoringEffect",
         "parameters": {
           "effect": {
             "value": "[parameters('storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesMonitoringEffect')]"
@@ -7811,6 +7824,19 @@
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6edd7eda-6dd8-40f7-810d-67160c639cd9",
         "definitionVersion": "2.*.*",
         "policyDefinitionReferenceId": "storageAccountShouldUseAPrivateLinkConnectionMonitoringEffect",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('storageAccountShouldUseAPrivateLinkConnectionMonitoringEffect')]"
+          }
+        },
+        "groupNames": [
+          "Azure_Security_Benchmark_v3.0_NS-2"
+        ]
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/18ac0011-fb88-42b6-a025-b33b6f0d2cb3",
+        "definitionVersion": "1.*.*",
+        "policyDefinitionReferenceId": "storageAccountShouldUseAPrivateLinkConnectionExAROMonitoringEffect",
         "parameters": {
           "effect": {
             "value": "[parameters('storageAccountShouldUseAPrivateLinkConnectionMonitoringEffect')]"
@@ -8541,6 +8567,14 @@
         ]
       },
       {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/05f95bb8-8ef8-4cef-8cad-5d30f9912850",
+        "definitionVersion": "1.*.*",
+        "policyDefinitionReferenceId": "storageAccountsShouldPreventSharedKeyAccessExARO",
+        "groupNames": [
+          "Azure_Security_Benchmark_v3.0_IM-1"
+        ]
+      },
+      {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/fd9903f1-38c2-4d36-8e44-5c1c20c561e8",
         "definitionVersion": "1.*.*",
         "policyDefinitionReferenceId": "storageAccountsShouldPreventSharedKeyAccessExDataBricks",
@@ -8607,6 +8641,8 @@
       }
     ],
     "versions": [
+      "57.58.0",
+      "57.57.0",
       "57.56.0",
       "57.55.0",
       "57.54.0",

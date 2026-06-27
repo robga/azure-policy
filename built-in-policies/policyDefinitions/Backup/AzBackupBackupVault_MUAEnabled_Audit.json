@@ -1,15 +1,14 @@
 {
   "properties": {
-    "displayName": "[Preview]: Multi-User Authorization (MUA) must be enabled for Backup Vaults.",
+    "displayName": "Multi-User Authorization (MUA) must be enabled for Backup Vaults.",
     "policyType": "BuiltIn",
     "mode": "Indexed",
     "description": "This policy audits if Multi-User Authorization (MUA) is enabled for Backup Vaults. MUA helps in securing your Backup Vaults by adding an additional layer of protection to critical operations. To learn more, visit https://aka.ms/mua-for-bv.",
     "metadata": {
-      "version": "1.0.0-preview",
-      "preview": true,
+      "version": "1.0.1",
       "category": "Backup"
     },
-    "version": "1.0.0-preview",
+    "version": "1.0.1",
     "parameters": {
       "effect": {
         "type": "String",
@@ -42,6 +41,7 @@
       }
     },
     "versions": [
+      "1.0.1",
       "1.0.0-PREVIEW"
     ]
   },

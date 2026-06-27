@@ -4,10 +4,10 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies that address a subset of DoD Impact Level 5 (IL5) controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/dodil5-initiative.",
     "metadata": {
-      "version": "19.15.0",
+      "version": "19.16.0",
       "category": "Regulatory Compliance"
     },
-    "version": "19.15.0",
+    "version": "19.16.0",
     "policyDefinitionGroups": [
       {
         "name": "DoD_IL5_R4_AC-1",
@@ -6576,20 +6576,6 @@
         ]
       },
       {
-        "policyDefinitionReferenceId": "2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2f2ee1de-44aa-4762-b6bd-0893fc3f306d",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "DoD_IL5_R4_AU-6",
-          "DoD_IL5_R4_AU-6(4)",
-          "DoD_IL5_R4_AU-6(5)",
-          "DoD_IL5_R4_AU-12",
-          "DoD_IL5_R4_AU-12(1)",
-          "DoD_IL5_R4_SI-4"
-        ]
-      },
-      {
         "policyDefinitionReferenceId": "399b2637-a50f-4f95-96f8-3a145476eb15",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/399b2637-a50f-4f95-96f8-3a145476eb15",
         "definitionVersion": "3.*.*",
@@ -6597,20 +6583,6 @@
         "groupNames": [
           "DoD_IL5_R4_SC-8",
           "DoD_IL5_R4_SC-8(1)"
-        ]
-      },
-      {
-        "policyDefinitionReferenceId": "04c4380f-3fae-46e8-96c9-30193528f602",
-        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/04c4380f-3fae-46e8-96c9-30193528f602",
-        "definitionVersion": "1.*.*-preview",
-        "parameters": {},
-        "groupNames": [
-          "DoD_IL5_R4_AU-6",
-          "DoD_IL5_R4_AU-6(4)",
-          "DoD_IL5_R4_AU-6(5)",
-          "DoD_IL5_R4_AU-12",
-          "DoD_IL5_R4_AU-12(1)",
-          "DoD_IL5_R4_SI-4"
         ]
       },
       {
@@ -6943,6 +6915,7 @@
       }
     ],
     "versions": [
+      "19.16.0",
       "19.15.0",
       "19.14.0",
       "19.13.0",

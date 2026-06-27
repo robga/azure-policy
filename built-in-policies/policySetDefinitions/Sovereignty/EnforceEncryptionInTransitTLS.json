@@ -4,12 +4,12 @@
     "policyType": "BuiltIn",
     "description": "Help restrict and audit Azure Services to use latest TLS versions",
     "metadata": {
-      "version": "1.0.0-preview",
+      "version": "1.1.0-preview",
       "category": "Sovereignty",
       "preview": true,
       "SovereigntyLevel": "Level 2 - Encryption at-rest/in-transit"
     },
-    "version": "1.0.0-preview",
+    "version": "1.1.0-preview",
     "parameters": {
       "effect_deny": {
         "type": "String",
@@ -58,6 +58,18 @@
         "metadata": {
           "displayName": "Effect-AuditIfNotExists",
           "description": "This effect applies to policies that support AuditIfNotExists effect."
+        }
+      },
+      "effect_audit": {
+        "type": "String",
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ],
+        "metadata": {
+          "displayName": "Effect-Audit",
+          "description": "This effect applies to policies that support Audit effect."
         }
       },
       "includeArcMachines": {
@@ -321,9 +333,30 @@
             "value": "[parameters('5752e6d6-1206-46d8-8ab1-ecc2f71a8112_minimumTLSVersion')]"
           }
         }
+      },
+      {
+        "policyDefinitionReferenceId": "minTLSOnSQLManagedInstance",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a8793640-60f7-487c-b5c3-1d37215905c4",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "tlsOnArcSQLManagedInstance",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bb3c7464-033e-41ee-81dc-480fde675b20",
+        "definitionVersion": "1.*.*",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect_audit')]"
+          }
+        }
       }
     ],
     "versions": [
+      "1.1.0-PREVIEW",
       "1.0.0-PREVIEW"
     ]
   },
