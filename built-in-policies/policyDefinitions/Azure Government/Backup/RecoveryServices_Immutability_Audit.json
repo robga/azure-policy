@@ -1,14 +1,15 @@
 {
   "properties": {
-    "displayName": "Immutability must be enabled for Recovery Services vaults",
+    "displayName": "[Preview]: Immutability must be enabled for Recovery Services vaults",
     "description": "This policy audits if the immutable vaults property is enabled for Recovery Services vaults in the scope. This helps protect your backup data from being deleted before its intended expiry. Learn more at https://aka.ms/AB-ImmutableVaults.",
     "policyType": "BuiltIn",
     "mode": "Indexed",
     "metadata": {
-      "version": "1.0.2",
+      "version": "1.0.1-preview",
+      "preview": true,
       "category": "Backup"
     },
-    "version": "1.0.2",
+    "version": "1.0.1-preview",
     "parameters": {
       "effect": {
         "type": "String",
@@ -72,8 +73,8 @@
       }
     },
     "versions": [
-      "1.0.2",
-      "1.0.1-PREVIEW"
+      "1.0.1-PREVIEW",
+      "1.0.0-PREVIEW"
     ]
   },
   "id": "/providers/Microsoft.Authorization/policyDefinitions/d6f6f560-14b7-49a4-9fc8-d2c3a9807868",

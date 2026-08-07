@@ -5,10 +5,10 @@
     "mode": "All",
     "description": "This policy enables you to exlcude Usage Costs Resources. Usage costs include things like metered storage and Azure resources which are billed based on usage.",
     "metadata": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "General"
     },
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "parameters": {
       "effect": {
         "type": "String",
@@ -41,7 +41,9 @@
                 "Microsoft.Authorization/policyAssignments",
                 "Microsoft.Authorization/policyDefinitions",
                 "Microsoft.Authorization/policySetDefinitions",
-                "Microsoft.Authorization/denyAssignments"
+                "Microsoft.Authorization/denyAssignments",
+                "Microsoft.Authorization/roleAssignments",
+                "Microsoft.Authorization/roleDefinitions"
               ]
             }
           ]
@@ -52,6 +54,7 @@
       }
     },
     "versions": [
+      "1.1.0",
       "1.0.0"
     ]
   },

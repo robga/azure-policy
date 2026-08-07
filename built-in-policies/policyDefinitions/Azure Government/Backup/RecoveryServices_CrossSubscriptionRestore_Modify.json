@@ -1,14 +1,15 @@
 {
   "properties": {
-    "displayName": "Disable Cross Subscription Restore for Backup Vaults",
+    "displayName": "[Preview]: Disable Cross Subscription Restore for Azure Recovery Services vaults",
     "policyType": "BuiltIn",
     "mode": "Indexed",
-    "description": "Disable or PermanentlyDisable Cross Subscription Restore for your Backup vault so that restore targets cannot be in different subscription from the vault subscription. Learn more at: https://aka.ms/csrstatechange.",
+    "description": "Disable or PermanentlyDisable Cross Subscription Restore for your Recovery Services vault so that restore targets cannot be in different subscription from the vault subscription. Learn more at: https://aka.ms/csrenhancements.",
     "metadata": {
-      "version": "1.1.1",
-      "category": "Backup"
+      "version": "1.1.0-preview",
+      "category": "Backup",
+      "preview": true
     },
-    "version": "1.1.1",
+    "version": "1.1.0-preview",
     "parameters": {
       "effect": {
         "type": "String",
@@ -53,10 +54,10 @@
         "allOf": [
           {
             "field": "type",
-            "equals": "Microsoft.DataProtection/backupVaults"
+            "equals": "Microsoft.RecoveryServices/vaults"
           },
           {
-            "field": "Microsoft.DataProtection/backupVaults/featureSettings.crossSubscriptionRestoreSettings.state",
+            "field": "Microsoft.RecoveryServices/vaults/restoreSettings.crossSubscriptionRestoreSettings.crossSubscriptionRestoreState",
             "notEquals": "[parameters('crossSubscriptionRestoreStateParameter')]"
           }
         ]
@@ -70,9 +71,9 @@
           ],
           "operations": [
             {
-              "condition": "[greaterOrEquals(requestContext().apiVersion, '2022-12-01')]",
+              "condition": "[greaterOrEquals(requestContext().apiVersion, '2023-02-01')]",
               "operation": "addOrReplace",
-              "field": "Microsoft.DataProtection/backupVaults/featureSettings.crossSubscriptionRestoreSettings.state",
+              "field": "Microsoft.RecoveryServices/vaults/restoreSettings.crossSubscriptionRestoreSettings.crossSubscriptionRestoreState",
               "value": "[parameters('crossSubscriptionRestoreStateParameter')]"
             }
           ]
@@ -80,10 +81,9 @@
       }
     },
     "versions": [
-      "1.1.1",
       "1.1.0-PREVIEW"
     ]
   },
-  "id": "/providers/Microsoft.Authorization/policyDefinitions/4d479a11-f2b5-4f0a-bb1e-d2332aa95cda",
-  "name": "4d479a11-f2b5-4f0a-bb1e-d2332aa95cda"
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/f19b0c83-716f-4b81-85e3-2dbf057c35d6",
+  "name": "f19b0c83-716f-4b81-85e3-2dbf057c35d6"
 }

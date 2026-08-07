@@ -3,12 +3,12 @@
     "displayName": "Configure backup on virtual machines without a given tag to an existing recovery services vault in the same location",
     "policyType": "BuiltIn",
     "mode": "Indexed",
-    "description": "Enforce backup for all virtual machines by backing them up to an existing central recovery services vault in the same location and subscription as the virtual machine. Doing this is useful when there is a central team in your organization managing backups for all resources in a subscription. You can optionally exclude virtual machines containing a specified tag to control the scope of assignment. See https://aka.ms/AzureVMCentralBackupExcludeTag.",
+    "description": "Enforce backup for all virtual machines by backing to an existing central Recovery Services vault in the same location. Useful when a central team is managing backups for all resources across subscriptions. Exclude virtual machines containing the specified tag to control the scope of assignment. See https://aka.ms/AzureVMCentralBackupExcludeTag.",
     "metadata": {
-      "version": "9.6.0",
+      "version": "9.6.1",
       "category": "Backup"
     },
-    "version": "9.6.0",
+    "version": "9.6.1",
     "parameters": {
       "vaultLocation": {
         "type": "String",
@@ -701,6 +701,7 @@
       }
     },
     "versions": [
+      "9.6.1",
       "9.6.0",
       "9.5.0",
       "9.4.0",

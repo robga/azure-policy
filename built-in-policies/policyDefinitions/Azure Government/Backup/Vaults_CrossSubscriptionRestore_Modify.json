@@ -1,14 +1,15 @@
 {
   "properties": {
-    "displayName": "Disable Cross Subscription Restore for Backup Vaults",
+    "displayName": "[Preview]: Disable Cross Subscription Restore for Backup Vaults",
     "policyType": "BuiltIn",
     "mode": "Indexed",
     "description": "Disable or PermanentlyDisable Cross Subscription Restore for your Backup vault so that restore targets cannot be in different subscription from the vault subscription. Learn more at: https://aka.ms/csrstatechange.",
     "metadata": {
-      "version": "1.1.1",
-      "category": "Backup"
+      "version": "1.1.0-preview",
+      "category": "Backup",
+      "preview": true
     },
-    "version": "1.1.1",
+    "version": "1.1.0-preview",
     "parameters": {
       "effect": {
         "type": "String",
@@ -80,7 +81,6 @@
       }
     },
     "versions": [
-      "1.1.1",
       "1.1.0-PREVIEW"
     ]
   },

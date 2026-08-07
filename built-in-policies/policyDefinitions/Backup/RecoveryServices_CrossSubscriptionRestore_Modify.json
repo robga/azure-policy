@@ -1,15 +1,14 @@
 {
   "properties": {
-    "displayName": "[Preview]: Disable Cross Subscription Restore for Azure Recovery Services vaults",
+    "displayName": "Disable Cross Subscription Restore for Azure Recovery Services vaults",
     "policyType": "BuiltIn",
     "mode": "Indexed",
     "description": "Disable or PermanentlyDisable Cross Subscription Restore for your Recovery Services vault so that restore targets cannot be in different subscription from the vault subscription. Learn more at: https://aka.ms/csrenhancements.",
     "metadata": {
-      "version": "1.1.0-preview",
-      "category": "Backup",
-      "preview": true
+      "version": "1.1.1",
+      "category": "Backup"
     },
-    "version": "1.1.0-preview",
+    "version": "1.1.1",
     "parameters": {
       "effect": {
         "type": "String",
@@ -81,6 +80,7 @@
       }
     },
     "versions": [
+      "1.1.1",
       "1.1.0-PREVIEW"
     ]
   },

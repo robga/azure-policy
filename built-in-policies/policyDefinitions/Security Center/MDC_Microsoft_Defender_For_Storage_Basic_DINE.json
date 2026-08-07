@@ -4,9 +4,9 @@
     "policyType": "BuiltIn",
     "mode": "All",
     "description": "Microsoft Defender for Storage provides Azure-native threat detection for storage accounts. This policy enables basic features (Activity Monitoring). For full protection, including Malware Scanning and Sensitive Data Discovery, use aka.ms/DFStoragePolicy. Major version update: PerTransaction is no longer supported for new enablements after Feb 5, 2025. Existing accounts using it remain supported. Learn more: aka.ms/DF-Storage/NewPlanMigration.",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "metadata": {
-      "version": "2.0.0",
+      "version": "3.0.0",
       "category": "Security Center"
     },
     "parameters": {
@@ -29,7 +29,6 @@
           "description": "Sets the sub plan for Storage bundle"
         },
         "allowedValues": [
-          "PerStorageAccount",
           "DefenderForStorageV2"
         ],
         "defaultValue": "DefenderForStorageV2"
@@ -109,6 +108,7 @@
       }
     },
     "versions": [
+      "3.0.0",
       "2.0.0",
       "1.1.0",
       "1.0.2"

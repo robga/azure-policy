@@ -5,10 +5,10 @@
     "mode": "All",
     "description": "Microsoft Defender for Key Vault provides an additional layer of protection and security intelligence by detecting unusual and potentially harmful attempts to access or exploit key vault accounts.",
     "metadata": {
-      "version": "1.1.0",
+      "version": "2.0.0",
       "category": "Security Center"
     },
-    "version": "1.1.0",
+    "version": "2.0.0",
     "parameters": {
       "effect": {
         "type": "string",
@@ -29,10 +29,9 @@
           "description": "Select a Defender for Key Vault plan"
         },
         "allowedValues": [
-          "PerTransaction",
           "PerKeyVault"
         ],
-        "defaultValue": "PerTransaction"
+        "defaultValue": "PerKeyVault"
       }
     },
     "policyRule": {
@@ -99,6 +98,7 @@
       }
     },
     "versions": [
+      "2.0.0",
       "1.1.0",
       "1.0.2"
     ]

@@ -1,14 +1,15 @@
 {
   "properties": {
-    "displayName": "Configure Recovery Services vaults to use private endpoints for backup",
+    "displayName": "[Preview]: Configure Recovery Services vaults to use private endpoints for backup",
     "policyType": "BuiltIn",
     "description": "Private endpoints connect your virtual networks to Azure services without a public IP address at the source or destination. By mapping private endpoints to Recovery Services vaults, you can reduce data leakage risks. Note that your vaults need to meet certain pre-requisites to be eligible for private endpoint configuration. Learn more at : https://go.microsoft.com/fwlink/?linkid=2187162.",
     "mode": "Indexed",
     "metadata": {
-      "version": "1.0.1",
+      "version": "1.0.0-preview",
+      "preview": true,
       "category": "Backup"
     },
-    "version": "1.0.1",
+    "version": "1.0.0-preview",
     "parameters": {
       "privateEndpointSubnetId": {
         "type": "String",
@@ -130,7 +131,6 @@
       }
     },
     "versions": [
-      "1.0.1",
       "1.0.0-PREVIEW"
     ]
   },

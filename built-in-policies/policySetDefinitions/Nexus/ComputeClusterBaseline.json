@@ -4,11 +4,11 @@
     "policyType": "BuiltIn",
     "description": "This initiative includes policies designed to reflect the security baseline expectations of Nexus Compute Clusters. It ensures that the cluster configurations adhere to specific security controls that are critical for maintaining a secure environment.",
     "metadata": {
-      "version": "1.3.0-preview",
+      "version": "2.0.0-preview",
       "preview": true,
       "category": "Nexus"
     },
-    "version": "1.3.0-preview",
+    "version": "2.0.0-preview",
     "parameters": {
       "effect": {
         "type": "string",
@@ -44,6 +44,7 @@
           },
           "allowedServicePortsList": {
             "value": [
+              "1022",
               "111",
               "123",
               "20048",
@@ -93,12 +94,12 @@
             "value": {
               "paths": [
                 {
-                  "pathPrefix": "/",
-                  "readOnly": false
+                  "pathPrefix": "/bin",
+                  "readOnly": true
                 },
                 {
-                  "pathPrefix": "/bin",
-                  "readOnly": false
+                  "pathPrefix": "/boot",
+                  "readOnly": true
                 },
                 {
                   "pathPrefix": "/dev",
@@ -106,38 +107,134 @@
                 },
                 {
                   "pathPrefix": "/dev/kmsg",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/etc",
-                  "readOnly": false
+                  "readOnly": true
                 },
                 {
                   "pathPrefix": "/etc/cni/net.d",
                   "readOnly": false
                 },
                 {
+                  "pathPrefix": "/etc/hostname",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/etc/iscsi",
+                  "readOnly": true
+                },
+                {
                   "pathPrefix": "/etc/kubernetes",
                   "readOnly": false
                 },
                 {
-                  "pathPrefix": "/lib/modules",
+                  "pathPrefix": "/etc/kubernetes/admin.conf",
                   "readOnly": false
                 },
                 {
-                  "pathPrefix": "/opt",
+                  "pathPrefix": "/etc/kubernetes/controller-manager.conf",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/etc/kubernetes/enc",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/etc/kubernetes/pki",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/etc/kubernetes/pki/etcd",
                   "readOnly": false
+                },
+                {
+                  "pathPrefix": "/etc/kubernetes/scheduler.conf",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/etc/kubernetes/super-admin.conf",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/etc/localtime",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/etc/multipath",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/etc/opt/microsoft/mdatp",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/etc/pki",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/etc/rsyslog.d",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/etc/ssl/certs",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/etc/systemd/system",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/etc/telemetry",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/home",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/lib/modules",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/lib/systemd/system",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/lib/x86_64-linux-gnu",
+                  "readOnly": true
                 },
                 {
                   "pathPrefix": "/opt/cni/bin",
                   "readOnly": false
                 },
                 {
-                  "pathPrefix": "/proc",
+                  "pathPrefix": "/opt/local-path-provisioner",
                   "readOnly": false
                 },
                 {
-                  "pathPrefix": "/run",
+                  "pathPrefix": "/proc",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/run/containerd/containerd.sock",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/run/dbus",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/run/log/journal",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/run/rte",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/run/systemd",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/run/undercloud-volume.csi.azure.com",
                   "readOnly": false
                 },
                 {
@@ -145,24 +242,20 @@
                   "readOnly": false
                 },
                 {
+                  "pathPrefix": "/sbin",
+                  "readOnly": true
+                },
+                {
                   "pathPrefix": "/sys",
+                  "readOnly": true
+                },
+                {
+                  "pathPrefix": "/tmp",
                   "readOnly": false
                 },
                 {
-                  "pathPrefix": "/sys/fs/bpf",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/sys/fs/cgroup",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/sys/kernel",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/usr",
-                  "readOnly": false
+                  "pathPrefix": "/usr/lib/systemd/system",
+                  "readOnly": true
                 },
                 {
                   "pathPrefix": "/usr/libexec/kubernetes/kubelet-plugins/volume/exec",
@@ -173,15 +266,19 @@
                   "readOnly": false
                 },
                 {
+                  "pathPrefix": "/var/lib/docker/containers",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/var/lib/etcd",
+                  "readOnly": false
+                },
+                {
+                  "pathPrefix": "/var/lib/etcd-snapshots",
+                  "readOnly": false
+                },
+                {
                   "pathPrefix": "/var/lib/kubelet",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/lib/kubelet/plugins/csi.tigera.io",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/lib/kubelet/plugins_registry",
                   "readOnly": false
                 },
                 {
@@ -193,59 +290,48 @@
                   "readOnly": false
                 },
                 {
+                  "pathPrefix": "/var/lib/otelcol",
+                  "readOnly": false
+                },
+                {
                   "pathPrefix": "/var/log",
                   "readOnly": false
                 },
                 {
-                  "pathPrefix": "/var/log/azuredefender",
-                  "readOnly": false
+                  "pathPrefix": "/var/log/microsoft/mdatp",
+                  "readOnly": true
                 },
                 {
-                  "pathPrefix": "/var/log/calico/cni",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/log/kube-apiserver",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/log/microsoft-defender-for-cloud",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/log/microsoft-defender-for-cloud/collectors/LowLevelCollector",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/log/microsoft-defender-for-cloud/collectors/PodCollector",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/log/microsoft-defender-for-cloud/metrics",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/log/microsoft-defender-for-cloud/traces",
+                  "pathPrefix": "/var/microsoft/microsoft-defender-for-cloud",
                   "readOnly": false
                 },
                 {
                   "pathPrefix": "/var/run",
                   "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/run/calico",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/run/nodeagen",
-                  "readOnly": false
-                },
-                {
-                  "pathPrefix": "/var/run/nodeagent",
-                  "readOnly": false
                 }
               ]
             }
+          },
+          "excludedContainers": {
+            "value": [
+              "action-command-container",
+              "bmmkeyset-agent",
+              "busybox",
+              "csi-node-exporter",
+              "host-sync",
+              "identity-enforcer",
+              "mdatp-sync",
+              "mount-leak-detector",
+              "nc-toolbox-deploy",
+              "networkcloud-collector",
+              "node",
+              "node-exporter"
+            ]
+          },
+          "excludedImages": {
+            "value": [
+              "mcr.microsoft.com/networkcloud/nc-platform-operator/afo-action-command:*"
+            ]
           }
         }
       },
@@ -258,54 +344,39 @@
             "value": "[parameters('effect')]"
           },
           "allowedContainerImagesRegex": {
-            "value": "^(mcr\\.microsoft\\.com|ncprivateprod\\.azurecr\\.io|marinerhciprod\\.azurecr\\.io|nfaprodglobalacr\\.azurecr\\.io|nfaimagespublic\\.azurecr\\.io|linuxgeneva\\-microsoft\\.azurecr\\.io)\\/.+$"
+            "value": "^(mcr\\.microsoft\\.com|nfaprodglobalacr\\.azurecr\\.io|nfaimagespublic\\.azurecr\\.io)\\/.+$"
           }
         }
       },
       {
         "policyDefinitionReferenceId": "AuthorizedHostNetworking",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/82985f06-dc18-4a48-bc1c-b9f4f0098cfe",
-        "definitionVersion": "6.*.*",
+        "definitionVersion": "7.*.*",
         "parameters": {
           "effect": {
             "value": "[parameters('effect')]"
           },
-          "excludedContainers": {
+          "allowHostNetwork": {
+            "value": true
+          },
+          "allowedHostPorts": {
             "value": [
-              "action-command-container",
-              "amacoreagent",
-              "bmmkeyset-agent",
-              "calico-node",
-              "calico-typha",
-              "cleaner",
-              "csi-node-exporter",
-              "custom-statistics-exporter",
-              "custom-statistics-exporter-rs",
-              "deployer",
-              "etcd",
-              "flexvol-driver",
-              "fluentd",
-              "identity-enforcer",
-              "idrac-exporter",
-              "install-cni",
-              "liveness-probe",
-              "mdm",
-              "msi-adapter",
-              "multus-sweeper",
-              "networkcloud-collector",
-              "nfs",
-              "node",
-              "node-driver-registrar",
-              "node-exporter",
-              "node-problem-detector",
-              "nodedata-exporter",
-              "ntp-server-node-locator",
-              "pod-collector",
-              "process-exporter",
-              "telegraf",
-              "tigera-operator",
-              "wait",
-              "watcher"
+              "13133",
+              "20257",
+              "29603",
+              "29652",
+              "29653",
+              "5140",
+              "5473",
+              "8089",
+              "9100",
+              "9101",
+              "9109",
+              "9203",
+              "9204",
+              "9256",
+              "9963",
+              "9964"
             ]
           },
           "excludedImages": {
@@ -344,13 +415,14 @@
               "clusterctl-init-move",
               "clusterctl-init-upgrade",
               "compute",
+              "csi-node-driver-registrar",
+              "csi-resizer",
               "csn-dns",
               "csn-keepalived",
               "csn-ntp",
               "csn-ntp-init",
               "csn-route-add",
-              "csi-node-driver-registrar",
-              "csi-resizer",
+              "db-seed",
               "deployer",
               "distributor",
               "dnsmasq",
@@ -381,9 +453,11 @@
               "ironic-static",
               "kube-fledged",
               "kube-rbac-proxy",
+              "kubectl",
               "manager",
               "mdm",
               "mdsd",
+              "migrate-sts",
               "mise-sidecar",
               "msi-adapter",
               "nc-kube-events",
@@ -401,9 +475,9 @@
               "rp-filter",
               "sa-alerts-exporter",
               "sa-metrics-exporter",
-              "server",
               "scheduler-plugins-controller",
               "scheduler-plugins-scheduler",
+              "server",
               "shared-pool-container",
               "syslog",
               "telegraf",
@@ -413,7 +487,9 @@
               "virt-controller",
               "virt-handler",
               "virt-launcher",
+              "virt-launcher-image-holder",
               "virt-operator",
+              "volume-migrator",
               "wait",
               "wait-for-certificates",
               "watcher",
@@ -422,8 +498,8 @@
           },
           "excludedImages": {
             "value": [
-              "mcr.microsoft.com/networkcloud/nc-platform-operator/aksipam-web:*",
-              "mcr.microsoft.com/networkcloud/nc-platform-operator/afo-action-command:*"
+              "mcr.microsoft.com/networkcloud/nc-platform-operator/afo-action-command:*",
+              "mcr.microsoft.com/networkcloud/nc-platform-operator/aksipam-web:*"
             ]
           }
         }
@@ -468,10 +544,12 @@
               "etcd-snapshotter-cleaner",
               "etcd-snapshotter-distribution",
               "low-level-collector",
+              "mount-leak-detector",
               "nfs",
               "nfs-server",
               "nginx",
               "node",
+              "node-driver-registrar",
               "otel-pipeline"
             ]
           }
@@ -500,6 +578,7 @@
               "action-command-container",
               "arc-for-servers-connect-agent",
               "arc-for-servers-connect-agent-init",
+              "busybox",
               "calico-apiserver",
               "calico-csi",
               "calico-node",
@@ -518,6 +597,7 @@
               "idrac-exporter",
               "install-cni",
               "ironic-static",
+              "kube-ovn-tolerations-webhook",
               "mdatp-sync",
               "nc-toolbox-deploy",
               "nfs",
@@ -533,14 +613,15 @@
               "toolbox",
               "virt-handler",
               "virt-launcher",
+              "volume-migrator",
               "vulnerability-operator-health-check",
               "vulnerability-server"
             ]
           },
           "excludedImages": {
             "value": [
-              "mcr.microsoft.com/oss/v2/aquasecurity/trivy:*",
-              "mcr.microsoft.com/networkcloud/nc-platform-operator/afo-action-command:*"
+              "mcr.microsoft.com/networkcloud/nc-platform-operator/afo-action-command:*",
+              "mcr.microsoft.com/oss/v2/aquasecurity/trivy:*"
             ]
           }
         }
@@ -555,7 +636,6 @@
           },
           "excludedImages": {
             "value": [
-              "marinerhciprod.azurecr.io/capkvcontroller:*",
               "mcr.microsoft.com/azurelinux/base/cluster-api-provider-kubevirt:*"
             ]
           }
@@ -564,7 +644,7 @@
       {
         "policyDefinitionReferenceId": "NoPrivilegeEscalation",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1c6e92c9-99f0-4e55-9cf2-0c234dc48f99",
-        "definitionVersion": "7.*.*",
+        "definitionVersion": "8.*.*",
         "parameters": {
           "effect": {
             "value": "[parameters('effect')]"
@@ -577,13 +657,19 @@
               "controller",
               "csi-node-driver-registrar",
               "dnsmasq",
+              "etcd-snapshotter",
+              "etcd-snapshotter-cleaner",
+              "etcd-snapshotter-distribution",
               "flexvol-driver",
               "install-cni",
+              "migrate-sts",
+              "mise-sidecar",
               "nfs",
               "nfs-server",
               "node",
               "node-exporter",
-              "mise-sidecar",
+              "otel-collector",
+              "otel-pipeline",
               "process-exporter",
               "proxy",
               "pure-storage-exporter",
@@ -597,7 +683,8 @@
           },
           "excludedImages": {
             "value": [
-              "mcr.microsoft.com/networkcloud/nc-platform-operator/afo-action-command:*"
+              "mcr.microsoft.com/networkcloud/nc-platform-operator/afo-action-command:*",
+              "nccacheacr.azurecr.io/networkcloud/nc-platform-operator/afo-action-command:*"
             ]
           }
         }
@@ -635,6 +722,7 @@
       }
     ],
     "versions": [
+      "2.0.0-PREVIEW",
       "1.3.0-PREVIEW",
       "1.2.0-PREVIEW",
       "1.1.0-PREVIEW",
